@@ -1,4 +1,4 @@
-![Текст описания](https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81_%D0%B2_%D0%BF%D1%83%D1%81%D1%82%D1%8B%D0%BD%D0%B5_(%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0_%D0%9A%D1%80%D0%B0%D0%BC%D1%81%D0%BA%D0%BE%D0%B3%D0%BE)#/media/%D0%A4%D0%B0%D0%B9%D0%BB:Kramskoi_Christ_dans_le_d%C3%A9sert.jpg)
+![Текст описания](https://upload.wikimedia.org/wikipedia/commons/8/8a/Kramskoi_Christ_dans_le_d%C3%A9sert.jpg)
 
 # hate arising labs
 
@@ -7,3 +7,5 @@
 * [Хайкин С. Нейронные сети: полный курс (2006)](https://palchevsky.ru/uploads/books/1.pdf)
 * [Головко В.А. Нейросетевые технологии обработки данных (2017)](https://elib.bsu.by/bitstream/123456789/193558/1/Golovko.pdf)
 * [Гафаров Ф.М. Искусственные нейронные сети и приложения (2018)](https://kpfu.ru/staff_files/F1493580427/NejronGafGal.pdf)
+* [Нейронные сети для начинающих. Введение в машинное обучение](https://ai-news.ru/nejronnye_seti_dlya_nachinaushih.html)
+* [Машинное обучение (курс лекций, К.В.Воронцов)](http://www.machinelearning.ru/wiki/index.php?title=%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%28%D0%BA%D1%83%D1%80%D1%81_%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B9%2C_%D0%9A.%D0%92.%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D1%86%D0%BE%D0%B2%29)
