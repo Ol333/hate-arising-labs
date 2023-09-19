@@ -1,4 +1,4 @@
 # Спортивное программирование
 
-* [Стек](/icpc/topics/stack.html);
+* [Стек]({{ site.baseurl }}/icpc/topics/stack.html);
 * еще что-то.
