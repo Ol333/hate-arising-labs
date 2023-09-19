@@ -3,6 +3,6 @@
 
 Разделы:
 
-* [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
+* [Спортивное программирование](/icpc/index.html)
 * [Искусственный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) 
 
