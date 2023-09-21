@@ -66,3 +66,4 @@ $\,\,\,\,\,\,\,\,\,\,\,\,φ(v) = \begin{cases} 1 & если \, x>0 \\ 0 & есл
 
 0 1 0 1 $x_2$      ($\overrightarrow{w_{12}=1}$)
 
+[Лабораторная работа №2 →]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html)

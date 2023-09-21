@@ -5,7 +5,7 @@
 * [Структуры данных]({{ site.baseurl }}/icpc/topics/data-structure/index.html):
     * [Стек]({{ site.baseurl }}/icpc/topics/data-structure/index.html#стек);
     * [Очередь]({{ site.baseurl }}/icpc/topics/data-structure/index.html#очередь);
-    * [Графы]({{ site.baseurl }}/icpc/topics/data-structure/index.html№графы);
+    * [Графы]({{ site.baseurl }}/icpc/topics/data-structure/index.html#графы);
 * [Сортировки]({{ site.baseurl }}/icpc/topics/sorts/index.html):
     * [Быстрая сортировка]({{ site.baseurl }}/icpc/topics/sorts/index.html#быстрая-сортировка)
 * [Динамическое программирование]({{ site.baseurl }}/icpc/topics/data-structure/index.html#динамическое-программирование);
