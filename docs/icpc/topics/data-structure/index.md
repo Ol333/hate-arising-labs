@@ -1,6 +1,6 @@
 [Главная]({{ site.baseurl }}) >> [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
 
-[TOC]
+[[_TOC_]]
 
 # Структуры данных
 
@@ -37,10 +37,10 @@
 
 |  | Задача |
 | ----------- | ----------- |
-| :smile: | [399B](https://codeforces.com/problemset/problem/399/b)|
-| easy    | [612C (скобочная последовательность)](https://codeforces.com/contest/612/problem/C)|
-| medium  | -   |
-| hard    | -   |
+| :blue_heart: | [399B](https://codeforces.com/problemset/problem/399/b)|
+| :green_heart:   | [612C (скобочная последовательность)](https://codeforces.com/contest/612/problem/C)|
+| :yellow_heart:  | -   |
+| :heart:   | -   |
 
 _____________
 
