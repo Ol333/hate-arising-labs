@@ -5,4 +5,5 @@
 
 * [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
 * [Искусственный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) 
+* [Теория информационных процессов и систем]({{ site.baseurl }}/TIPiS/index.html)
 
