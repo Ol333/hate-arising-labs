@@ -56,7 +56,10 @@ print(results)
 ```python
 from sklearn.model_selection import train_test_split
 
-X_train, X_test, Y_train, Y_test = train_test_split(train_data_features, emotion, test_size=0.2, random_state=0)
+X_train, X_test, Y_train, Y_test = train_test_split(train_data_features, 
+                                                    emotion, 
+                                                    test_size=0.2, 
+                                                    random_state=0)
 ```
 Создать и обучить классификатор
 ```python
@@ -89,6 +92,8 @@ x -= x.mean(axis=0)
 x /= x.std(axis=0)
 ```
 Предполагается, что x — это двумерная матрица данных с формой (образцы, свойства). 
+
+### Задание 2
 
 Прочитать [Шолле Ф. Глубокое обучение на Python (2018)](https://codernet.ru/books/python/glubokoe_obuchenie_na_python_sholle_fransua/):
 
