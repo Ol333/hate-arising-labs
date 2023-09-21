@@ -82,10 +82,9 @@ $ ω_{ij}^{t+1}=ω_{ij}^t + \frac {y_i - \sum_{j=1}^n ω_{ij}^t x_{ij}}{\sum_{j=
 $\bar x ^{k+1} = \bar x^k - α∇Φ(\bar x^k )$,	<a id="eq_2">(2)</a>
 
 где
-<script type="math/tex; mode=display">% <![CDATA[
-∇Φ(\bar x) = \begin{pmatrix}
-\frac {∂Φ}{∂x_1} \\ \frac {∂Φ}{∂x_2} \\ .. \\ ..
-\end{pmatrix}  %]]></script>,
+$$ ∇Φ(\bar x) = \begin{pmatrix}
+\frac {∂Φ}{∂x_1} \\\\\\\\ \frac {∂Φ}{∂x_2} \\\\\\\\ .. \\\\\\\\ ..
+\end{pmatrix}  $$ ,
 
 $α$ – задаваемый шаг, лучше делать меньше 0.01.
 
