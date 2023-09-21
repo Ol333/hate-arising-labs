@@ -1,4 +1,4 @@
-[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусстенные нейронные сети]({{ site.baseurl }}/artificial-intelligence/index.html)
+[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусстенные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html)
 
 # Модель нейрона
 

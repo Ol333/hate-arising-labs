@@ -1,4 +1,4 @@
-[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусстенные нейронные сети]({{ site.baseurl }}/artificial-intelligence/index.html)
+[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусстенные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html)
 
 # Градиентный спуск и Правило обучения Уидроу-Хоффа. Обучение однослойной нейронной сети
 
@@ -82,9 +82,9 @@ $ ω_{ij}^{t+1}=ω_{ij}^t + \frac {y_i - \sum_{j=1}^n ω_{ij}^t x_{ij}}{\sum_{j=
 $\bar x ^{k+1} = \bar x^k - α∇Φ(\bar x^k )$,	<a id="eq_2">(2)</a>
 
 где
-$$ ∇Φ(\bar x) = \begin{pmatrix}
+$ ∇Φ(\bar x) = \begin{pmatrix}
 \frac {∂Φ}{∂x_1} \\\\\\\\ \frac {∂Φ}{∂x_2} \\\\\\\\ .. \\\\\\\\ ..
-\end{pmatrix}  $$ ,
+\end{pmatrix}  $ ,
 
 $α$ – задаваемый шаг, лучше делать меньше 0.01.
 
