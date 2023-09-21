@@ -3,13 +3,13 @@
 # Спортивное программирование
 
 * [Структуры данных]({{ site.baseurl }}/icpc/topics/data-structure/index.html):
-    * [Стек]({{ site.baseurl }}/icpc/topics/data-structure/index.html/#stack);
-    * [Очередь]({{ site.baseurl }}/icpc/topics/data-structure/index.html/#queue);
-    * [Графы]({{ site.baseurl }}/icpc/topics/data-structure/index.html/#graf);
+    * [Стек]({{ site.baseurl }}/icpc/topics/data-structure/index.html?stack);
+    * [Очередь]({{ site.baseurl }}/icpc/topics/data-structure/index.html?queue);
+    * [Графы]({{ site.baseurl }}/icpc/topics/data-structure/index.html?graf);
 * [Сортировки]({{ site.baseurl }}/icpc/topics/sorts/index.html):
-    * [Быстрая сортировка]({{ site.baseurl }}/icpc/topics/sorts/index.html/#quick_sort)
-* [Динамическое программирование]({{ site.baseurl }}/icpc/topics/data-structure/index.html/#dynamic_programming);
-* [Жадные алгоритмы]({{ site.baseurl }}/icpc/topics/data-structure/index.html/#greedy_algorithm);
+    * [Быстрая сортировка]({{ site.baseurl }}/icpc/topics/sorts/index.html?quick_sort)
+* [Динамическое программирование]({{ site.baseurl }}/icpc/topics/data-structure/index.html?dynamic_programming);
+* [Жадные алгоритмы]({{ site.baseurl }}/icpc/topics/data-structure/index.html?greedy_algorithm);
 
     
 
