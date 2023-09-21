@@ -2,6 +2,10 @@
 
 # Искусстенный интеллект
 
+* [Искусственные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html)
+* Инструменты, подходы и методы обработки структурированных и неструктурированных данных
+* Временные ряды
+
 ### Полезная литература:
 
 * [Шолле Ф. Глубокое обучение на Python (2018)](https://codernet.ru/books/python/glubokoe_obuchenie_na_python_sholle_fransua/)
