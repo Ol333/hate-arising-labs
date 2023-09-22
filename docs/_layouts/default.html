@@ -14,8 +14,8 @@
         MathJax = {tex: {inlineMath: [['$', '$']]}};
     </script>
 
-    <!-- <script src="https://gist.github.com/rxaviers/7360908.js"></script> -->
-    
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -25,6 +25,10 @@
     <div class="wrapper">
         <header>
             <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.title }}</a></h1>
+            
+            <nav>
+              <ul></ul>
+            </nav>
             
             <!-- {% if site.logo %}
               <img src="{{site.logo | relative_url}}" alt="Logo" />
