@@ -35,7 +35,7 @@
 
 |  | Задача |
 | :-: | ----------- |
-| 🥚 🐌 | [399B](https://codeforces.com/problemset/problem/399/b)|
+| 🐌 | [399B](https://codeforces.com/problemset/problem/399/b)|
 | 🐣  | [612C (скобочная последовательность)](https://codeforces.com/contest/612/problem/C)|
 | 🐤  | -   |
 | 🐔 | -   |
