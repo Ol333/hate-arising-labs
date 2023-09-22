@@ -1,4 +1,4 @@
-[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусстенные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html)
+[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусственные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html)
 
 # Модель нейрона
 
@@ -67,3 +67,4 @@ $\,\,\,\,\,\,\,\,\,\,\,\,φ(v) = \begin{cases} 1 & если \, x>0 \\\\\\\\ 0 & 
 0 1 0 1 $x_2$      ($\overrightarrow{w_{12}=1}$)
 
 [Лабораторная работа №2 →]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html)
+[Вверх](#модель-нейрона)

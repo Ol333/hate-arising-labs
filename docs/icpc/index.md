@@ -2,6 +2,8 @@
 
 # Спортивное программирование
 
+* [Алгоритмы]({{ site.baseurl }}/icpc/topics/algorithms/index.html):
+    * [Бинарный поиск]({{ site.baseurl }}/icpc/topics/algorithms/index.html#бинарный-поиск)
 * [Структуры данных]({{ site.baseurl }}/icpc/topics/data-structure/index.html):
     * [Стек]({{ site.baseurl }}/icpc/topics/data-structure/index.html#стек);
     * [Очередь]({{ site.baseurl }}/icpc/topics/data-structure/index.html#очередь);
