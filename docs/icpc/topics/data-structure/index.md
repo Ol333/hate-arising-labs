@@ -65,6 +65,7 @@ ____
 ________
 
 # <a id="dynamic_programming">Динамическое программирование</a>
+[1195C]((https://codeforces.com/contest/1195/problem/C)
 [1221D](https://codeforces.com/contest/1221/problem/D)
 
 ___

@@ -8,6 +8,8 @@
 
 Требуется отсортированный массив.
 
+![Алгоритм]({{ site.baseurl }}/img/bin_search.xml)
+
 ```python
 def f(a, aim):
     left = 0
@@ -21,3 +23,10 @@ def f(a, aim):
     if a[left] >= aim:
         return a[left]
 ```
+
+|  | Задача |
+| :-: |-|
+| 🐌 | |
+| 🐣  | |
+| 🐤  | [91B](https://codeforces.com/problemset/problem/91/B) |
+| 🐔 | [2 задача](https://codeforces.com/gym/100881/attachments) (Космическое поселение) |
