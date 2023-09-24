@@ -31,7 +31,7 @@
     },
     value: 0,
   });
-    fl = fasle;
+    fl = false;
     setInterval(() => {
       gauge.value(fl ? 0 : 1);
       fl = !fl;
