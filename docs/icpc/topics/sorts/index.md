@@ -33,7 +33,7 @@
   });
     fl = false;
     setInterval(() => {
-      gauge.value(fl ? 0 : 1);
+      $('#gauge').dxCircularGauge('instance').value(fl ? 0 : 1);
       fl = !fl;
     },
       500);
