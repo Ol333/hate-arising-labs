@@ -1,4 +1,8 @@
-[Главная]({{ site.baseurl }}) >> [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/icpc/index.html">Спортивное программирование</a></li>
+  <li class="breadcrumb-item active">Структуры данных</li>
+</ol>
 
 # Структуры данных
 
@@ -65,7 +69,7 @@ ____
 ________
 
 # <a id="dynamic_programming">Динамическое программирование</a>
-[1195C]((https://codeforces.com/contest/1195/problem/C)
+[1195C](https://codeforces.com/contest/1195/problem/C)
 [1221D](https://codeforces.com/contest/1221/problem/D)
 
 ___

@@ -1,4 +1,7 @@
-[Главная]({{ site.baseurl }})
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item active">Искусственный интеллект</li>
+</ol>
 
 # Искусственный интеллект
 

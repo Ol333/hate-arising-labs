@@ -1,13 +1,75 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active">Главная</li>
+</ol>
+
 <div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar"  id="progressbar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
- ![Христос_в_пустыне_(картина_Крамского)](https://upload.wikimedia.org/wikipedia/commons/8/8a/Kramskoi_Christ_dans_le_d%C3%A9sert.jpg)
+<br>
+
+<div class="row row-cols-1 row-cols-md-2">
+<div class="col-lg-4">
+<div class="card bg-light mb-2" style="max-width: 20rem;">
+  <div class="card-body">
+     <div id="gauge"></div>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="card border-primary mb-2" style="max-width: 20rem;">
+  <div class="card-body">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Kramskoi_Christ_dans_le_d%C3%A9sert.jpg"
+        alt="Христос_в_пустыне_(картина_Крамского)"  focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
+</div>
+</div>
 
 
-## Разделы:
+ <script>
+   $(() => {
+    const gauge = $('#gauge').dxCircularGauge({
+     scale: {
+       startValue: 0,
+       endValue: 10,
+       tick: {
+         color: '#9c9c9c',
+       },
+       minorTick: {
+         color: '#9c9c9c',
+         visible: true,
+       },
+       tickInterval: 0.5,
+       minorTickInterval: 0.25,
+     },
+     rangeContainer: {
+       backgroundColor: 'none',
+     },
+     title: {
+       text: 'Скорость сдачи лаб (шт./сут.)',
+       font: { size: 28 },
+     },
+     value: 0,
+   });
+     fl = false;
+     setInterval(() => {
+       $('#gauge').dxCircularGauge('instance').value(fl ? 0 : 1);
+       fl = !fl;
+     },
+       500);
+       var d = new Date();
+       d = (((1+d.getMonth())%7)-1)*25;
+       $('#progressbar').attr('aria-valuenow', d).css('width', d + "%");
+
+ });  
+ </script>
+
+
+
+### Разделы:
 
 * [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
-* [Искусственный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) 
+* [Искусственный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html)
 * [Теория информационных процессов и систем]({{ site.baseurl }}/TIPiS/index.html)
-

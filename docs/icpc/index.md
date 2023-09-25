@@ -1,4 +1,7 @@
-[Главная]({{ site.baseurl }})
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item active">Спортивное программирование</li>
+</ol>
 
 # Спортивное программирование
 
@@ -13,7 +16,7 @@
 * [Динамическое программирование]({{ site.baseurl }}/icpc/topics/data-structure/index.html#динамическое-программирование);
 * [Жадные алгоритмы]({{ site.baseurl }}/icpc/topics/data-structure/index.html#жадные-алгоритмы);
 
-    
+
 
 
 ## Литература для интересующихся

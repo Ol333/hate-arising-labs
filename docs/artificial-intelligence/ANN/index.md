@@ -1,4 +1,8 @@
-[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html)
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">Искусственный интеллект</a></li>
+  <li class="breadcrumb-item active">Искусственные нейронные сети</li>
+</ol>
 
 # Искусственные нейронные сети
 

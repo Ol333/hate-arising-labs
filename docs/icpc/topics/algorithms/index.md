@@ -1,4 +1,8 @@
-[Главная]({{ site.baseurl }}) >> [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/icpc/index.html">Спортивное программирование</a></li>
+  <li class="breadcrumb-item active">Алгоритмы</li>
+</ol>
 
 # Алгоритмы
 
@@ -13,7 +17,7 @@
     $( "#tabs" ).tabs();
   } );
   </script>
-  
+
 <div id="tabs">
   <ul>
     <li><a href="#tabs-1">Смысл</a></li>
@@ -42,7 +46,7 @@
             return a[left]
     ```    -->
       <div class="markdown-body editormd-preview-container" previewcontainer="true" style="padding: 20px;"><pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><code class="lang-python"><span class="pln">    </span><span class="kwd">def</span><span class="pln"> f</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> aim</span><span class="pun">):</span></code></li><li class="L1"><code class="lang-python"><span class="pln">        left </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span></code></li><li class="L2"><code class="lang-python"><span class="pln">        right </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">-</span><span class="lit">1</span></code></li><li class="L3"><code class="lang-python"><span class="pln">        </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">left </span><span class="pun">&lt;</span><span class="pln"> right</span><span class="pun">)</span></code></li><li class="L4"><code class="lang-python"><span class="pln">            middle </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">left </span><span class="pun">+</span><span class="pln"> right</span><span class="pun">)</span><span class="pln"> </span><span class="pun">//</span><span class="pln"> </span><span class="lit">2</span></code></li><li class="L5"><code class="lang-python"><span class="pln">            </span><span class="kwd">if</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">middle</span><span class="pun">]</span><span class="pln"> </span><span class="pun">&gt;=</span><span class="pln"> aim</span><span class="pun">:</span></code></li><li class="L6"><code class="lang-python"><span class="pln">                left </span><span class="pun">=</span><span class="pln"> middle</span></code></li><li class="L7"><code class="lang-python"><span class="pln">            </span><span class="kwd">else</span><span class="pun">:</span></code></li><li class="L8"><code class="lang-python"><span class="pln">                right </span><span class="pun">=</span><span class="pln"> middle </span><span class="pun">-</span><span class="lit">1</span></code></li><li class="L9"><code class="lang-python"><span class="pln">        </span><span class="kwd">if</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">left</span><span class="pun">]</span><span class="pln"> </span><span class="pun">&gt;=</span><span class="pln"> aim</span><span class="pun">:</span></code></li><li class="L0"><code class="lang-python"><span class="pln">            </span><span class="kwd">return</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">left</span><span class="pun">]</span></code></li></ol></pre>
-        
+
 </div>
   </div>
 </div>
