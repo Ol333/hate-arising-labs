@@ -1,4 +1,11 @@
-[Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусственные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html)
+<!-- [Главная]({{ site.baseurl }}) >> [Искусстенный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html) >> [Искусственные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html) -->
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">Искусстенный интеллект</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/ANN/index.html">Искусственные нейронные сети</a></li>
+  <li class="breadcrumb-item active">Лабораторная работа №2</li>
+</ol>
 
 # Градиентный спуск и Правило обучения Уидроу-Хоффа. Обучение однослойной нейронной сети
 
