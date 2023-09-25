@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}"> -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap_minty.css">
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/img/duck_32.png">
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
@@ -42,9 +43,7 @@
             <p>{{ site.description | default: site.github.project_tagline }}</p>
 
             <nav>
-              <ul>
-                <li>?</li>
-              </ul>
+              <ul></ul>
             </nav>
     
             <!-- {% if site.github.is_project_page %}
