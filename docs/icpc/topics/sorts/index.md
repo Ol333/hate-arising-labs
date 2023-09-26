@@ -51,7 +51,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/sheicer1.png"
+  <img src="{{ site.baseurl }}/img/sheicer1.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>

@@ -42,7 +42,7 @@
 | 🐌 | [399B](https://codeforces.com/problemset/problem/399/b)||
 | 🐣  | [612C](https://codeforces.com/contest/612/problem/C), [91B](https://codeforces.com/problemset/problem/91/B)|скобочная последовательность|
 | 🐤  | -   ||
-| 🐔 | -   ||
+| 🐔 😳| -   ||
 
 _____________
 
