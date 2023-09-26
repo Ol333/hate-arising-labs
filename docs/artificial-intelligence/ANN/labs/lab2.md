@@ -11,7 +11,7 @@
 
 # Градиентный спуск и Правило обучения Уидроу-Хоффа. Обучение однослойной нейронной сети
 
-Читаем cтр. 16 – 24. в учебном пособии [Гафаров Ф.М. Искусственные нейронные сети и приложения](https://kpfu.ru/staff_files/F1493580427/NejronGafGal.pdf).
+Читаем cтр. 16 – 24. в учебном пособии [Гафаров Ф.М. Искусственные нейронные сети и приложения](https://kpfu.ru/staff_files/F1493580427/NejronGafGal.pdf){:target="_blank"}.
 
 
 # Задание
@@ -140,6 +140,15 @@ $ω_{ij}^{t+1} = ω_{ij}^t - α \left( \sum_{j=1}^n (ω_{ij}^t x_{ij}) - y_i \ri
 ## Шаг 7
 Обучаем сеть из 1 нейрона с 2 входами на распознавание наличия цвета на картинке (берем файл с данными, подготовленный в конце второй лабораторной по другой дисциплине). Если не обучается, попробуйте подобрать веса вручную.
 
-[← Лабораторная работа №1]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html)
-
-<button type="button" class="btn btn-primary" onclick="window.location.href='#задание';">Вверх</button>
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="list-unstyled">
+      <li class="float-end">
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание';">Вверх</button>
+      </li>
+      <li>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html';">← Лабораторная работа №1</button>
+      </li>
+    </ul>
+  </div>
+</div>
