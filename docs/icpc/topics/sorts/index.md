@@ -20,7 +20,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/vkluch2.png"
+  <img src="{{ site.baseurl }}/img/vkluch2.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -30,7 +30,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/vibor1.png"
+  <img src="{{ site.baseurl }}/img/vibor1.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -41,7 +41,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/puzir2.png"
+  <img src="{{ site.baseurl }}/img/puzir2.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -63,7 +63,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/bistro.png"
+  <img src="{{ site.baseurl }}/img/bistro.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -73,7 +73,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/sli.png"
+  <img src="{{ site.baseurl }}/img/sli.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -83,7 +83,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/tree2.png"
+  <img src="{{ site.baseurl }}/img/tree2.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -93,7 +93,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/pira0.2.png"
+  <img src="{{ site.baseurl }}/img/pira0.2.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -103,7 +103,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/jsort.png"
+  <img src="{{ site.baseurl }}/img/jsort.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -113,7 +113,7 @@
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
-  <img src="{{baseurl}}/img/por.png"
+  <img src="{{ site.baseurl }}/img/por.png"
         focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
