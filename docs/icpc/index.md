@@ -12,7 +12,7 @@
     * [Очередь]({{ site.baseurl }}/icpc/topics/data-structure/index.html#очередь);
     * [Графы]({{ site.baseurl }}/icpc/topics/data-structure/index.html#графы);
 * [Сортировки]({{ site.baseurl }}/icpc/topics/sorts/index.html):
-    * [Быстрая сортировка]({{ site.baseurl }}/icpc/topics/sorts/index.html#быстрая-сортировка)
+    * [Быстрая сортировка]({{ site.baseurl }}/icpc/topics/sorts/index.html#quicksort)
 * [Динамическое программирование]({{ site.baseurl }}/icpc/topics/data-structure/index.html#динамическое-программирование);
 * [Жадные алгоритмы]({{ site.baseurl }}/icpc/topics/data-structure/index.html#жадные-алгоритмы);
 

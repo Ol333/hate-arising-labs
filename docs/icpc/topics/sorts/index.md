@@ -4,6 +4,10 @@
   <li class="breadcrumb-item active">Сортировки</li>
 </ol>
 
+<nav>
+  <ul></ul>
+</nav>
+
 # Сортировки
 
 Сортировка — упорядочивание набора однотипных данных по
@@ -11,12 +15,14 @@
 Цель сортировки — облегчить последующий поиск элементов в
 таком отсортированном массиве.
 
-Прямые методы сортировки можно разбить на:
-* сортитровки с помощью включения;
-* сортировки с помощью выбора;
-* сортировки с помощью обмена.
+Дальше представлено 3 простых сортировки, одно улучшение и 6 сложных.
 
-# Сортировка вставками
+## Insertion sort
+### Сортировка вставками
+
+На каждом шаге алгоритма мы берем один элемент из входного массива данных и помещаем его на свое место (сравнивая с уже имеющимися) в отсортированный выходной массив.
+
+(Цветом отмечено: белым — элемент, занявший свое место в отсортированной последовательности, темно-зеленым — элементы, которые поменяли свои места в массиве.)
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
@@ -26,7 +32,14 @@
   </div>
 </div>
 
-# Сортировка с помощью выбора
+## Selection sort
+### Сортировка выбором
+
+Метод сортировки прямым выбором основан на следующих правилах:
+
+1. Выбирается элемент с наименьшим ключом.
+2. Он меняется местами с первым элементом $a_0$.
+3. Затем эти операции повторяются с оставшимися $n-1$ элементами, $n-2$ элементами и так далее до тех пор, пока не останется один, самый большой элемент.
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
@@ -36,10 +49,12 @@
   </div>
 </div>
 
-# Сортировка с помощью обмена, пузырьковая сортировка
-(bubble sort)
+## Bubble sort
+### Сортировка обменом, пузырьковая сортировка
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
+Сравнение и смена мест для пары соседних элементов до тех пор, пока не будут упорядочены все элементы.
+
+<div class="card border-primary mb-2" style="max-width: 25rem;">
   <div class="card-body">
   <img src="{{ site.baseurl }}/img/puzir2.png"
         focusable="false" width="100%"
@@ -47,7 +62,11 @@
   </div>
 </div>
 
-# Шейкерная сортировка (shaker sort)
+## Shaker sort
+### Шейкерная сортировка
+
+Напоминает приготовление коктейля, когда один стакан накрывают другим и встряхивают вверх-вниз.
+При просмотре вверх на свое место всплывает самый легкий элемент, при просмотре вниз тонет на свое место "тяжелый" элемент.
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
@@ -57,11 +76,12 @@
   </div>
 </div>
 
-# <a id="quick_sort">Быстрая сортировка</a>
+## QuickSort
+### Быстрая сортировка или сортировка с разделением
 
-Метод сортировки (QuickSort) с разделением или быстрая сортировка.
+Идея этого алгоритма заключается в следующем: произвольно разбить массив на две части (выбрав опорный элемент), добиться того, что все элементы левой части были больше или равны элементам правой части, далее поступить также с правой и левой частью, рассматривая их как отдельные массивы.
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
+<div class="card border-primary mb-2" style="max-width: 15rem;">
   <div class="card-body">
   <img src="{{ site.baseurl }}/img/bistro.png"
         focusable="false" width="100%"
@@ -69,9 +89,18 @@
   </div>
 </div>
 
-# Слияние (merge sort)
+##  Merge sort
+### Слияние
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
+Алгоритм данной сортировки:
+
+1. Последовательность $а$ разбивается на две половины: $b$ и $с$.
+2. Части $b$ и $с$ сливаются, при этом одиночные элементы образуют упорядоченные пары.
+3. Полученная последовательность под именем а вновь обрабатывается, как указано в пунктах 1 и 2; при этом упорядоченные пары переходят в такие же четвёрки.
+
+Повторяя предыдущие шаги, сливаем четвёрки в восьмёрки и т.д., каждый раз, удваивая длину слитых последовательностей до тех пор, пока не будет упорядочена последовательность целиком.
+
+<div class="card border-primary mb-2" style="max-width: 10rem;">
   <div class="card-body">
   <img src="{{ site.baseurl }}/img/sli.png"
         focusable="false" width="100%"
@@ -79,27 +108,87 @@
   </div>
 </div>
 
-# Сортировка деревом (tree sort)
+## Tree sort
+### Сортировка деревом
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
-  <div class="card-body">
-  <img src="{{ site.baseurl }}/img/tree2.png"
-        focusable="false" width="100%"
-        class="d-block user-select-none" />
+Бинарное (двоичное) дерево поиска – это бинарное дерево, для которого выполняются следующие дополнительные условия (свойства дерева поиска):
+
+* оба поддерева – левое и правое, являются двоичными деревьями поиска;
+* у всех узлов левого поддерева произвольного узла $X$ значения ключей данных меньше, чем значение ключа данных самого узла $X$;
+* у всех узлов правого поддерева произвольного узла $X$ значения ключей данных не меньше, чем значение ключа данных узла $X$.
+
+Совершаем обход бинарного дерева в соответствии со следующими рекурсивными правилами:
+1. Посетить во внутреннем порядке левое поддерево корня (если оно существует).
+2. Посетить корень.
+3. Посетить во внутреннем порядке правое поддерево корня (если оно существует).
+
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col-lg-4">
+    <div class="card border-primary mb-2" style="max-width: 20rem;">
+      <div class="card-body">
+      <img src="{{ site.baseurl }}/img/tree2.png"
+            focusable="false" width="100%"
+            class="d-block user-select-none" />
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card border-primary mb-2" style="max-width: 20rem;">
+      <div class="card-body">
+      <img src="{{ site.baseurl }}/img/tree.png"
+            focusable="false" width="100%"
+            class="d-block user-select-none" />
+      </div>
+    </div>
   </div>
 </div>
 
-# Пирамидальная сортировка (англ. Heapsort) или сортировка кучей
+## Heapsort
+### Пирамидальная сортировка или сортировка кучей
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
-  <div class="card-body">
-  <img src="{{ site.baseurl }}/img/pira0.2.png"
-        focusable="false" width="100%"
-        class="d-block user-select-none" />
+Пирамида, двоичная куча, пирамида, или сортирующее дерево — такое двоичное дерево, для которого выполнены три условия:
+
+1. Значение в любой вершине не меньше, чем значения её потомков.
+2. Глубина листьев (расстояние до корня) отличается не более чем на 1 слой.
+3. Последний слой заполняется слева направо.
+
+Алгоритм сортировки будет состоять из двух основных шагов:
+
+1. Выстраиваем элементы массива в виде сортирующего дерева. Этот шаг требует $N$ операций.
+2. Элемент корня меняется местами с последним, и рассматриваемый массив сокращается на один элемент. Возвращаемся к первому шагу. Процесс продолжается до тех пор, пока в сортирующем дереве не останется один элемент. Этот шаг требует ($n \log n$) операций.
+
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col-lg-4">
+    <div class="card border-primary mb-2" style="max-width: 20rem;">
+      <div class="card-body">
+      <img src="{{ site.baseurl }}/img/pira0.2.png"
+            focusable="false" width="100%"
+            class="d-block user-select-none" />
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card border-primary mb-2" style="max-width: 20rem;">
+      <div class="card-body">
+      <img src="{{ site.baseurl }}/img/pira1.png"
+            focusable="false" width="100%"
+            class="d-block user-select-none" />
+      </div>
+    </div>
   </div>
 </div>
 
-# J-сортировка (JSort)
+## JSort
+### J-сортировка
+
+Построение двух пирамид (нисходящей и восходящей) значительно упорядочивает массив в обоих направлениях.
+Сначала нужно осуществить построение невозрастающей кучи.
+В результате меньшие элементы всплывают в верхние узлы пирамиды (что будет соответствовать левой половине массива), наименьший элемент окажется в корне.
+Элементы находящиеся ближе к листьям дерева (им будет соответствовать вторая половина массива) будут иметь менее упорядоченный вид, поскольку они не сравнивались друг с другом, а просто были оттеснены на задворки в результате перемещения их родителей.
+Для наведения относительного порядка в правой части массива следует построить кучу ещё раз, во всём противоположную первой. Во-первых, эта куча должна быть неубывающей.
+Во-вторых, она должна быть «зеркальной» к массиву, то есть её корень должен соответствовать не первому, а последнему элементу и выстраивать дерево следует, перебирая массив от конца к началу.
+В итоге получаем во многом упорядоченный массив.
+Довершает дело сортировка вставками.
 
 <div class="card border-primary mb-2" style="max-width: 20rem;">
   <div class="card-body">
@@ -109,9 +198,23 @@
   </div>
 </div>
 
-# Поразрядная сортировка или цифровая сортировка (radix sort)
+## Radix sort
+### Поразрядная сортировка или цифровая сортировка
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
+Мы имеем массив `source = [9,5,15,6,7,8,13,11]`.
+
+1. Создаем массив `count` из $m$ элементов (счетчиков);
+2. Присваиваем `count[i]` количество элементов `sours`, равных $i$. Для этого:
+    1. Обнулить все элементы `count`;
+    2. Пройти по `count` от начала до конца, увеличивая для каждого числа значение элемента `count` с соответствующим номером. В нашем примере `count = [0,1,0,1,0,2,1,1,1,1]`.
+3. Присвоить `count[i]` значение, равное сумме всех элементов до него:
+`count[i] = count[0] + count[1] + … + count[i-1]`.
+В нашем примере `count = [0,0,1,1,2,2,4,5,6,7]`.
+Эта сумма является количеством элементов исходного массива, меньших $i$.
+4. Расставляем элементы.
+Для каждого числа `source[i]` мы знаем, сколько чисел меньше него – это значение хранится в `count[source[i]]`. Таким образом, нам известно место элемента в упорядоченном массиве: если есть $K$ чисел меньше данного, то оно должно стоять на $K+1$ месте. Осуществляем проход по массиву `source` слева направо, одновременно заполняя выходной массив `dest`. Таким образом, число `c = source[i]` ставится на место `count[c]`. Если числа повторяются в массиве, предусмотрен оператор, который увеличивает значение позиции для следующего числа $c$, если таковое будет.
+
+<div class="card border-primary mb-2" style="max-width: 10rem;">
   <div class="card-body">
   <img src="{{ site.baseurl }}/img/por.png"
         focusable="false" width="100%"
@@ -119,114 +222,43 @@
   </div>
 </div>
 
-# Сравнение
+## Сравнение
 
-Простые алгоритмы
+Простые алгоритмы:
+* устойчивы,
+* просты в реализации,
+* эффективны на малых массивах, упорядоченных массивах,
+* долго работают на больших массивах.
 
-<table border="1">
-<tbody>
-<tr>
-  <td>название</td>
-  <td>сложность</td>
-  <td>кол-во сравнений<br>
-  min/avg/max</td>
-  <td>кол-во перестановок<br>
-  min/avg/max</td>
-  <td><a href="sl.html#us">устойчивость</a></td>
-  <td>достоинства</td>
-  <td>недостатки</td>
-</tr>
-<tr>
-  <td>включение</td>
-  <td>O(n<sup>2</sup>)</td>
-  <td>
-  <table border="1" width="100%">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Название</th>
+      <th scope="col">Сложность</th>
+      <th scope="col">Кол-во сравнений<br>min | avg | max</th>
+      <th scope="col">Кол-во перестановок<br>min | avg | max</th>
+    </tr>
+  </thead>
   <tbody>
-  <tr>
-  <td>n-1</td>
-  <td>(n<sup>2</sup>+n-2)/4</td>
-  <td>(n<sup>2</sup>-n)/2</td>
-  </tr>
+    <tr class="table-active">
+      <th scope="row">Включение</th>
+      <td>O(n<sup>2</sup>)</td>
+      <td>n-1 | (n<sup>2</sup>+n-2)/4 | (n<sup>2</sup>-n)/2</td>
+      <td>2(n-1) | (n<sup>2</sup>+9n-10)/4 | (n<sup>2</sup>+3n-4)/2</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Выбор</th>
+      <td>O(n<sup>2</sup>)</td>
+      <td>(n<sup>2</sup>-n)/2 | (n<sup>2</sup>-n)/2 | (n<sup>2</sup>-n)/2</td>
+      <td>3(n-1) | n(ln n +0,57) | n<sup>2</sup>/4+3(n-1)</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">обмен</th>
+      <td>O(n<sup>2</sup>)</td>
+      <td>(n<sup>2</sup>-n)/2 | (n<sup>2</sup>-n)/2 | (n<sup>2</sup>-n)/2</td>
+      <td>0 | (n<sup>2</sup>-n)*1,5 | (n<sup>2</sup>-n)/4</td>
+    </tr>
   </tbody>
-  </table>
-  </td>
-  <td>
-  <table border="1" width="100%">
-  <tbody>
-  <tr>
-  <td>2(n-1)</td>
-  <td>(n<sup>2</sup>+9n-10)/4</td>
-  <td>(n<sup>2</sup>+3n-4)/2</td>
-  </tr>
-  </tbody>
-  </table>
-  </td>
-  <td>устойчив</td>
-  <td>прост в реализации, эффективен на малых массивах,
-  упорядоченных массивах</td>
-  <td>долго работает на больших массивах</td>
-</tr>
-  <tr>
-  <td>выбор</td>
-  <td>O(n<sup>2</sup>)</td>
-  <td>
-  <table border="1" width="100%">
-  <tbody>
-  <tr>
-  <td>(n<sup>2</sup>-n)/2</td>
-  <td>(n<sup>2</sup>-n)/2</td>
-  <td>(n<sup>2</sup>-n)/2</td>
-  </tr>
-  </tbody>
-  </table>
-  </td>
-  <td>
-  <table border="1" width="100%">
-  <tbody>
-  <tr>
-  <td>3(n-1)</td>
-  <td>n(ln n +0,57)</td>
-  <td>n<sup>2</sup>/4+3(n-1)</td>
-  </tr>
-  </tbody>
-  </table>
-  </td>
-  <td>устойчив</td>
-  <td>прост в реализации, эффективен на малых массивах,
-  упорядоченных массивах, наименьшее число перестановок</td>
-  <td>долго работает на больших массивах</td>
-</tr>
-<tr>
-  <td>обмен</td>
-  <td>O(n<sup>2</sup>)</td>
-  <td>
-  <table border="1" width="100%">
-  <tbody>
-  <tr>
-  <td>(n<sup>2</sup>-n)/2</td>
-  <td>(n<sup>2</sup>-n)/2</td>
-  <td>(n<sup>2</sup>-n)/2</td>
-  </tr>
-  </tbody>
-  </table>
-  </td>
-  <td>
-  <table border="1" width="100%">
-  <tbody>
-  <tr>
-  <td>0</td>
-  <td>(n<sup>2</sup>-n)*1,5</td>
-  <td>(n<sup>2</sup>-n)/4</td>
-  </tr>
-  </tbody>
-  </table>
-  </td>
-  <td>устойчив</td>
-  <td>прост в реализации, эффективен на малых массивах,
-  упорядоченных массивах</td>
-  <td>долго работает на больших массивах</td>
-</tr>
-</tbody>
 </table>
 
 Сложные алгоритмы
@@ -308,354 +340,87 @@
 </tbody>
 </table>
 
-Вот данные, полученные в результате тестов с тысячью элементов массива:
+Вот данные, полученные в результате тестов с тысячью элементов массива и с сотней тысяч элементов (миллион элементов сортируется простым методом более часа).
 
-<table class="MsoNormalTable" style="border: medium none ; border-collapse: collapse; top: 1230px; left: 232px; width: 879px; height: 311px;" border="1" cellpadding="0" cellspacing="0">
-<tbody>
-<tr style="height: 44.3pt;">
-<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">1тыс. элементов</p>
-<p class="MsoNormal"></p>
-<p class="MsoNormal">миллисекунды<o:p></o:p></p>
-</td>
-<td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">отсортирован<o:p></o:p></p>
-<p class="MsoNormal">по возрастанию<o:p></o:p></p>
-</td>
-<td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">случайный <o:p></o:p></p>
-<p class="MsoNormal">порядок<o:p></o:p></p>
-</td>
-<td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">отсортирован<o:p></o:p></p>
-<p class="MsoNormal">по убыванию<o:p></o:p></p>
-</td>
-</tr>
-<tr style="height: 15.6pt;">
-<td colspan="4" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 448.8pt; height: 15.6pt;" valign="top" width="598">
-<p class="MsoNormal" style="text-align: center;" align="center">простые<o:p></o:p></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">включение<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">003<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">003<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">007<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">выбор<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">003<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">003<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">003<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">обмен<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">004<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">009<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">011<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td colspan="4" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 448.8pt; height: 14.7pt;" valign="top" width="598">
-<p class="MsoNormal" style="text-align: center;" align="center">сложные<o:p></o:p></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">шейкерная<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">005<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">009<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">012<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">быстрая<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">001<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">001<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">001<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">пирамидальная<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">j-</span>сортировка<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">слиянием<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">дерево<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 15.6pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal">порязрядная<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">002<o:p></o:p></span></p>
-</td>
-</tr>
-</tbody>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Сортировка<br>10<sup>3</sup> эл. (мс) / 10<sup>5</sup> эл. (мин:с:мс)</th>
+      <th scope="col">Отсортирован по возрастанию</th>
+      <th scope="col">Случайный порядок</th>
+      <th scope="col">Отсортирован по убыванию</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <th scope="row">Включение</th>
+      <td>003 / 39:783</td>
+      <td>003 / 34:078</td>
+      <td>007 / 1:03:885</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Выбор</th>
+      <td>003 / 39:719</td>
+      <td>003 / 39:786</td>
+      <td>003 / 40:903</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">Обмен</th>
+      <td>004 / 40:856</td>
+      <td>009 / 1:36:197</td>
+      <td>011 / 1:47:388</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Шейкерная</th>
+      <td>005 / 40:995</td>
+      <td>009 / 1:25:540</td>
+      <td>012 / 1:44:262</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">Быстрая</th>
+      <td>001 / 012</td>
+      <td>001 / 029</td>
+      <td>001 / 012</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Пирамидальная</th>
+      <td>002 / 063</td>
+      <td>002 / 068</td>
+      <td>002 / 058</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">J-сортировка</th>
+      <td>002 / 065</td>
+      <td>002 / 067</td>
+      <td>002 / 063</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Слиянием</th>
+      <td>002 / 1:157</td>
+      <td>002 / 1:208</td>
+      <td>002 / 1:178</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">Дерево</th>
+      <td>002 / 063</td>
+      <td>002 / 065</td>
+      <td>002 / 060</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Порязрядная</th>
+      <td>002 / 055</td>
+      <td>002 / 053</td>
+      <td>002 / 058</td>
+    </tr>
+  </tbody>
 </table>
 
-И с сотней тысяч элементов (миллион элементов сортируется простым методом более часа).
 
-<table class="MsoNormalTable" style="border: medium none ; border-collapse: collapse; left: 232px; width: 877px;" border="1" cellpadding="0" cellspacing="0">
-<tbody>
-<tr style="height: 44.3pt;">
-<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">1<span style="" lang="EN-US">00</span>тыс. элементов</p>
-<p class="MsoNormal">мин:сек:мсек</p>
-<p class="MsoNormal"></p>
-</td>
-<td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">отсортирован<o:p></o:p></p>
-<p class="MsoNormal">по возрастанию<o:p></o:p></p>
-</td>
-<td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">случайный <o:p></o:p></p>
-<p class="MsoNormal">порядок<o:p></o:p></p>
-</td>
-<td style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 44.3pt;" valign="top" width="150">
-<p class="MsoNormal">отсортирован<o:p></o:p></p>
-<p class="MsoNormal">по убыванию<o:p></o:p></p>
-</td>
-</tr>
-<tr style="height: 15.6pt;">
-<td colspan="4" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 448.8pt; height: 15.6pt;" valign="top" width="598">
-<p class="MsoNormal" style="text-align: center;" align="center">простые<o:p></o:p></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">включение<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">39:783<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">34:078<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">1:03:885<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">выбор<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">39:719<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">39:786<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">40:903<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">обмен<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">40:856<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">1:36:197<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">1<span style="" lang="EN-US">:47:388<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td colspan="4" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 448.8pt; height: 14.7pt;" valign="top" width="598">
-<p class="MsoNormal" style="text-align: center;" align="center">сложные<o:p></o:p></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">шейкерная<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">40:995<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">1:25:540<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">1:44:262<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">быстрая<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">012<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">029<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">012<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">пирамидальная<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">063<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">068<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">058<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">j-</span>сортировка<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">065<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">067<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">063<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">слиянием<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">1:157<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">1:208<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">1:178<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 14.7pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal">дерево<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">063<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">065<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 14.7pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">060<o:p></o:p></span></p>
-</td>
-</tr>
-<tr style="height: 15.6pt;">
-<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal">порязрядная<o:p></o:p></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">055<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">053<o:p></o:p></span></p>
-</td>
-<td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 112.2pt; height: 15.6pt;" valign="top" width="150">
-<p class="MsoNormal"><span style="" lang="EN-US">058<o:p></o:p></span></p>
-</td>
-</tr>
-</tbody>
-</table>
+## Задачи
+
+|  | Задача |
+| :-: |-|
+| 🐌 | |
+| 🐣  | |
+| 🐤  |  |
+| 🐔 |  |
