@@ -3,8 +3,10 @@
 </ol>
 
 <div class="progress">
-  <div class="progress-bar"  id="progressbar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar progress-bar-striped progress-bar-animated"  id="progressbar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+
+<p class="text-info" align="right">↑ сколько осталось времени для сдачи лаб</p>
 
 <br>
 
@@ -70,6 +72,12 @@
 
 ### Разделы:
 
+<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/icpc/index.html';">Спортивное программирование</button>
+
+<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/index.html';">Искусственный интеллект</button>
+
+<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/TIPiS/index.html';">Теория информационных процессов и систем</button>
+<!-- 
 * [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
 * [Искусственный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html)
-* [Теория информационных процессов и систем]({{ site.baseurl }}/TIPiS/index.html)
+* [Теория информационных процессов и систем]({{ site.baseurl }}/TIPiS/index.html) -->
