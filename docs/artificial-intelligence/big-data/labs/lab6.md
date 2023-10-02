@@ -7,7 +7,7 @@
 
 # Кластеризация
 
-Теория: [лекция]({{ site.baseurl }}/files/AI-big-data/lecture12-unsupervised.pdf).
+Теория: [лекция]({{ site.baseurl }}/files/AI-big-data/lecture12-unsupervised.pdf){:target="_blank"}.
 
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-04-unsupervised.ipynb).
 

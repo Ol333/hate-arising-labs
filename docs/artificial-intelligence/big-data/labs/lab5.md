@@ -7,7 +7,7 @@
 
 # Ансамбли
 
-Теория: [лекция 1]({{ site.baseurl }}/files/AI-big-data/lecture07-trees.pdf), [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture08-ensembles.pdf), [лекция 3]({{ site.baseurl }}/files/AI-big-data/lecture09-ensembles.pdf), [лекция 4]({{ site.baseurl }}/files/AI-big-data/lecture10-ensembles.pdf).
+Теория: [лекция 1]({{ site.baseurl }}/files/AI-big-data/lecture07-trees.pdf){:target="_blank"}, [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture08-ensembles.pdf){:target="_blank"}, [лекция 3]({{ site.baseurl }}/files/AI-big-data/lecture09-ensembles.pdf){:target="_blank"}, [лекция 4]({{ site.baseurl }}/files/AI-big-data/lecture10-ensembles.pdf){:target="_blank"}.
 
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-03-ensembles.ipynb).
 

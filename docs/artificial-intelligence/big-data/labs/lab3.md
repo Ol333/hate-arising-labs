@@ -7,7 +7,7 @@
 
 # Линейная регрессия
 
-Теория: [лекция 1]({{ site.baseurl }}/files/AI-big-data/lecture03-linregr.pdf) и [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture02-linregr.pdf).
+Теория: [лекция 1]({{ site.baseurl }}/files/AI-big-data/lecture03-linregr.pdf){:target="_blank"} и [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture02-linregr.pdf){:target="_blank"}.
 
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-01-linregr.ipynb).
 

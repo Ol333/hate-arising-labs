@@ -7,7 +7,7 @@
 
 # Линейная классификация
 
-Теория: [лекция 1]({{ site.baseurl }}/files/AI-big-data/lecture04-linclass.pdf), [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture05-linclass.pdf) и [лекция 3]({{ site.baseurl }}/files/AI-big-data/lecture06-linclass.pdf).
+Теория: [лекция 1]({{ site.baseurl }}/files/AI-big-data/lecture04-linclass.pdf){:target="_blank"}, [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture05-linclass.pdf){:target="_blank"} и [лекция 3]({{ site.baseurl }}/files/AI-big-data/lecture06-linclass.pdf){:target="_blank"}.
 
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-02-linclass.ipynb).
 
