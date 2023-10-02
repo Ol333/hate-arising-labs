@@ -9,3 +9,11 @@
 [Лабораторная работа №1]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html)
 
 [Лабораторная работа №2]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab2.html)
+
+[Лабораторная работа №3]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab3.html)
+
+[Лабораторная работа №4]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab4.html)
+
+[Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab5.html)
+
+[Лабораторная работа №6]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab6.html)
