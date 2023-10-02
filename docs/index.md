@@ -68,16 +68,11 @@
  });  
  </script>
 
-
-
-### Разделы:
+<br>
 
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/icpc/index.html';">Спортивное программирование</button>
 
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/index.html';">Искусственный интеллект</button>
 
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/TIPiS/index.html';">Теория информационных процессов и систем</button>
-<!-- 
-* [Спортивное программирование]({{ site.baseurl }}/icpc/index.html)
-* [Искусственный интеллект]({{ site.baseurl }}/artificial-intelligence/index.html)
-* [Теория информационных процессов и систем]({{ site.baseurl }}/TIPiS/index.html) -->
+

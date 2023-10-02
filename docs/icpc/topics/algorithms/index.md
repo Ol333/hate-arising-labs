@@ -31,7 +31,7 @@
     <img src="https://static.tildacdn.com/tild3566-6335-4661-b661-396439326665/binary-and-linear-se.gif"/>
   </div>
   <div id="tabs-3">
-  <pre><code class="language-python">def f(a, aim):
+    <pre><code class="language-python">def f(a, aim):
   left = 0
   right = n-1
   while (left < right)
@@ -42,8 +42,7 @@
           right = middle
   if a[left] > aim:
       return left
-  </code></pre>
-</div>
+    </code></pre>  
   </div>
 </div>
 
