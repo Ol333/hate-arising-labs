@@ -9,7 +9,10 @@
 * [Лабораторная работа №2]({{ site.baseurl }}/TIPiS/labs/lab2)
 * [Лабораторная работа №3]({{ site.baseurl }}/TIPiS/labs/lab3)
 * [Лабораторная работа №4]({{ site.baseurl }}/TIPiS/labs/lab4)
-* Лабораторная работа №5
+* [Лабораторная работа №5]({{ site.baseurl }}/TIPiS/labs/lab5)
+* Лабораторная работа №6
+* Лабораторная работа №7
+* Лабораторная работа №8
 
 ## Литература
 
@@ -17,4 +20,5 @@
 * [Громов, Ю. Ю. и др. Теория информационных процессов и систем (2014)](https://www.tstu.ru/book/elib/pdf/2014/didrih.pdf)
 * Иванов, И.В. Теория информационных процессов и систем (2014): [tg StudFiles](https://www.studmed.ru/ivanov-i-v-teoriya-informacionnyh-processov-i-sistem_762d4c81540.html), [архив](https://kit.bstu.ru/shared/attachments/102785)
 * [Герман, О. Г., Дорожкина, Н. Н. Теория информационных процессов и систем (2007)](https://elib.belstu.by/bitstream/123456789/2936/1/german_teoriya-informacionnyx-sistem.pdf)
-* [Юдковский Э. Ш. Гарри Поттер и методы рационального мышления (2010)](https://hpmor.ru/)
+* [Юдковский, Э. Ш. Гарри Поттер и методы рационального мышления (2010)](https://hpmor.ru/)
+* [Острейковский, В. А. Математические модели теории управления (2009)](https://elib.surgu.ru/fulltext/umm/88998/view)
