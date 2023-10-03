@@ -70,17 +70,25 @@ $|E|$ - размер графа (число ребер).
 
 *Изоморфные* графы (каждая вершина одного графа имеет тождественную вершину в другом):
 
+<div class="card border-primary mb-2" style="max-width: 20rem;">
 <div class="card-body">
   <img src="https://kvodo.ru/wp-content/uploads/izomorph_graph.jpg"
         alt="изоморфные графы"  focusable="false" width="100%"
         class="d-block user-select-none" />
+</div>
 </div>
 
 Когда каждому ребру графа поставлено в соответствие некоторое значение, называемое весом ребра, тогда такой граф называют *взвешнным*.
 
 *Путь* - это последовательность вершин, каждая из которых соединена с последующей посредством ребра. Если первая и последняя вершины совпадают, то такой пость называется циклом. Длина пути определяется количеством составляющих его ребер.
 
-![граф]({{ site.baseurl }}/img/graf.svg)
+<div class="card border-primary mb-2" style="max-width: 20rem;">
+  <div class="card-body">
+    <img src="{{ site.baseurl }}/img/graf.svg"
+          alt="граф"  focusable="false" width="100%"
+          class="d-block user-select-none" />
+  </div>
+</div>
 
 Граф на рис. выше можно представить следующими способами:
 <li><b>матрица смежности</b>. Если из $i$ в $j$ существует ребро, то <code>A[i][j] = 1</code>, в противном случае <code>A[i][j] = 0</code>. Получается двуменый массив, размерности $n*n$, где $n$ - число вершин графа.
@@ -117,7 +125,13 @@ $|E|$ - размер графа (число ребер).
 
 ### Обход в ширину (Breadth First Search)
 
-![граф]({{ site.baseurl }}/img/graf_BFS.svg)
+<div class="card border-primary mb-2" style="max-width: 50rem;">
+  <div class="card-body">
+    <img src="{{ site.baseurl }}/img/graf_BFS.svg"
+          alt="Обход в ширину"  focusable="false" width="100%"
+          class="d-block user-select-none" />
+  </div>
+</div>
 
 Потребуется очередь (`queue`) и массив посещенных вершин (`vis`).
 
@@ -132,10 +146,15 @@ $|E|$ - размер графа (число ребер).
 
 ### Обход в глубину (Depth First Search)
 
-![граф]({{ site.baseurl }}/img/graf_DFS.svg)
+<div class="card border-primary mb-2" style="max-width: 50rem;">
+  <div class="card-body">
+    <img src="{{ site.baseurl }}/img/graf_DFS.svg"
+          alt="Обход в глубину"  focusable="false" width="100%"
+          class="d-block user-select-none" />
+  </div>
+</div>
 
-Рекурсивный алгоритм:
-1. Функция `DFS(p)`, получающая на вход номер вершины.
+Рекурсивный алгоритм - функция `DFS(p)`, получающая на вход номер вершины:
 1. В массиве `vis` вершина отмечается как посещенная.
 1. В цикле для всех смежных ребер:
     * Если вторая вершина $u$ ребра не посещена, то вызвать для нее функцию `DFS(u)`.

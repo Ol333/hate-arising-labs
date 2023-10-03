@@ -5,11 +5,11 @@
 
 # Теория информационных процессов и систем
 
-* [Лабораторная работа №1]({{ site.baseurl }}/TIPiS/labs/lab1)
-* [Лабораторная работа №2]({{ site.baseurl }}/TIPiS/labs/lab2)
-* [Лабораторная работа №3]({{ site.baseurl }}/TIPiS/labs/lab3)
-* [Лабораторная работа №4]({{ site.baseurl }}/TIPiS/labs/lab4)
-* [Лабораторная работа №5]({{ site.baseurl }}/TIPiS/labs/lab5)
+* [Лабораторная работа №1]({{ site.baseurl }}/TIPiS/labs/lab1.html)
+* [Лабораторная работа №2]({{ site.baseurl }}/TIPiS/labs/lab2.html)
+* [Лабораторная работа №3]({{ site.baseurl }}/TIPiS/labs/lab3.html)
+* [Лабораторная работа №4]({{ site.baseurl }}/TIPiS/labs/lab4.html)
+* [Лабораторная работа №5]({{ site.baseurl }}/TIPiS/labs/lab5.html)
 * Лабораторная работа №6
 * Лабораторная работа №7
 * Лабораторная работа №8
