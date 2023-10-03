@@ -6,7 +6,7 @@
   <div class="progress-bar progress-bar-striped progress-bar-animated"  id="progressbar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
-<p class="text-info" align="right">↑ сколько осталось времени для сдачи лаб</p>
+<p class="text-primary" align="right">↑ семестр</p>
 
 <br>
 
@@ -62,7 +62,7 @@
      },
        500);
        var d = new Date();
-       d = (((1+d.getMonth())%7)-1)*25;
+       d = (((1+d.getMonth())%7)-2)*25;
        $('#progressbar').attr('aria-valuenow', d).css('width', d + "%");
 
  });  

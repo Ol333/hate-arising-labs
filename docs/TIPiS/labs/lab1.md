@@ -1,6 +1,6 @@
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/TIPiS/index.html">Теория информационных процессов и систем</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/TIPiS/index.html">ТИПиС</a></li>
   <li class="breadcrumb-item active">Лабораторная работа №1</li>
 </ol>
 
