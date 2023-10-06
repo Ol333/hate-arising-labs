@@ -427,9 +427,26 @@ MSD (Most Significant Digit radix sort) - сортировка.
 
 ## Задачи
 
-|  | |
-| :-: |-|
-| 🐌 | [1816C](https://codeforces.com/contest/1816/problem/C)|
-| 🐣  | |
-| 🐤  |  |
-| 🐔 |  |
+<table class="table table-hover">
+  <tbody>
+    <tr>
+      <th scope="row">🐌</th>
+      <td><a href="https://codeforces.com/contest/1816/problem/C">1816C</a></td>
+    </tr>
+    <tr>
+      <th scope="row">🐣</th>
+      <td><a href="https://codeforces.com/problemset/problem/1730/C">1730C</a></td>
+    </tr>
+    <tr>
+      <th scope="row">🐤</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">🐔</th>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<button type="button" class="btn btn-outline-primary" onclick="window.location.href='#сортировки';">Вверх</button>
