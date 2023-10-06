@@ -6,6 +6,20 @@
 
 # Искусственные нейронные сети
 
-[Лабораторная работа №1]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html)
+[Лабораторная работа №1. Нейрон]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html)
 
-[Лабораторная работа №2]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html)
+[Лабораторная работа №2. Однослойная сеть]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html)
+
+Лабораторная работа №3. back propagation
+
+sequences, error
+
+multihead
+
+CNN
+
+RNN
+
+transformer
+
+[Лабораторная работа №9. Обучение с подкреплением]({{ site.baseurl }}/artificial-intelligence/ANN/labs/labn.html)

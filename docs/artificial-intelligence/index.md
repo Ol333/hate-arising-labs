@@ -5,13 +5,15 @@
 
 # Искусственный интеллект
 
-* [Искусственные нейронные сети]({{ site.baseurl }}/artificial-intelligence/ANN/index.html)
-* [Инструменты, подходы и методы обработки структурированных и неструктурированных данных]({{ site.baseurl }}/artificial-intelligence/big-data/index.html)
-* Временные ряды
+<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/index.html';">Искусственные нейронные сети</button>
+
+<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/big-data/index.html';">Инструменты, подходы и методы обработки структурированных и неструктурированных данных</button>
+
+<button type="button" class="btn btn-primary btn-lg disabled">Временные ряды</button>
 
 ### Полезная литература:
 
-* ### [Юдковский Э. Гарри Поттер и методы рационального мышления (2010)](https://hpmor.ru/)
+* [Юдковский Э. Гарри Поттер и методы рационального мышления (2010)](https://hpmor.ru/)
 
 * [Шолле Ф. Глубокое обучение на Python (2018)](https://codernet.ru/books/python/glubokoe_obuchenie_na_python_sholle_fransua/)
 
