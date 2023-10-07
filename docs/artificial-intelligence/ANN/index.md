@@ -10,7 +10,7 @@
 
 [Лабораторная работа №2. Однослойная сеть]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html)
 
-Лабораторная работа №3. back propagation
+[Лабораторная работа №3. Обратное распространение ошибки]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab3.html)
 
 sequences, error
 
