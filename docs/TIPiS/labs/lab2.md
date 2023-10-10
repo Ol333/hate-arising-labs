@@ -1,7 +1,7 @@
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
   <li class="breadcrumb-item"><a href="{{ site.baseurl }}/TIPiS/index.html">ТИПиС</a></li>
-  <li class="breadcrumb-item active">Лабораторная работа №2</li>
+  <li class="breadcrumb-item active">ЛР №2</li>
 </ol>
 
 <nav>
@@ -15,7 +15,7 @@
 
 [Пример](https://zinginstruments.com/wp-content/uploads/2019/09/WhatInstrumentShouldILearn_InfoGrap.jpg) дерева выбора музыкального инструмента (на англ.).
 
-[Шаблон]({{ site.baseurl }}/files/TIPiS/2lab_blank.drawio) дерева решений, который можно открыть в браузере на сайте <draw.io>.
+[Шаблон]({{ site.baseurl }}/files/TIPiS/2lab_blank.drawio) дерева решений, который можно открыть в браузере на сайте [draw.io](https://app.diagrams.net/){:target="_blank"}.
 
 **6 итоговых вариантов. 3 уровня вопросов.**
 
