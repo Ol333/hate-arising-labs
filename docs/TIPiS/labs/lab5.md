@@ -22,6 +22,8 @@
 
 Советую использовать [draw.io](https://app.diagrams.net/){:target="_blank"}.
 
+Не забудьте сохранить результат!
+
 <table class="table table-hover">
   <thead>
     <tr>

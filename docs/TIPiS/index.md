@@ -10,7 +10,7 @@
 * [Лабораторная работа №3]({{ site.baseurl }}/TIPiS/labs/lab3.html)
 * [Лабораторная работа №4]({{ site.baseurl }}/TIPiS/labs/lab4.html)
 * [Лабораторная работа №5]({{ site.baseurl }}/TIPiS/labs/lab5.html)
-* Лабораторная работа №6
+* [Лабораторная работа №6]({{ site.baseurl }}/TIPiS/labs/lab6.html)
 * Лабораторная работа №7
 * Лабораторная работа №8
 
