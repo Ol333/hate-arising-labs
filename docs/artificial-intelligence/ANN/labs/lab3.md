@@ -65,6 +65,8 @@ $ω_{ij}^k(n+1) = ω_{ij}^k(n) + α (\delta_i^k y_i^{k-1} ) $,	<a id="eq_4">(4)<
 
 Реализовать обратное распространение ошибки.
 
+Протестировать на [наборе данных]().
+
 При сдаче работы ответить на вопросы.
 
 <div class="row">
@@ -73,6 +75,9 @@ $ω_{ij}^k(n+1) = ω_{ij}^k(n) + α (\delta_i^k y_i^{k-1} ) $,	<a id="eq_4">(4)<
       <li class="float-end">
         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#обратное-распространение-ошибки';">Вверх</button>
       </li>
+      <li  class="float-end">
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab4.html';">Лабораторная работа №4 →</button>
+     </li>
       <li>
         <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html';">← Лабораторная работа №2</button>
       </li>

@@ -1,7 +1,7 @@
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">Искусственный интеллект</a></li>
-  <li class="breadcrumb-item active">Искусственные нейронные сети</li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">ИИ</a></li>
+  <li class="breadcrumb-item active">ИНС</li>
 </ol>
 
 # Искусственные нейронные сети
@@ -12,7 +12,7 @@
 
 [Лабораторная работа №3. Обратное распространение ошибки]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab3.html)
 
-sequences, error
+[Лабораторная работа №4. Keras]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab4.html)
 
 multihead
 

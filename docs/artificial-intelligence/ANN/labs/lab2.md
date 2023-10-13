@@ -1,8 +1,8 @@
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">Искусственный интеллект</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/ANN/index.html">Искусственные нейронные сети</a></li>
-  <li class="breadcrumb-item active">Лабораторная работа №2</li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">ИИ</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/ANN/index.html">ИНС</a></li>
+  <li class="breadcrumb-item active">ЛР №2</li>
 </ol>
 
 <nav>

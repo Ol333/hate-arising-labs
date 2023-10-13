@@ -139,18 +139,238 @@
 
 Для первого $w$: *«Больше нравились обществознание или литература? Обществознание.»* ответ первого эксперта -  `362145` в порядке убывания вероятности.
 
-Получим ответы еще нескольких экспертов.
+От еще 2-х экспертов на этот вопрос получим `361254` и `362415`.
 
 Посчитаем согласованность (ссылка на понятный сайт [выше](#экспертные-оценки)).
 
-Если достаточно согласовано, то идем дальше.
+<table class="table table-hover">
+<thead>
+<tr class="table-info">
+      <th rowspan="2">Эксперты (m)</th>
+      <th colspan="7">Профессии/направления обучения (n)</th>
+    </tr>
+    <tr class="table-info">
+      <th>1 (бух)</th>
+      <th>2 (мен)</th>
+      <th>3 (юр) </th>
+      <th>4 (изд)</th>
+      <th>5 (фил)</th>
+      <th>6 (жур)</th>
+      <th>итого</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-light">
+      <th>1</th>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>6</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+    <tr class="table-active">
+      <th>2</th>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>6</td>
+      <td>5</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+    <tr class="table-light">
+      <th>3</th>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>6</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+    <tr class="table-light">
+      <th>Сумма рангов</th>
+      <td>12</td>
+      <td>10</td>
+      <td>3</td>
+      <td>15</td>
+      <td>17</td>
+      <td>6</td>
+      <td>63</td>
+    </tr>
+    <tr class="table-active">
+      <th>Отклонение</th>
+      <td>1,5</td>
+      <td>-0,5</td>
+      <td>-7,5</td>
+      <td>4,5</td>
+      <td>6,5</td>
+      <td>-4,5</td>
+      <td>-</td>
+    </tr>
+    <tr class="table-light">
+      <th>Квадраты отклонений</th>
+      <td>2,25</td>
+      <td>0,25</td>
+      <td>56,25</td>
+      <td>20,25</td>
+      <td>42,25</td>
+      <td>20,25</td>
+      <td>141,5</td>
+    </tr>
+   </tbody>
+</table>
+
+Коэффициент конкордации:
+
+```python
+a = 12 * 141.5
+b = 3**2 * (6**3 - 6)
+print(a/b)
+```
+
+```console
+0.8984126984126984
+```
+Достаточно согласовано ($> 0,5$).
 
 
-Посчитаем обобщенную оценку экспертов в виде обобщенного ранга той или иной профессии по данному результату (Обществознание) данного вопроса (Больше нравились обществознание или литература?) (*формула в [учебном пособии](#экспертные-оценки) стр. 125*).
+Посчитаем обобщенную оценку экспертов в виде обобщенного ранга той или иной профессии по данному результату (*Обществознание*) данного вопроса (*Больше нравились обществознание или литература?*) (*формула в [учебном пособии](#экспертные-оценки) стр. 125*).
+
+<table class="table table-hover">
+<thead>
+<tr class="table-info">
+      <th rowspan="2">W = 1</th>
+      <th colspan="7">Профессии/направления обучения (n)</th>
+    </tr>
+    <tr class="table-info">
+      <th>1 (бух)</th>
+      <th>2 (мен)</th>
+      <th>3 (юр) </th>
+      <th>4 (изд)</th>
+      <th>5 (фил)</th>
+      <th>6 (жур)</th>
+      <th>итого</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-light">
+      <th>Сумма рангов</th>
+      <td>12</td>
+      <td>10</td>
+      <td>3</td>
+      <td>15</td>
+      <td>17</td>
+      <td>6</td>
+      <td>63</td>
+    </tr>
+    <tr class="table-active">
+      <th>Обобщенный ранг</th>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>6</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+   </tbody>
+</table>
 
 То же самое для еще 7 $w$ из $W$.
 Получится набор ранжирований для того или иного результата каждого из вариантов каждого вопроса, основанные на экспертных оценках.
 
+Пускай, получится что-то такое:
+
+<table class="table table-hover">
+<thead>
+<tr class="table-info">
+      <th>W</th>
+      <th>1 (бух)</th>
+      <th>2 (мен)</th>
+      <th>3 (юр) </th>
+      <th>4 (изд)</th>
+      <th>5 (фил)</th>
+      <th>6 (жур)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-light">
+      <th>1</th>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+    <tr class="table-active">
+      <th>2</th>
+      <td>6</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr class="table-light">
+      <th>3</th>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3</td>
+    </tr>
+    <tr class="table-active">
+      <th>4</th>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr class="table-light">
+      <th>5</th>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3</td>
+    </tr>
+    <tr class="table-active">
+      <th>6</th>
+      <td>5</td>
+      <td>6</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr class="table-light">
+      <th>7</th>
+      <td>6</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr class="table-active">
+      <th>8</th>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+      <td>6</td>
+      <td>1</td>
+    </tr>
+   </tbody>
+</table>
 
 Добавить второй вариант прохождения опросника, когда ответы даются на все вопросы $Q$ (*даже те, что, по идее, находятся в ветви, которую мы обрезаем, выбирая одно из двух*). Т.е. в нашем примере надо будет ответить на вопросы:
 
@@ -165,19 +385,52 @@
 <table class="table table-hover">
   <tbody>
     <tr class="table-info">
-      <td>W</td>
-      <td>1 (бух)</td>
-      <td>2 (мен)</td>
-      <td>3 (юр) </td>
-      <td>4 (изд)</td>
-      <td>5 (фил)</td>
-      <td>6 (жур)</td>
+      <th>W</th>
+      <th>1 (бух)</th>
+      <th>2 (мен)</th>
+      <th>3 (юр) </th>
+      <th>4 (изд)</th>
+      <th>5 (фил)</th>
+      <th>6 (жур)</th>
     </tr>
     <tr class="table-light">
-      <td colspan="7" align="center">магия</td>
+      <th>1</th>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>6</td>
+      <td>2</td>
     </tr>
-    <tr class="table-info">
-      <td>ранг</td>
+    <tr class="table-active">
+      <th>4</th>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr class="table-light">
+      <th>7</th>
+      <td>6</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr class="table-active">
+      <th>Сумма</th>
+      <td>13</td>
+      <td>6</td>
+      <td>6</td>
+      <td>13</td>
+      <td>16</td>
+      <td>9</td>
+    </tr>
+    <tr class="table-light">
+      <th>Ранг</th>
       <td>2</td>
       <td>5</td>
       <td>5</td>

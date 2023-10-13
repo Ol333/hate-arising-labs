@@ -1,4 +1,9 @@
-
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">ИИ</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/ANN/index.html">ИНС</a></li>
+  <li class="breadcrumb-item active">ЛР №9</li>
+</ol>
 
 <nav>
     <ul></ul>
@@ -145,15 +150,50 @@ Asynchronous Advantage Actor Critic (A3C) имеет сервер, собира�
 pip install keras-rl2
 ```
 
-Доступные Агенты[*](https://keras-rl.readthedocs.io/en/latest/agents/overview/){:target="_blank"}
+Доступные Агенты[*](https://keras-rl.readthedocs.io/en/latest/agents/overview/){:target="_blank"}:
 
-|Название|Реализация|Наблюдаемое пространство|Пространство действий|
-|-|-|-|-|
-|DQN|rl.agents.DQNAgent|дискретное или непрерывное|дискретное|
-|DDPG|rl.agents.DDPGAgent|дискретное или непрерывное|непрерывное|
-|NAF|rl.agents.NAFAgent|дискретное или непрерывное|непрерывное|
-|CEM|rl.agents.CEMAgent|дискретное или непрерывное|дискретное|
-|SARSA|rl.agents.SARSAAgent|дискретное или непрерывное|дискретное|
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Название</th>
+      <th scope="col">Реализация</th>
+      <th scope="col">Наблюдаемое пространство</th>
+      <th scope="col">Пространство действий</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <th scope="row">DQN</th>
+      <td>rl.agents.DQNAgent</td>
+      <td>дискретное или непрерывное</td>
+      <td>дискретное</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">DDPG</th>
+      <td>rl.agents.DDPGAgent</td>
+      <td>дискретное или непрерывное</td>
+      <td>непрерывное</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">NAF</th>
+      <td>rl.agents.NAFAgent</td>
+      <td>дискретное или непрерывное</td>
+      <td>непрерывное</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">CEM</th>
+      <td>rl.agents.CEMAgent</td>
+      <td>дискретное или непрерывное</td>
+      <td>дискретное</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">SARSA</th>
+      <td>rl.agents.SARSAAgent</td>
+      <td>дискретное или непрерывное</td>
+      <td>дискретное</td>
+    </tr>
+  </tbody>
+</table>
 
 ### SpinUp от OpenAI
 
@@ -195,26 +235,65 @@ pip install keras-rl2
 
 ## Задание
 
-Обучить [агента]({{ site.baseurl }}/files/AI/rl.py) перестраиваться между полосами и двигаться с максимальной скоростью.
+[Среда]({{ site.baseurl }}/files/AI-ANN/car_track.py) в которой автомобили (окружности с радиусом 2 м) движутся по круговому треку с тремя полосами.
 
-[Среда]({{ site.baseurl }}/files/AI/car_track.py) в которой автомобили (окружности с радиусом 2 м) движутся по круговому треку с тремя полосами.
+Обучить агента перестраиваться между полосами и двигаться с максимальной скоростью.
 
-|№ варианта|Реализовать|
-|-|-|
-|1|DQN|
-|2|DDPG|
-|3|SARSA|
-|4|A3C/A2C|
-|5|PPO|
-|6|SAC|
+Должно получиться что-то такое ([код DDPG]({{ site.baseurl }}/files/AI-ANN/rl_but_not_keras.py) – адаптиция того примера с хабра), только лучше:
 
+<div class="card border-primary mb-2" style="max-width: 30rem;">
+  <div class="card-body">
+  <img src="{{ site.baseurl }}/img/rl_sample_ddqn.gif"
+        alt="Пример"  focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
 
-## Полезные источники
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">№ варианта</th>
+      <th scope="col">Реализовать</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <th scope="row">1</th>
+      <td>DQN</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">2</th>
+      <td><s>DDPG</s></td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">3</th>
+      <td>SARSA</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">4</th>
+      <td>A3C/A2C</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">5</th>
+      <td>TRPO</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">6</th>
+      <td>PPO</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">7</th>
+      <td>SAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Полезные источники
 
 Не читала, но выглядит полезно:
 
-* [статья с хабра](https://habr.com/ru/articles/561746/),
-* [pylessons](https://pylessons.com/CartPole-reinforcement-learning)
+* [статья с хабра](https://habr.com/ru/articles/561746/);
+* [pylessons](https://pylessons.com/CartPole-reinforcement-learning).
 
 
 <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#reinforcement-learning';">Вверх</button>
