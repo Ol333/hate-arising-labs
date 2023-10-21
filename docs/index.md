@@ -62,8 +62,11 @@
      },
        500);
        var d = new Date();
-       d = (((1+d.getMonth())%7)-2)*25;
-       $('#progressbar').attr('aria-valuenow', d).css('width', d + "%");
+       var com = d.getMonth()+1;
+       var m = (d.getMonth()+11)%12;
+       var ran = com==2 ? (d.getFullYear() % 4 == 0 ? 29 : 28) : ((com%2==0 && com>=8)||(com%2==1 && com<8) ? 31 : 30);
+       var bar = (m%7 + (d.getDate()/ran))*25;
+       $('#progressbar').attr('aria-valuenow', bar).css('width', bar + "%");
 
  });  
  </script>

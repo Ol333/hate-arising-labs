@@ -12,6 +12,16 @@
 
 Почитайте [стандарт](https://docs.cntd.ru/document/1200028629), пожалуйста. Хотя бы попытайтесь.
 
+Если кратко, то синтаксис следующий:
+
+<div class="card border-primary mb-2" style="max-width: 30rem;">
+  <div class="card-body">
+  <img src="{{ site.baseurl }}/img/idef0.svg"
+        alt="Синтаксис нотаций"  focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
+
 ## Задание
 
 Проектирование информационной системы в нотации IDEF0.
