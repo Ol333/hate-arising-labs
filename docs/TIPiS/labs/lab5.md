@@ -14,7 +14,7 @@
 
 Если кратко, то синтаксис следующий:
 
-<div class="card border-primary mb-2" style="max-width: 30rem;">
+<div class="card border-primary mb-2" style="max-width: 40rem;">
   <div class="card-body">
   <img src="{{ site.baseurl }}/img/idef0.svg"
         alt="Синтаксис нотаций"  focusable="false" width="100%"
