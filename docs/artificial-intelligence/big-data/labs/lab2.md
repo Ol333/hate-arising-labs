@@ -1,8 +1,8 @@
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">Искусственный интеллект</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/big-data/index.html">Инструменты, подходы и методы обработки структурированных и неструктурированных данных</a></li>
-  <li class="breadcrumb-item active">Лабораторная работа №2</li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">ИИ</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/big-data/index.html">Обработка данных</a></li>
+  <li class="breadcrumb-item active">ЛР №2</li>
 </ol>
 
 <nav>
@@ -267,5 +267,18 @@ int main()
 
 \# Импортируем в Python код во 2-й лабе по ИНС для обучения однослойной сети из одного нейрона с 3 входами.
 
-[← Лабораторная работа №1]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html)
-[Вверх](#задание-1)
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="list-unstyled">
+      <li class="float-end">
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание-1';">Вверх</button>
+      </li>
+      <li  class="float-end">
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/big-data/labs/lab3.html';">ЛР №3 →</button>
+     </li>
+      <li>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html';">← ЛР №1</button>
+      </li>
+    </ul>
+  </div>
+</div>

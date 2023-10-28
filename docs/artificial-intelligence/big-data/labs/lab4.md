@@ -1,8 +1,8 @@
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">Искусственный интеллект</a></li>
-  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/big-data/index.html">Инструменты, подходы и методы обработки структурированных и неструктурированных данных</a></li>
-  <li class="breadcrumb-item active">Лабораторная работа №4</li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">ИИ</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/big-data/index.html">Обработка данных</a></li>
+  <li class="breadcrumb-item active">ЛР №4</li>
 </ol>
 
 # Линейная классификация
@@ -14,4 +14,18 @@
 Успехов!
 
 
-[Вверх](#линейная-классификация)
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="list-unstyled">
+      <li class="float-end">
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#линейная-классификация';">Вверх</button>
+      </li>
+      <li  class="float-end">
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/big-data/labs/lab5.html';">ЛР №5 →</button>
+     </li>
+      <li>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/big-data/labs/lab3.html';">← ЛР №3</button>
+      </li>
+    </ul>
+  </div>
+</div>
