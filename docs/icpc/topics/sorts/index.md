@@ -240,6 +240,7 @@ MSD (Most Significant Digit radix sort) - сортировка.
 * эффективны на малых массивах, упорядоченных массивах,
 * долго работают на больших массивах.
 
+<div class="table-responsive">
 <table class="table table-hover">
   <thead>
     <tr>
@@ -270,9 +271,11 @@ MSD (Most Significant Digit radix sort) - сортировка.
     </tr>
   </tbody>
 </table>
+</div>
 
 Сложные алгоритмы
 
+<div class="table-responsive">
 <table class="table table-hover">
 <thead>
 <tr>
@@ -348,9 +351,11 @@ MSD (Most Significant Digit radix sort) - сортировка.
 </tr>
 </tbody>
 </table>
+</div>
 
 Вот данные, полученные в результате тестов с тысячью элементов массива и с сотней тысяч элементов (миллион элементов сортируется простым методом более часа).
 
+<div class="table-responsive">
 <table class="table table-hover">
   <thead>
     <tr>
@@ -423,7 +428,7 @@ MSD (Most Significant Digit radix sort) - сортировка.
     </tr>
   </tbody>
 </table>
-
+</div>
 
 ## Задачи
 
