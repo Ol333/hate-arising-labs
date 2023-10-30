@@ -43,71 +43,70 @@
 
 <br><br><br>
 
-## Решение на Python
+## Решение
 
-```python
-print(sum(map(int,input().split())))
-```
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
 
-## Решение на Visual C++
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Python</a></li>
+    <li><a href="#tabs-2">C#</a></li>
+    <li><a href="#tabs-3">C++</a></li>
+    <li><a href="#tabs-4">Java</a></li>
+  </ul>
+  <div id="tabs-1">
+    <pre><code class="lang-python">print(sum(map(int,input().split())))</code></pre>
+  </div>
+  <div id="tabs-2">
+    <pre><code class="lang-csharp">using System;
 
-```cpp
-#include <iostream>
+public class Sum{
+  private static void Main()
+  {
+    string[] tokens = Console.ReadLine().Split(' ');
+    Console.WriteLine(int.Parse(tokens[0]) + int.Parse(tokens[1]));
+  }
+}
+</code></pre>
+  </div>
+  <div id="tabs-3">
+    <pre><code class="language-cpp">#include &lt;iostream&gt;
 
 using namespace std;
 
 int a,b;
 
-int main(){
-  cin >> a >> b;
-  cout << a+b;
-  return 0;
+int main()
+{
+  cin >> a >> b;
+  cout << a+b;
+  return 0;
 }
-```
-
-## Решение на Delphi
-
-```delphi
-var a,b : integer;
-
-begin
-  read(a,b);
-  write(a+b)
-end.
-```
-
-## Решение на Java
-
-```java
-import java.io.*;
+</code></pre>  
+  </div>
+  <div id="tabs-4">
+    <pre><code class="language-java">import java.io.*;
 import java.util.*;
 
 public class Main{
-  public static void main(String[] args){
-    Scanner in = new Scanner(System.in);
-    PrintWriter out = new PrintWriter(System.out);
+  public static void main(String[] args)
+  {
+    Scanner in = new Scanner(System.in);
+    PrintWriter out = new PrintWriter(System.out);
 
-    int a = in.nextInt();
-    int b = in.nextInt();
-    out.println(a + b);
+    int a = in.nextInt();
+    int b = in.nextInt();
+    out.println(a + b);
 
-    out.flush();
-  }
-}
-```
-
-## Решение на Visual C#
-
-```csharp
-using System;
-
-public class Sum{
-  private static void Main(){
-    string[] tokens = Console.ReadLine().Split(' ');
-    Console.WriteLine(int.Parse(tokens[0]) + int.Parse(tokens[1]));
-  }
-}
-```
+    out.flush();
+  }
+}</code></pre>
+  </div>
+</div>
 
 ## Задание
 
@@ -159,7 +158,7 @@ public class Sum{
          <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#разминка';">Вверх</button>
        </li>
        <li>
-         <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab2.html';">Лабораторная работа №2 →</button>
+         <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab2.html';">ЛР №2 →</button>
        </li>
      </ul>
    </div>

@@ -99,10 +99,10 @@
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#математика';">Вверх</button>
      </li>
      <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab5.html';">Лабораторная работа №5 →</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab5.html';">ЛР №5 →</button>
      </li>
      <li>
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab3.html';">← Лабораторная работа №3</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab3.html';">← ЛР №3</button>
      </li>
    </ul>
   </div>

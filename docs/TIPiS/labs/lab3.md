@@ -74,6 +74,7 @@
   </div>
 </div>
 
+<div class="table-responsive">
 <table class="table table-hover">
   <thead>
     <tr>
@@ -134,6 +135,7 @@
     </tr>
    </tbody>
 </table>
+</div>
 
 Эксперту нужно для каждого из 8 вариантов ответов на 3 вопроса проранжировать 6 вариантов.
 
@@ -143,6 +145,7 @@
 
 Посчитаем согласованность (ссылка на понятный сайт [выше](#экспертные-оценки)).
 
+<div class="table-responsive">
 <table class="table table-hover">
 <thead>
 <tr class="table-info">
@@ -222,6 +225,7 @@
     </tr>
    </tbody>
 </table>
+</div>
 
 Коэффициент конкордации:
 
@@ -239,6 +243,7 @@ print(a/b)
 
 Посчитаем обобщенную оценку экспертов в виде обобщенного ранга той или иной профессии по данному результату (*Обществознание*) данного вопроса (*Больше нравились обществознание или литература?*) (*формула в [учебном пособии](#экспертные-оценки) стр. 125*).
 
+<div class="table-responsive">
 <table class="table table-hover">
 <thead>
 <tr class="table-info">
@@ -278,12 +283,14 @@ print(a/b)
     </tr>
    </tbody>
 </table>
+</div>
 
 То же самое для еще 7 $w$ из $W$.
 Получится набор ранжирований для того или иного результата каждого из вариантов каждого вопроса, основанные на экспертных оценках.
 
 Пускай, получится что-то такое:
 
+<div class="table-responsive">
 <table class="table table-hover">
 <thead>
 <tr class="table-info">
@@ -371,6 +378,7 @@ print(a/b)
     </tr>
    </tbody>
 </table>
+</div>
 
 Добавить второй вариант прохождения опросника, когда ответы даются на все вопросы $Q$ (*даже те, что, по идее, находятся в ветви, которую мы обрезаем, выбирая одно из двух*). Т.е. в нашем примере надо будет ответить на вопросы:
 
@@ -382,6 +390,7 @@ print(a/b)
 Это $w1$, $w4$, $w7$.
 Для них:
 
+<div class="table-responsive">
 <table class="table table-hover">
   <tbody>
     <tr class="table-info">
@@ -440,6 +449,7 @@ print(a/b)
     </tr>
    </tbody>
 </table>
+</div>
 
 Выписываем в результат первые 3 варианта. Это будут:
 
@@ -455,10 +465,10 @@ print(a/b)
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#экспертные-оценки';">Вверх</button>
      </li>
      <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab4.html';">Лабораторная работа №4 →</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab4.html';">ЛР №4 →</button>
      </li>
      <li>
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab2.html';">← Лабораторная работа №2</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab2.html';">← ЛР №2</button>
      </li>
    </ul>
   </div>

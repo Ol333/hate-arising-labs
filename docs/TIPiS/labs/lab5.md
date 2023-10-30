@@ -101,10 +101,10 @@
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#idef0';">Вверх</button>
      </li>
      <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab6.html';">Лабораторная работа №6 →</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab6.html';">ЛР №6 →</button>
      </li>
      <li>
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab4.html';">← Лабораторная работа №4</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab4.html';">← ЛР №4</button>
      </li>
    </ul>
   </div>

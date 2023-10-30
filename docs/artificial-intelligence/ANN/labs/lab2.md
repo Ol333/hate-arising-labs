@@ -149,10 +149,10 @@ $ω_{ij}^{t+1} = ω_{ij}^t - α \left( \sum_{j=1}^n (ω_{ij}^t x_{ij}) - y_i \ri
         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#однослойная-сеть';">Вверх</button>
       </li>
       <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab3.html';">Лабораторная работа №3 →</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab3.html';">ЛР №3 →</button>
      </li>
       <li>
-        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html';">← Лабораторная работа №1</button>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html';">← ЛР №1</button>
       </li>
     </ul>
   </div>

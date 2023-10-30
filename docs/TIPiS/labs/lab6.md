@@ -74,11 +74,11 @@
      <li class="float-end">
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#dfd';">Вверх</button>
      </li>
-     <!-- <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab7.html';">Лабораторная работа №7 →</button>
-     </li> -->
+     <li  class="float-end">
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab7.html';">ЛР №7 →</button>
+     </li>
      <li>
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab5.html';">← Лабораторная работа №5</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab5.html';">← ЛР №5</button>
      </li>
    </ul>
   </div>

@@ -80,7 +80,7 @@ $\,\,\,\,\,\,\,\,\,\,\,\,φ(v) = \begin{cases} 1 & если \, x>0 \\\\\\\\ 0 & 
 
 0 1 0 1 $x_2$      ($\overrightarrow{w_{12}=1}$)
 
-<button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html';">Лабораторная работа №2 →</button>
+<button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html';">ЛР №2 →</button>
 
 
 [Вверх](#модель-нейрона)
