@@ -14,7 +14,7 @@
 ## Задание 1
 Проверить возникают ли приведенные ниже ошибки в известных вам (и доступных на машине) языках программирования высокого уровня.
 
-Онлайн компилятор: <https://www.onlinegdb.com/online_c_compiler#>
+Онлайн компилятор (если у вас нет ПО): <https://www.onlinegdb.com/online_c_compiler#>
 
 #### 1. Ошибка вызванная точностью представления числа в формате IEEE754
 
@@ -157,9 +157,9 @@ int main(int argc, char *argv[])
 variable_d = 100
 variable_u = 0
 for i in range(1000000000):
-    variable_d += 1/1000000000
-    variable_u -= 1/1000000000
-print(variable_d, variable_u)
+    variable_d -= 1/1000000000
+    variable_u += 1/1000000000
+    print(variable_d, variable_u)
 ```
 > 101.00000363545405 -0.9999999925399329
 
