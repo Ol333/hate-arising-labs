@@ -19,7 +19,7 @@ ___
 ## Задание 1
 
 Библиотеки Numpy и Pandas.
-[Блокнот](homework-1_0-linregr.ipynb).
+[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-1_0-linregr.ipynb).
 
 [Данные](https://www.kaggle.com/datasets/prajitdatta/data-stories-of-us-airlines) по авиа рейсам.
 
@@ -189,7 +189,7 @@ ___
 ## Задание 2
 
 Линейная регрессия.
-[Блокнот](homework-1_1-linregr.ipynb).
+[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-1_1-linregr.ipynb).
 
 Про регуляризацию можно почитать во [второй лекции]({{ site.baseurl }}/files/AI-big-data/lecture03-linregr.pdf){:target="_blank"}.
 
@@ -329,7 +329,7 @@ ___
 ## Задание 3
 
 Градиентный спуск.
-[Блокнот](homework-1_2-linregr.ipynb).
+[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-1_2-linregr.ipynb).
 
 ___
 
