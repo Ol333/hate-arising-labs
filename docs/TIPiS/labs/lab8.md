@@ -45,47 +45,185 @@ Run-length encoding – кодирование длин серий.
 
 АААААБББССД → 5А3Б2С1Д
 
-Пример с числами:
+Пример с числами (исходник "00000042044448802221" – 20 байт):
 
-00000042044448802221 – 20 байт
+<table class="table table-bordered">
+  <tbody>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>4</td>
+    <td>2</td>
+    <td>0</td>
+    <td>4</td>
+    <td>4</td>
+    <td>4</td>
+    <td>4</td>
+    <td>8</td>
+    <td>8</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>1</td>
+  </tbody>
+</table>
 
 ↓
 
-6014121044228103211 – 18 байт
+<table class="table table-bordered">
+  <tbody>
+    <td>6</td>
+    <td>0</td>
+    <td>1</td>
+    <td>4</td>
+    <td>1</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+    <td>4</td>
+    <td>4</td>
+    <td>2</td>
+    <td>8</td>
+    <td>1</td>
+    <td>0</td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+  </tbody>
+</table>
+
+Сжалось до 18 байт.
 
 Можно сделать чуть умнее. В байте, уходящем на кодирование количества повторов, первый бит отдать на флаг повтора, а остальные 7 – на количество символов (до 128), к которому этот флаг относится. На предыдущем примере это будет выглядеть так:
 
-1|6 0 0|3 420 1|4 4 1|2 8 0|1 0 1|3 2 0|1 1 – 16 байт
+<table class="table table-bordered">
+  <tbody>
+    <td>1|6</td>
+    <td>0</td>
+    <td>0|3</td>
+    <td>420</td>
+    <td>1|4</td>
+    <td>4</td>
+    <td>1|2</td>
+    <td>8</td>
+    <td>0|1</td>
+    <td>0</td>
+    <td>1|3</td>
+    <td>2</td>
+    <td>0|1</td>
+    <td>1</td>
+  </tbody>
+</table>
+
+Получилось сжать до 16 байт.
 
 При этом, можно уменьшить числа, обозначающие количество повторов, для повторов на 2, а для уникальных – на 1:
 
-1|4 0 0|2 420 1|2 4 1|2 8 0|0 0 1|1 2 0|0 1 – 16 байт
+<table class="table table-bordered">
+  <tbody>
+    <td>1|4</td>
+    <td>0</td>
+    <td>0|2</td>
+    <td>420</td>
+    <td>1|2</td>
+    <td>4</td>
+    <td>1|0</td>
+    <td>8</td>
+    <td>0|0</td>
+    <td>0</td>
+    <td>1|1</td>
+    <td>2</td>
+    <td>0|0</td>
+    <td>1</td>
+  </tbody>
+</table>
+
+Размер – 16 байт.
 
 ___
 
 ## Задание
 
 <ol>
-<li>Найти в Интернете текстовый файл, содержащий текст на одном из естественных языков или языке эсперанто. Длина текста – не менее 10 тыс. символов.
-</li>
-<li>Рассчитать оптимальную энтропию для заданного языка.
-$ H_0  =n \log_2  m $, где $n$ – количество символов в тексте, $m$ – мощность алфавита.
-</li>
-<li>Составить программу для экспериментального определения реальной энтропии сообщения при условии независимости символов. Выполнить расчет для полученного файла.
+  <li>Реализовать алгоритм декодирования файла, сжатого с помощью RLE.</li>
+  <li>Раскодировать файл по номеру варианта и записать результат в файл .txt.</li>
+  <li>Рассчитать оптимальную энтропию (если бы символы использовались равновероятно) для раскодированного сообщения.
+  $ H_0  =n \log_2  m $, где $n$ – количество символов в тексте, $m$ – мощность алфавита.
+  </li>
+  <li>Экспериментально определить реальную энтропию раскодированного сообщения при условии независимости символов.
+  $ H_P  = - \sum_{i=1}^m p_i \log_2 p_i $ , где где $p_i$ – вероятность появления $i$-го символа (или частота символа). 
+  </li>
+  <li>Рассчитать избыточность сообщения при условии независимости символов алфавита.
+  $ φ = \frac{H_p -H_0}{H_p} = 1 - \frac{H_0}{H_p}  $
+  </li>
+  <li>Рассчитать насколько уменьшилась избыточность сообщения в результате кодирования. 
+  $ μ = \frac{n_{p1}}{n_p}$, где $n_{p1}$ – размер закодированного файла, $n_p$ – размер раскодированного файла.
+  </li>
+</ol>
 
-$ H_P  = - \sum_{i=1}^m p_i \log_2 p_i $ , где где $p_i$ – вероятность появления $i$-го символа (или частота символа). 
-</li>
-<li>Рассчитать избыточность сообщения заданного естественного языка при условии независимости символов алфавита.
-
-$ φ = \frac{H_p -H_0}{H_p} = 1 - \frac{H_0}{H_p}  $
-</li>
-<li>Реализовать один из алгоритмов кодирования (RLE, Хаффман или LZ77). 
-<i>Реализовать как кодирование, так и декодирование, после работы в папке с программой и исходным текстовым файлом должен появиться закодированный .bin файл и раскодированный .txt, совпадающий и исходным.</i>
-</li>
-<li>Рассчитать насколько уменьшилась избыточность сообщения. 
-
-$ μ = \frac{n_{p1}}{n_p}$, где $n_{p1}$ – размер закодированного файла, $n_p$ – размер исходного файла.
-</li>
+<table class="table table-hover">
+   <thead>
+     <tr>
+       <th scope="col">№ варианта</th>
+       <th scope="col">Задача</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr class="table-active">
+       <th scope="row">1</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle1.bin">Файл</a></td>
+     </tr>
+     <tr class="table-primary">
+       <th scope="row">2</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle2.bin">Файл</a></td>
+     </tr>
+     <tr class="table-active">
+       <th scope="row">3</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle3.bin">Файл</a></td>
+     </tr>
+     <tr class="table-primary">
+       <th scope="row">4</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle4.bin">Файл</a></td>
+     </tr>
+     <tr class="table-active">
+       <th scope="row">5</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle5.bin">Файл</a></td>
+     </tr>
+     <tr class="table-primary">
+       <th scope="row">6</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle6.bin">Файл</a></td>
+     </tr>
+     <tr class="table-active">
+       <th scope="row">7</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle7.bin">Файл</a></td>
+     </tr>
+     <tr class="table-primary">
+       <th scope="row">8</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle8.bin">Файл</a></td>
+     </tr>
+     <tr class="table-active">
+       <th scope="row">9</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle9.bin">Файл</a></td>
+     </tr>
+     <tr class="table-primary">
+       <th scope="row">10</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle10.bin">Файл</a></td>
+     </tr>
+     <tr class="table-active">
+       <th scope="row">11</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle11.bin">Файл</a></td>
+     </tr>
+     <tr class="table-primary">
+       <th scope="row">12</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle12.bin">Файл</a></td>
+     </tr>
+    </tbody>
+</table>
 
 <br>
 

@@ -826,9 +826,9 @@ int main()
      <li class="float-end">
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#бинарные-файлы';">Вверх</button>
      </li>
-     <!-- <li  class="float-end">
+     <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab8.html';">ЛР №8 →</button>
-     </li> -->
+     </li>
      <li>
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab6.html';">← ЛР №6</button>
      </li>

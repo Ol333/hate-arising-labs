@@ -159,7 +159,7 @@ variable_u = 0
 for i in range(1000000000):
     variable_d -= 1/1000000000
     variable_u += 1/1000000000
-    print(variable_d, variable_u)
+print(variable_d, variable_u)
 ```
 > 101.00000363545405 -0.9999999925399329
 
