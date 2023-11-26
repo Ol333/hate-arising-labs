@@ -15,6 +15,8 @@
 * лекция 1 приведена ниже (подробнее в [pdf]({{ site.baseurl }}/files/AI-big-data/lecture02-linregr.pdf){:target="_blank"});
 * [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture03-linregr.pdf){:target="_blank"}.
 
+Может оказаться полезным посмотреть блокноты [1](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem01-tools.ipynb), [2](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem02-linregr.ipynb), [3](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem03-linregr.ipynb), потому что там есть картинки, хорошие объяснения и примеры кода.
+
 ___
 ## Задание 1
 
@@ -330,6 +332,28 @@ ___
 
 Градиентный спуск.
 [Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-1_2-linregr.ipynb).
+
+Может понадобиться:
+
+$ MSPE = \frac{1}{l}\sum_{i=1}^l \left( \frac{y_i - \langle w, x_i \rangle }{y_i} \right)^2 $
+
+Градиент MSPE по $w$ можно вычислить следующим образом:
+
+$ \frac{\partial}{\partial w} MSPE(w) = \frac{\partial}{\partial w} [\frac{1}{l} \frac{y^Ty - y^TXw - w^TX^Ty + w^TX^TXw}{y^Ty}]. $
+
+Продифференцируем каждое слагаемое отдельно.
+
+$ \frac{\partial}{\partial w} [\frac{y^Ty}{y^Ty}] = 0. $
+
+$ \frac{\partial}{\partial w} [\frac{- y^TXw}{y^Ty}] = \frac{-X^Ty}{y^Ty}. $
+
+$ \frac{\partial}{\partial w} [\frac{- w^TX^Ty}{y^Ty}] = \frac{-X^Ty}{y^Ty}. $
+
+$ \frac{\partial}{\partial w} [\frac{w^TX^TXw}{y^Ty}] = \frac{2X^TXw}{y^Ty}. $
+
+Получаем уравнение
+
+$ \frac{\partial}{\partial w} MSPE(w) = \frac{2}{l} * \frac{X^TXw -X^Ty}{y^Ty} = \frac{2*X^T}{l} * \frac{Xw - y}{y^Ty}. $
 
 ___
 

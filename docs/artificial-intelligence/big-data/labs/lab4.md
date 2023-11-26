@@ -11,6 +11,8 @@
 
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-02-linclass.ipynb).
 
+Может оказаться полезным посмотреть блокноты [1](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem04-linclass.ipynb), [2](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem05-linclass-viz.ipynb), [3](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem05-linclass.pdf), [4](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem06-texts.ipynb), потому что там есть картинки, хорошие объяснения и примеры кода (особенно, в последнем).
+
 Успехов!
 
 

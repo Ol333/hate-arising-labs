@@ -11,6 +11,8 @@
 
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-04-unsupervised.ipynb).
 
+Может оказаться полезным посмотреть блокнот [1](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem13-pca.ipynb), потому что там есть картинки, хорошие объяснения и примеры кода.
+
 Успехов!
 
 <div class="row">

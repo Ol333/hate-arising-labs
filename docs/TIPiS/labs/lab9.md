@@ -59,7 +59,7 @@ $ \Delta = (1 - \frac{n_{p1}}{n_p})*100% $,
   <div class="col-lg-12">
    <ul class="list-unstyled">
      <li class="float-end">
-       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#алгоритмы-шифрования;">Вверх</button>
+       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#алгоритмы-шифрования';">Вверх</button>
      </li>
      <!-- <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab10.html';">ЛР №10 →</button>

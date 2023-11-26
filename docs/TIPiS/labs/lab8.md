@@ -241,9 +241,9 @@ ___
      <li class="float-end">
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#исследование-избыточности-источника-информации';">Вверх</button>
      </li>
-     <!-- <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab9.html';">ЛР №9 →</button>
-     </li> -->
+     <li  class="float-end">
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab9.html';">(доп.) ЛР №9 →</button>
+     </li>
      <li>
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab7.html';">← ЛР №7</button>
      </li>
