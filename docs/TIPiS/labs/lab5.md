@@ -80,7 +80,7 @@
     </tr>
     <tr class="table-primary">
       <th scope="row">10</th>
-      <td>Планирование и подготовка сборочного производства</td>
+      <td>ИС планирования и подготовки сборочного производства</td>
     </tr>
     <tr class="table-active">
       <th scope="row">11</th>
