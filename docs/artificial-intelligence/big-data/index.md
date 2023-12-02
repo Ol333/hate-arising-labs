@@ -17,3 +17,5 @@
 [Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab5.html)
 
 [Лабораторная работа №6]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab6.html)
+
+### [Диагностическое тестирование](https://docs.google.com/forms/d/e/1FAIpQLSf8dXp6oAT3ueTdfEcCEToVJSbpqrFZX8frOZSGryao3NKqkg/viewform?usp=sf_link)
