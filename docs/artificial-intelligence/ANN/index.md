@@ -23,3 +23,5 @@ RNN
 transformer
 
 [Лабораторная работа №9. Обучение с подкреплением]({{ site.baseurl }}/artificial-intelligence/ANN/labs/labn.html)
+
+### [Диагностическое тестирование](https://docs.google.com/forms/d/e/1FAIpQLSe2ZJfPs_1eGA7PDnrrWLUumw8XeepDARs5xXpUQsoUDhx1uw/viewform?usp=sf_link)
