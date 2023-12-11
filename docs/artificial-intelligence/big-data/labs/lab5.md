@@ -11,7 +11,7 @@
 
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-03-ensembles.ipynb).
 
-Может оказаться полезным посмотреть блокноты [1](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem07-trees.ipynb), [2](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem08-ensembles.pdf), [3](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem09-ensembles.pdf), [4](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem10-ensembles.ipynb), потому что там есть картинки, хорошие объяснения и примеры кода.
+Может оказаться полезным посмотреть блокноты [1](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem07-trees.ipynb){:target="_blank"}, [2](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem08-ensembles.pdf){:target="_blank"}, [3](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem09-ensembles.pdf){:target="_blank"}, [4](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem10-ensembles.ipynb){:target="_blank"}, потому что там есть картинки, хорошие объяснения и примеры кода.
 
 Успехов!
 

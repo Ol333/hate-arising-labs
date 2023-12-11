@@ -81,20 +81,20 @@ Run-length encoding – кодирование длин серий.
   <tbody>
     <td>6</td>
     <td>0</td>
-    <td>1</td>
-    <td>4</td>
+    <td class="table-active">1</td>
+    <td class="table-active">4</td>
     <td>1</td>
     <td>2</td>
+    <td class="table-active">1</td>
+    <td class="table-active">0</td>
+    <td>4</td>
+    <td>4</td>
+    <td class="table-active">2</td>
+    <td class="table-active">8</td>
     <td>1</td>
     <td>0</td>
-    <td>4</td>
-    <td>4</td>
-    <td>2</td>
-    <td>8</td>
-    <td>1</td>
-    <td>0</td>
-    <td>3</td>
-    <td>2</td>
+    <td class="table-active">3</td>
+    <td class="table-active">2</td>
     <td>1</td>
     <td>1</td>
   </tbody>
@@ -110,16 +110,18 @@ Run-length encoding – кодирование длин серий.
   <tbody>
     <td>1|6</td>
     <td>0</td>
-    <td>0|3</td>
-    <td>420</td>
+    <td class="table-active">0|3</td>
+    <td class="table-active">4</td>
+    <td class="table-active">2</td>
+    <td class="table-active">0</td>
     <td>1|4</td>
     <td>4</td>
-    <td>1|2</td>
-    <td>8</td>
+    <td class="table-active">1|2</td>
+    <td class="table-active">8</td>
     <td>0|1</td>
     <td>0</td>
-    <td>1|3</td>
-    <td>2</td>
+    <td class="table-active">1|3</td>
+    <td class="table-active">2</td>
     <td>0|1</td>
     <td>1</td>
   </tbody>
@@ -135,16 +137,18 @@ Run-length encoding – кодирование длин серий.
   <tbody>
     <td>1|4</td>
     <td>0</td>
-    <td>0|2</td>
-    <td>420</td>
+    <td class="table-active">0|2</td>
+    <td class="table-active">4</td>
+    <td class="table-active">2</td>
+    <td class="table-active">0</td>
     <td>1|2</td>
     <td>4</td>
-    <td>1|0</td>
-    <td>8</td>
+    <td class="table-active">1|0</td>
+    <td class="table-active">8</td>
     <td>0|0</td>
     <td>0</td>
-    <td>1|1</td>
-    <td>2</td>
+    <td class="table-active">1|1</td>
+    <td class="table-active">2</td>
     <td>0|0</td>
     <td>1</td>
   </tbody>

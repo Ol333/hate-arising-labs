@@ -15,17 +15,7 @@
 * лекция 1 приведена ниже (подробнее в [pdf]({{ site.baseurl }}/files/AI-big-data/lecture02-linregr.pdf){:target="_blank"});
 * [лекция 2]({{ site.baseurl }}/files/AI-big-data/lecture03-linregr.pdf){:target="_blank"}.
 
-Может оказаться полезным посмотреть блокноты [1](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem01-tools.ipynb), [2](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem02-linregr.ipynb), [3](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem03-linregr.ipynb), потому что там есть картинки, хорошие объяснения и примеры кода.
-
-___
-## Задание 1
-
-Библиотеки Numpy и Pandas.
-[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-1_0-linregr.ipynb).
-
-[Данные](https://www.kaggle.com/datasets/prajitdatta/data-stories-of-us-airlines) по авиа рейсам.
-
-___
+Может оказаться полезным посмотреть блокноты [1](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem01-tools.ipynb){:target="_blank"}, [2](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem02-linregr.ipynb){:target="_blank"}, [3](https://github.com/esokolov/ml-course-hse/blob/master/2016-fall/seminars/sem03-linregr.ipynb){:target="_blank"}, потому что там есть картинки, хорошие объяснения и примеры кода.
 
 ### 1. Линейные модели
 
@@ -187,23 +177,6 @@ $ w = (X^TX)^{−1} X^Ty $ .
 рамках которого можно обучать модель для широкого класса функционалов. Такой
 подход действительно есть для дифференцируемых функций — обсудим его подробнее.
 
-___
-## Задание 2
-
-Линейная регрессия.
-[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-1_1-linregr.ipynb).
-
-Про регуляризацию можно почитать во [второй лекции]({{ site.baseurl }}/files/AI-big-data/lecture03-linregr.pdf){:target="_blank"}.
-
-[Данные](https://www.kaggle.com/datasets/prajitdatta/data-stories-of-us-airlines) по авиа рейсам.
-
-На этапе подготовки данных перед обучением потребуется вспомнить то, что было в 1-й лабораторной, только выполнить это с использованием библиотеки scikit-learn или numpy/pandas:
-
-* Удаление пропусков в данных [→]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html#обработка-недостающих-значений).
-* Масштабирование вещественных признаков (нормализация [→]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html#нормализация)).
-* One-hot кодирование (векторизация с некоторыми отличиями [→]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html#векторизация)).
-
-___
 
 ### 4. Градиентный спуск и оценивание градиента
 
@@ -327,37 +300,30 @@ $ \nabla_w Q(w) = Q(w + δu)u $ .
 Если вычислять градиенты $\nabla_w q_i(w)$ сложно, то можно *обучить модель*, которая будет выдавать оценку градиента на основе текущих значений параметров.
 Этот подход был предложен для обучения глубинных нейронных сетей.
 
-___
-## Задание 3
-
-Градиентный спуск.
-[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-1_2-linregr.ipynb).
-
-Может понадобиться:
-
-$ MSPE = \frac{1}{l}\sum_{i=1}^l \left( \frac{y_i - \langle w, x_i \rangle }{y_i} \right)^2 $
-
-Градиент MSPE по $w$ можно вычислить следующим образом:
-
-$ \frac{\partial}{\partial w} MSPE(w) = \frac{\partial}{\partial w} [\frac{1}{l} \frac{y^Ty - y^TXw - w^TX^Ty + w^TX^TXw}{y^Ty}]. $
-
-Продифференцируем каждое слагаемое отдельно.
-
-$ \frac{\partial}{\partial w} [\frac{y^Ty}{y^Ty}] = 0. $
-
-$ \frac{\partial}{\partial w} [\frac{- y^TXw}{y^Ty}] = \frac{-X^Ty}{y^Ty}. $
-
-$ \frac{\partial}{\partial w} [\frac{- w^TX^Ty}{y^Ty}] = \frac{-X^Ty}{y^Ty}. $
-
-$ \frac{\partial}{\partial w} [\frac{w^TX^TXw}{y^Ty}] = \frac{2X^TXw}{y^Ty}. $
-
-Получаем уравнение
-
-$ \frac{\partial}{\partial w} MSPE(w) = \frac{2}{l} * \frac{X^TXw -X^Ty}{y^Ty} = \frac{2*X^T}{l} * \frac{Xw - y}{y^Ty}. $
 
 ___
+## Задание
 
-**Итого, 3 блокнота с выполненными заданиями нужно прислать для проверки на почту *bobrovskaya_op@surgu.ru* или *Smorodinov-1990@mail.ru*.**
+[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-01-linregr.ipynb) с заданием.
+
+[Данные](https://www.kaggle.com/datasets/prajitdatta/data-stories-of-us-airlines) по авиа рейсам.
+
+В блокноте можно выделить следующие 3 блока заданий:
+
+* **Библиотеки Numpy и Pandas**. Numpy позволяет работать с многомерными массивами и матрицами, содержит математические функции. Pandas — библиотека для обработки и анализа данных.
+
+* **Линейная регрессия**. Про регуляризацию можно почитать во [второй лекции]({{ site.baseurl }}/files/AI-big-data/lecture03-linregr.pdf){:target="_blank"}. На этапе подготовки данных перед обучением потребуется вспомнить то, что было в 1-й лабораторной, только выполнить это с использованием библиотеки scikit-learn или numpy/pandas:
+    * Удаление пропусков в данных [→]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html#обработка-недостающих-значений).
+    * Масштабирование вещественных признаков (нормализация [→]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html#нормализация)).
+    * One-hot кодирование (векторизация с некоторыми отличиями [→]({{ site.baseurl }}/artificial-intelligence/big-data/labs/lab1.html#векторизация)).
+
+* **Градиентный спуск**. Поскольку реализованные в библиотеке scikit-learn функции не справятся со всеми видами функционалов, с которыми вы можете столкнуться в своей работе, нужно уметь самостоятельно реализовать составляющие процесса решения оптимизационной задачи.
+
+
+
+__
+
+**Блокнот с выполненными заданиями нужно прислать для проверки на почту *bobrovskaya_op@surgu.ru* или *Smorodinov-1990@mail.ru*.**
 
 <div class="row">
   <div class="col-lg-12">
