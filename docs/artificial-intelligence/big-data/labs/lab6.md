@@ -16,11 +16,24 @@ ___
 Задание в [блокноте]({{ site.baseurl }}/files/AI-big-data/homework-practice-04-unsupervised.ipynb).
 Чтобы сдать лабораторную, нужно продемонстрировать работу блокнота **на университетском компьютере** (У801).
 
-Для этого вам потребуется настроить виртуальное окружение, установить библиотеку `jupyter`, запустить сервер `jupyter notebook`, и установить библиотеки необходимые для работы вашего кода.
-
-* Могу посоветовать `pipenv` и [Pipfile]({{ site.baseurl }}/files/AI-big-data/Pipfile) и [Pipfile.lock]({{ site.baseurl }}/files/AI-big-data/Pipfile.lock) для него.
-
-* Если хотите воспользоваться `venv`, а выходит ошибка с предложением команды `apt-get install python-venv`, обратитесь к преподавателю.
+Для этого вам потребуется настроить виртуальное окружение (любое, на ваш выбор). Распространенные варианты:
+<ul>
+  <li><b>pipenv</b>
+  <pre><code class="console">pip3 install pipenv
+pipenv --python 3.11  </code></pre> 
+  Заменяете созданные Pipfile и Pipfile.lock на <a href="{{ site.baseurl }}/files/AI-big-data/Pipfile">Pipfile</a> и <a href="{{ site.baseurl }}/files/AI-big-data/Pipfile.lock">Pipfile.lock</a>.
+  <pre><code class="console">pipenv install --dev
+pipenv shell
+jupyter notebook  </code></pre> 
+  </li>
+  <li><b>venv</b>
+  <pre><code class="console">python3.11 -m venv your_env_name</code></pre>
+  Если выходит ошибка с предложением команды <code class="console">apt-get install python-venv</code>, обратитесь к преподавателю.
+  <pre><code class="console">source your_env_name/bin/activate
+pip install jupyter
+pip install ..</code></pre> 
+  </li>
+</ul>
 
 <div class="row">
   <div class="col-lg-12">
