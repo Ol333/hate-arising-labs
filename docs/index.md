@@ -57,10 +57,10 @@
    });
      fl = false;
      setInterval(() => {
-       $('#gauge').dxCircularGauge('instance').value(fl ? 0 : 1);
+       $('#gauge').dxCircularGauge('instance').value(fl ? 4 : 6);
        fl = !fl;
      },
-       500);
+       400);
        var d = new Date();
        var com = d.getMonth()+1;
        var m = (d.getMonth()+11)%12;
