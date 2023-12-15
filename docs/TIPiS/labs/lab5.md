@@ -93,6 +93,29 @@
    </tbody>
 </table>
 
+## Пример
+
+*Информационная система анализа ходов игрока сёги.*
+
+Контекстная диаграмма.
+
+<div class="card border-primary mb-2" style="max-width: 40rem;">
+  <div class="card-body">
+  <img src="{{ site.baseurl }}/img/IDEF0_shogi.svg"
+        alt="Синтаксис нотаций"  focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
+
+Декомпозиция.
+
+<div class="card border-primary mb-2" style="max-width: 40rem;">
+  <div class="card-body">
+  <img src="{{ site.baseurl }}/img/IDEF0_shogi_decomp.svg"
+        alt="Синтаксис нотаций"  focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
 
 <div class="row">
   <div class="col-lg-12">

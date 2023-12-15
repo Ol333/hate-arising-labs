@@ -63,10 +63,22 @@
 *Все элементы диаграммы должны иметь имена.*
 
 Сайты, которые могут помочь:
-* [красиво](https://www.lucidchart.com/pages/ru/%D0%B4%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-dfd)
-* [вики](https://ru.wikipedia.org/wiki/DFD)
-* [habr](https://habr.com/ru/articles/668684/)
-* [познавательно](https://pcoding.ru/gost/dfd.pdf)
+* [красиво](https://www.lucidchart.com/pages/ru/%D0%B4%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-dfd){:target="_blank"}
+* [вики](https://ru.wikipedia.org/wiki/DFD){:target="_blank"}
+* [habr](https://habr.com/ru/articles/668684/){:target="_blank"}
+* [познавательно](https://pcoding.ru/gost/dfd.pdf){:target="_blank"}
+
+## Пример
+
+*Информационная система анализа ходов игрока сёги.*
+
+<div class="card border-primary mb-2" style="max-width: 40rem;">
+  <div class="card-body">
+  <img src="{{ site.baseurl }}/img/DFD_shogi.svg"
+        alt="Синтаксис нотаций"  focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
 
 <div class="row">
   <div class="col-lg-12">

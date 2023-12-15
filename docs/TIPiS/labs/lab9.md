@@ -27,7 +27,7 @@
 
 abacabacabadaca (с окном = 5)
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
+<div class="card border-primary mb-2" style="max-width: 15rem;">
   <div class="card-body">
   <img src="{{ site.baseurl }}/img/lz77.svg"
         alt="Синтаксис нотаций"  focusable="false" width="100%"
