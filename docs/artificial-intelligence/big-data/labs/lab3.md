@@ -304,7 +304,7 @@ $ \nabla_w Q(w) = Q(w + δu)u $ .
 ___
 ## Задание
 
-[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-01-linregr.ipynb) с заданием.
+[Блокнот]({{ site.baseurl }}/files/AI-big-data/homework-practice-01-linregr.ipynb) с заданием.
 
 [Данные](https://www.kaggle.com/datasets/prajitdatta/data-stories-of-us-airlines) по авиа рейсам.
 
