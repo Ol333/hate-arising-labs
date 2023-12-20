@@ -19,6 +19,7 @@
 
 ___
 
+### [Требования на допуск]({{ site.baseurl }}/TIPiS/labs/min.html)
 
 ### [Вопросы к экзамену]({{ site.baseurl }}/TIPiS/labs/exam.html)
 

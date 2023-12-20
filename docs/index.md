@@ -56,11 +56,15 @@
      value: 0,
    });
      fl = false;
+     var dd = new Date();
+     var mm = dd.getMonth();
+     var ron = (mm==11 || mm==4) ? (dd.getDate() > 15 ? 10 : 6) : 1;
+     var sp = (mm==11 || mm==4) ? (dd.getDate() > 15 ? 300 : 400) : 500;
      setInterval(() => {
-       $('#gauge').dxCircularGauge('instance').value(fl ? 4 : 6);
+       $('#gauge').dxCircularGauge('instance').value(fl ? ron-1 : ron);
        fl = !fl;
      },
-       400);
+       sp);
        var d = new Date();
        var com = d.getMonth()+1;
        var m = (d.getMonth()+11)%12;
@@ -78,4 +82,3 @@
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/index.html';">Искусственный интеллект</button>
 
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/TIPiS/index.html';">Теория информационных процессов и систем</button>
-
