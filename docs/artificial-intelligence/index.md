@@ -9,7 +9,7 @@
 
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/big-data/index.html';">Инструменты, подходы и методы обработки структурированных и неструктурированных данных</button>
 
-<button type="button" class="btn btn-primary btn-lg disabled">Временные ряды</button>
+<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/time-series/index.html';">Методы и технологии анализа данных и временных рядов</button>
 
 ### Полезная литература:
 
@@ -26,3 +26,5 @@
 * [Нейронные сети для начинающих. Введение в машинное обучение](https://ai-news.ru/nejronnye_seti_dlya_nachinaushih.html){:target="_blank"}
 
 * [Машинное обучение (курс лекций, К.В.Воронцов)](http://www.machinelearning.ru/wiki/index.php?title=%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%28%D0%BA%D1%83%D1%80%D1%81_%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B9%2C_%D0%9A.%D0%92.%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D1%86%D0%BE%D0%B2%29){:target="_blank"}
+
+* [Лоскутов А.Ю. Анализ временных рядов. Курс лекций (2009)](https://chaos.phys.msu.ru/loskutov/PDF/Lectures_time_series_analysis.pdf)

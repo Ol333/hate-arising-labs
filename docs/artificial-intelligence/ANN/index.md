@@ -14,13 +14,14 @@
 
 [Лабораторная работа №4. Keras]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab4.html)
 
-multihead
+[Лабораторная работа №5. Multihead]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab5.html)
 
-CNN
+[Лабораторная работа №6. CNN]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab6.html)
 
-RNN
+[Лабораторная работа №7. RNN]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab7.html)
 
-transformer
+[Лабораторная работа №8. Transformer
+]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab8.html)
 
 [Лабораторная работа №9. Обучение с подкреплением]({{ site.baseurl }}/artificial-intelligence/ANN/labs/labn.html)
 

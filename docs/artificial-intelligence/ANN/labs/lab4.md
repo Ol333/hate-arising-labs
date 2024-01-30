@@ -61,7 +61,7 @@ plt.scatter(X_test, model.predict(X_test), c='green', label='тест')
 plt.legend()</code></pre>
 </li>
 <li>
-  Найти на <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a> набор данных для классификации и обучить на нем модель.
+  Найти на <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a> набор данных для классификации и обучить на нем модель. <b>Сохранить ссылку на набор данных, чтобы не потерять.</b>
 </li>
 <li>
   Показать на графике, как меняется ошибка в процессе обучения (для одной из предыдущих НС).
@@ -74,9 +74,9 @@ plt.legend()</code></pre>
       <li class="float-end">
         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#keras';">Вверх</button>
       </li>
-      <!-- <li  class="float-end">
+      <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab5.html';">ЛР №5 →</button>
-     </li> -->
+     </li>
       <li>
         <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab3.html';">← ЛР №3</button>
       </li>
