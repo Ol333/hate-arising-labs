@@ -82,3 +82,5 @@
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/index.html';">Искусственный интеллект</button>
 
 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/TIPiS/index.html';">Теория информационных процессов и систем</button>
+
+<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{{ site.baseurl }}/OOP/index.html';">Объектно-ориентированное программирование</button>
