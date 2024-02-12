@@ -12,7 +12,6 @@
 * [Лабораторная работа №5]({{ site.baseurl }}/OOP/labs/lab5.html)
 * [Лабораторная работа №6]({{ site.baseurl }}/OOP/labs/lab6.html)
 * [Лабораторная работа №7]({{ site.baseurl }}/OOP/labs/lab7.html)
-* [Лабораторная работа №8]({{ site.baseurl }}/OOP/labs/lab8.html)
 
 ___
 
