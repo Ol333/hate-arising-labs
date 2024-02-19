@@ -84,7 +84,7 @@ _, accuracy2 = model.evaluate(model.predict(X_test), y_test)</code></pre>
   Подобрать архитектуры, хорошо обучить.
 </li>
 <li>
-  Объединить предварительно обученные сети ($^1 x → T$, $^2 x → \varphi$, $^3 (T, \varphi) → Y=f(x)$) в одну сложную. Вывести результат.
+  Объединить предварительно обученные сети ($^1 x → T$, $^2 x → \varphi$, $^3 (T, \varphi) → Y=f(x)$) в одну сложную<a href="https://keras.io/api/layers/merging_layers/concatenate/" target="_blank">*</a>. Вывести результат.
 </li>
 <li>
   Сначала объединить сети в одну сложную. Затем обучить. Вывести результат.

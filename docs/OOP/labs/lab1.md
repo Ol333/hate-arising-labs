@@ -40,6 +40,7 @@ ___
 * Реализовать геттер и сеттер для приватного поля ClassName3 в виде методов.
 * Обеспечить взаимодействие с полем подобное взаимодейстию со свойством *(например, с помощью оператора присвавания "=", а не только вызвом метода set())*.
 
+<div class="table-responsive">
 <table class="table table-hover">
   <thead>
     <tr>
@@ -124,13 +125,13 @@ ___
     </tr>
    </tbody>
 </table>
-
+</div>
 
  <div class="row">
    <div class="col-lg-12">
      <ul class="list-unstyled">
        <li class="float-end">
-         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#разминка';">Вверх</button>
+         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание';">Вверх</button>
        </li>
        <li   class="float-end">
          <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/OOP/labs/lab2.html';">ЛР №2 →</button>
