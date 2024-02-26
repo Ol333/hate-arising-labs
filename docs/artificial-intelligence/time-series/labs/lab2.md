@@ -63,7 +63,7 @@ $ (f \star g)_i \overset{def}= \sum_j f_j^* g _{i+j} $
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#keras';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#свёртка';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/time-series/labs/lab3.html';">ЛР №3 →</button>

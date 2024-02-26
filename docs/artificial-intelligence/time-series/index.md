@@ -14,7 +14,7 @@
 
 * [Лабораторная работа №1. Статистика]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab1.html)
 * [Лабораторная работа №2. Взаимнокорреляционная функция]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab2.html)
-* Лабораторная работа №3. Необычные ряды
+* [Лабораторная работа №3. Необычные ряды]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab3.html)
 * Лабораторная работа №4. Фильтры
 * Лабораторная работа №5. Тейлор
 * Лабораторная работа №6. Фурье
