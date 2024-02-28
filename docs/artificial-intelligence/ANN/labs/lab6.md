@@ -34,15 +34,19 @@ $ w(x,y) \star f(x,y) = \sum_{s=-a}^a \sum_{t=-b}^b w(s,t)f(x-s,y-t) $
 
 # Сверточная сеть в Keras
 
-[Шолле](https://codernet.ru/books/python/glubokoe_obuchenie_na_python_sholle_fransua/){:target="_blank"} 5 глава со стр. 148.
+Читать [Шолле](https://codernet.ru/books/python/glubokoe_obuchenie_na_python_sholle_fransua/){:target="_blank"} 5 глава со стр. 148.
 
 ## Задание 2
 
-* Загрузить подготовленные [данные](https://disk.yandex.ru/d/Y3jZx0DtF9F78g){:target="_blank"}: png картинка размером 640x480.
+* Загрузить подготовленные [данные](https://disk.yandex.ru/d/Y3jZx0DtF9F78g){:target="_blank"}. Данные представляют собой png изображения размером 640x480. В 6 папках сгруппированны графики функций, формулы которых приведены в таблице ниже. 
 
-* По вариантам обучить нейронную сеть, которая осуществляет задачу бинарной классификации графиков функций.
+* По вариантам обучить нейронную сеть, которая осуществляет задачу бинарной классификации графиков функций. Ваш вариант - функция, которую нейросеть должна научиться узнавать. Все остальные функции должны классифицироваться как "не ваша функция".
 
+* [Памятка]({{ site.baseurl }}/artificial-intelligence/ANN/compendium.html) для тех, кто забыл, как работать с нейронными сетями.
 
+* Для тестовой выборки сохранить результаты работы модели в виде исходных изображений с подписями настоящего класса и определенного вашей нейронкой.
+
+<div class="table-responsive">
 <table class="table table-hover">
   <thead>
     <tr>
@@ -55,36 +59,36 @@ $ w(x,y) \star f(x,y) = \sum_{s=-a}^a \sum_{t=-b}^b w(s,t)f(x-s,y-t) $
     <tr class="table-active">
       <th scope="row">1</th>
       <td>$max()$</td>
-      <td>$y=ax^2+bx+c$, $a > 0, b,c \in R$</td>
+      <td>$y=ax^2+bx+c, a > 0, b, c \in R$</td>
     </tr>
     <tr class="table-primary">
       <th scope="row">2</th>
       <td>$min()$</td>
-      <td>$y=ax^3+bx^2+cx+d$, $a < 0, b,c,d \in R$</td>
+      <td>$y=ax^3+bx^2+cx+d, a < 0, b, c, d \in R$</td>
     </tr>
     <tr class="table-active">
       <th scope="row">3</th>
       <td>$np.average()$</td>
-      <td>$y = \frac{k}{x-a}+b$, $a,b \in R, r > 0$</td>
+      <td>$y = \frac{k}{x-a}+b, a,b \in R, r > 0$</td>
     </tr>
     <tr class="table-primary">
       <th scope="row">4</th>
       <td>$np.linalg.norm()$ - L2</td>
-      <td>$y=c* |x-k| + b$, $k,b \in R, c > 0$</td>
+      <td>$y=c* |x-k| + b, k,b \in R, c > 0$</td>
     </tr>
     <tr class="table-active">
       <th scope="row">5</th>
       <td>$sum()$</td>
-      <td>$y = \frac{k}{|x-a| - c}+b$, $a,b \in R, k < 0, c < 0$</td>
+      <td>$y = \frac{k}{|x-a| - c}+b, a,b \in R, k < 0, c < 0$</td>
     </tr>
     <tr class="table-primary">
       <th scope="row">6</th>
       <td>$np.median()$</td>
-      <td>$y=k |x-b| + ax + c$, $k < 0, a > 0, b,c \in R$</td>
+      <td>$y=k |x-b| + ax + c, k < 0, a > 0, b,c \in R$</td>
     </tr>
   </tbody>
 </table>
-
+</div>
 
 
 
@@ -92,7 +96,7 @@ $ w(x,y) \star f(x,y) = \sum_{s=-a}^a \sum_{t=-b}^b w(s,t)f(x-s,y-t) $
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#keras';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#свертка';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/lab7.html';">ЛР №7 →</button>

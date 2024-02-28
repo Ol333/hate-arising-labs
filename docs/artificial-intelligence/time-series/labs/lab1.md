@@ -70,8 +70,8 @@ $X_t = a_0 + \sum_{i=1}^p a_t X_{t-i} + \sum_{i=0}^q b_i \varepsilon_{t-i}$
 
 ## Задание 4
 
-* Используя модель авторегрессии скользящего среднего (ARMA) или ее интегрированного варианта (ARIMA) сделать предсказание *(построить график)*.
-* По вариантам реализовать одну из задач построения или предсказания $n$ значений временного ряда **самостоятельно** *(не используя для этого готовые высокоуровневые библиотеки)*.
+* Используя модель авторегрессии скользящего среднего (ARMA) или ее интегрированного варианта (ARIMA), сделать предсказание *(построить график)*.
+* По вариантам реализовать одну из задач построения или предсказания $n$ значений временного ряда **самостоятельно** *(не используя для этого готовые высокоуровневые библиотеки)*. Выше заданы уравнения для моделей, вам нужно по ним сгенерировать временной ряд либо продолжить существующий ряд предсказанием.
 
 <div class="table-responsive">
 <table class="table table-hover">
@@ -114,7 +114,7 @@ $X_t = a_0 + \sum_{i=1}^p a_t X_{t-i} + \sum_{i=0}^q b_i \varepsilon_{t-i}$
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#keras';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#статистический-анализ';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/time-series/labs/lab2.html';">ЛР №2 →</button>
