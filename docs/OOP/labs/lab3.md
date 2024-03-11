@@ -4,9 +4,7 @@
   <li class="breadcrumb-item active">ЛР №3</li>
 </ol>
 
-<nav>
-  <ul></ul>
-</nav>
+# Объектно-ориентированное проектирование
 
 Пример:
 
@@ -40,10 +38,21 @@
   <div id="tabs-3">
     <pre><code class="language-csharp">class Ring
 {
-    private Someone[] all = { new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(),
+    private Someone[] all;
+    private static Ring instance;
+    private Ring() 
+    {
+        all = new Someone[]{new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(),
                 new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(),
                 new Someone(), new Someone(), new Someone()};
+    }
 
+    public static Ring getInstance()
+    {
+        if (instance == null)
+            instance = new Ring();
+        return instance;
+    }
     public void toRule(string s)
     {
         foreach (var person in all)
@@ -78,7 +87,7 @@
     </code></pre>  
   </div>
   <div id="tabs-5">
-    <pre><code class="language-csharp">Ring ring = new Ring();
+    <pre><code class="language-csharp">Ring ring = Ring.getInstance();
 Console.WriteLine(ring.getFirstMinionWill());
 
 ring.toRule("Dark Lord's will: retrieve the Ring!");
@@ -108,7 +117,7 @@ ___
 
 ## Превосходно
 
-**Раздел находится в разработке**
+* Оформить классы в виде пользовательской библиотеки, подключаемой к проекту.
 
 <div class="table-responsive">
 <table class="table table-hover">
