@@ -18,7 +18,7 @@
 
 * [Лабораторная работа №6. CNN]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab6.html)
 
-* Лабораторная работа №7. RNN
+* [Лабораторная работа №7. RNN]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab7.html)
 
 * Лабораторная работа №8. Transformer
 
