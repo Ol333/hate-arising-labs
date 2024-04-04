@@ -8,9 +8,9 @@
 * [Лабораторная работа №1]({{ site.baseurl }}/OOP/labs/lab1.html)
 * [Лабораторная работа №2]({{ site.baseurl }}/OOP/labs/lab2.html)
 * [Лабораторная работа №3]({{ site.baseurl }}/OOP/labs/lab3.html)
-* Лабораторная работа №4
-* Лабораторная работа №5
-* Лабораторная работа №6
+* [Лабораторная работа №4]({{ site.baseurl }}/OOP/labs/lab4.html)
+* [Лабораторная работа №5]({{ site.baseurl }}/OOP/labs/lab5.html)
+* [Лабораторная работа №6]({{ site.baseurl }}/OOP/labs/lab6.html)
 * Лабораторная работа №7
 
 ___
@@ -33,4 +33,4 @@ ___
 
 * [Халидов А. А. Объектно-ориентированное программирование: практикум (2018)](https://lib.kgeu.ru/irbis64r_15/scan/186%D1%8D%D0%BB.pdf){:target="_blank"}
 
-* [metanit по C#](https://metanit.com/sharp/tutorial/){:target="_blank"}
+* [metanit по C#](https://metanit.com/sharp/tutorial/){:target="_blank"} и [по паттернам](https://metanit.com/sharp/patterns/){:target="_blank"}

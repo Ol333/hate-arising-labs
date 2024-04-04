@@ -9,12 +9,13 @@
 <p class="text-primary" align="right">↑ семестр</p>
 
 <div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
-  <div class="progress-bar bg-warning" role="progressbar" style="width: 18%;" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
-  <div class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">ТИПиС</div>
+  <div class="progress-bar bg-warning" role="progressbar" style="width: 23%;" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100">ИИ</div>
+  <div class="progress-bar bg-info" role="progressbar" style="width: 2%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">ООП</div>
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">72 шт.</div>
 </div>
 
-<p class="text-primary" align="right">↑ осталось сдать лаб до темной темы</p>
+<p class="text-primary" align="right">осталось сдать лаб до темной темы ↑</p>
 
 <br>
 
