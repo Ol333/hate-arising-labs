@@ -11,7 +11,7 @@
 * [Лабораторная работа №4]({{ site.baseurl }}/OOP/labs/lab4.html)
 * [Лабораторная работа №5]({{ site.baseurl }}/OOP/labs/lab5.html)
 * [Лабораторная работа №6]({{ site.baseurl }}/OOP/labs/lab6.html)
-* Лабораторная работа №7
+* [Лабораторная работа №7]({{ site.baseurl }}/OOP/labs/lab7.html)
 
 ___
 
@@ -19,6 +19,9 @@ ___
 
 ### [Вопросы к экзамену]({{ site.baseurl }}/OOP/labs/exam.html)
 
+___
+
+### Диагностическое тестирование
 ___
 
 ## Литература
