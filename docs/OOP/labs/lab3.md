@@ -8,35 +8,26 @@
 
 Пример:
 
-<script>
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-  </script>
+{% tabs example %}
 
-<div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Описание</a></li>
-    <li><a href="#tabs-2">UML</a></li>
-    <li><a href="#tabs-3">Ring</a></li>
-    <li><a href="#tabs-4">Someone</a></li>
-    <li><a href="#tabs-5">Main</a></li>
-    <li><a href="#tabs-6">Запуск</a></li>
-  </ul>
-  <div id="tabs-1">
-    One Ring to rule them all.
+{% tab example Описание %}
+One Ring to rule them all.
+{% endtab %}
+
+{% tab example UML %}
+<div class="card border-primary mb-2" style="max-width: 30rem;">
+  <div class="card-body">
+    <img src="{{ site.baseurl }}/img/oop_3lab.svg"
+        alt="Диаграмма классов"  focusable="false" width="100%"
+        class="d-block user-select-none" />
   </div>
-  <div id="tabs-2">
-    <div class="card border-primary mb-2" style="max-width: 30rem;">
-      <div class="card-body">
-        <img src="{{ site.baseurl }}/img/oop_3lab.svg"
-            alt="Диаграмма классов"  focusable="false" width="100%"
-            class="d-block user-select-none" />
-      </div>
-    </div>
-  </div>
-  <div id="tabs-3">
-    <pre><code class="language-csharp">class Ring
+</div>
+{% endtab %}
+
+{% tab example class Ring %}
+
+``` csharp
+class Ring
 {
     private Someone[] all;
     private static Ring instance;
@@ -65,10 +56,14 @@
     {
         return all[0].getState();
     }
-}</code></pre>  
-  </div>
-  <div id="tabs-4">
-    <pre><code class="language-csharp">class Someone
+}
+```
+{% endtab %}
+
+{% tab example class Someone %}
+
+``` csharp
+class Someone
 {
     private string will = "free will";
     private string aim = "doing something neutral";
@@ -84,20 +79,30 @@
         return "This Someone have " + will + " and will " + aim;
     }
 }
-    </code></pre>  
-  </div>
-  <div id="tabs-5">
-    <pre><code class="language-csharp">Ring ring = Ring.getInstance();
+```
+{% endtab %}
+
+{% tab example Main %}
+
+``` csharp
+Ring ring = Ring.getInstance();
 Console.WriteLine(ring.getFirstMinionWill());
 
 ring.toRule("Dark Lord's will: retrieve the Ring!");
-Console.WriteLine(ring.getFirstMinionWill());</code></pre>  
-  </div>
-  <div id="tabs-6">
-    <pre><code class="language-console">This Someone have free will and will doing something neutral
-This Someone have not free will and will  retrieve the Ring!</code></pre>  
-  </div>
-</div>
+Console.WriteLine(ring.getFirstMinionWill());
+```
+{% endtab %}
+
+{% tab example Результат %}
+
+``` console
+This Someone have free will and will doing something neutral
+This Someone have not free will and will  retrieve the Ring!
+```
+{% endtab %}
+
+{% endtabs %}
+
 
 # Задание
 

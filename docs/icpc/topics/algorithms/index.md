@@ -12,19 +12,16 @@
 
 Требуется отсортированный массив.
 
-<script>
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-  </script>
-
-<div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Смысл</a></li>
-    <li><a href="#tabs-2">Анимация</a></li>
-    <li><a href="#tabs-3">Python</a></li>
-  </ul>
-  <div id="tabs-1">
+  <ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" data-bs-toggle="tab" href="#mean" aria-selected="true" role="tab">Смысл</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" data-bs-toggle="tab" href="#anim" aria-selected="false" tabindex="-1" role="tab">Анимация</a>
+  </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade show active" id="mean" role="tabpanel">
     <div class="card border-primary mb-2" style="max-width: 30rem;">
         <div class="card-body">
           <img src="{{ site.baseurl }}/img/bin_search.svg"
@@ -33,7 +30,7 @@
         </div>
       </div>
   </div>
-  <div id="tabs-2">
+  <div class="tab-pane fade" id="anim" role="tabpanel">
     <div class="card border-primary mb-2" style="max-width: 30rem;">
       <div class="card-body">
         <img src="https://static.tildacdn.com/tild3566-6335-4661-b661-396439326665/binary-and-linear-se.gif"
@@ -42,8 +39,10 @@
       </div>
     </div>
   </div>
-  <div id="tabs-3">
-    <pre><code class="language-python">def f(a, aim):
+</div>
+
+``` python
+def f(a, aim):
   left = -1
   right = len(a)
   while (left < right):
@@ -53,11 +52,7 @@
       else:
           right = middle - 1
   return left
-    </code></pre>  
-  </div>
-</div>
-
-
+  ```
 
 |  | Задача |
 | :-: |-|

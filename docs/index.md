@@ -8,20 +8,11 @@
 
 <p class="text-primary" align="right">↑ семестр</p>
 
-<div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 51%;" aria-valuenow="51" aria-valuemin="0" aria-valuemax="100">ТИПиС</div>
-  <div class="progress-bar bg-warning" role="progressbar" style="width: 24%;" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100">ИИ</div>
-  <div class="progress-bar bg-info" role="progressbar" style="width: 7%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">ООП</div>
-  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 18%;" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">53 шт.</div>
-</div>
-
-<p class="text-primary" align="right">осталось сдать лаб до темной темы ↑</p>
-
 <br>
 
 <div class="row row-cols-1 row-cols-md-2">
 <div class="col-lg-4">
-  <div class="card bg-light mb-2" style="max-width: 20rem;">
+  <div class="card mb-2" style="max-width: 20rem;">
     <div class="card-body">
        <div id="gauge"></div>
     </div>
