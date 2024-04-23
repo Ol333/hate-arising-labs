@@ -20,7 +20,7 @@
 
 * [Лабораторная работа №7. RNN]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab7.html)
 
-* Лабораторная работа №8. Transformer
+* [Лабораторная работа №8. Transformer]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab8.html)
 
 Дополнительно:
 
