@@ -152,6 +152,7 @@ pip install keras-rl2
 
 Доступные Агенты[*](https://keras-rl.readthedocs.io/en/latest/agents/overview/){:target="_blank"}:
 
+<div class="table-responsive">
 <table class="table table-hover">
   <thead>
     <tr>
@@ -194,6 +195,7 @@ pip install keras-rl2
     </tr>
   </tbody>
 </table>
+</div>
 
 ### SpinUp от OpenAI
 
@@ -239,7 +241,7 @@ pip install keras-rl2
 
 Обучить агента перестраиваться между полосами и двигаться с максимальной скоростью.
 
-Должно получиться что-то такое ([код DDPG]({{ site.baseurl }}/files/AI-ANN/rl_but_not_keras.py) – адаптиция того примера с хабра), только лучше:
+Должно получиться что-то такое ([код DDPG]({{ site.baseurl }}/files/AI-ANN/rl_but_not_keras_rl.py) – адаптиция того примера с хабра), только лучше:
 
 <div class="card border-primary mb-2" style="max-width: 30rem;">
   <div class="card-body">

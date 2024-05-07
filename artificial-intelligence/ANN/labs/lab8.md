@@ -33,7 +33,7 @@
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#keras';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#сеть-трансформер';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/ANN/labs/labn.html';">(доп.) ЛР №9 →</button>
