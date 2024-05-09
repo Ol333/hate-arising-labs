@@ -18,10 +18,10 @@
 * [Лабораторная работа №4. Тейлор]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab4.html)
 * [Лабораторная работа №5. Фурье]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab5.html)
 * [Лабораторная работа №6. Фильтры]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab6.html)
-* Лабораторная работа №7. Вейвлет
+* [Лабораторная работа №7. Вейвлет]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab7.html)
 
 Дополнительно:
-* Лабораторная работа №8. Динамические системы
+* [Лабораторная работа №8. Динамические системы]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab8.html)
 
 ___
 

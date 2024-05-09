@@ -149,7 +149,7 @@ DWT всегда реализуется как банк фильтров в ви
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#keras';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#вейвлет-преобразование';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/time-series/labs/lab8.html';">(доп.) ЛР №8 →</button>
