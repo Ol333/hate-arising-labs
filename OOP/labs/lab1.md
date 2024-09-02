@@ -24,9 +24,9 @@
 
 * Скачать [файл]({{ site.baseurl }}/img/uml1.svg), открыть в [draw.io](https://app.diagrams.net/){:target="_blank"}, изменить согласно варианту названия классов, полей и методов.
 * Реализовать иерархию классов в коде. Геттер и сеттер для приватного поля реализовать:
-  * для ClassName1 через методы;
-  * для ClassName2 через свойство;
-  * для ClassName3 через автосвойство.
+  * для ClassName1 через методы (как на диаграмме);
+  * для ClassName2 через [свойство](https://metanit.com/sharp/tutorial/3.4.php);
+  * для ClassName3 через [автосвойство](https://metanit.com/sharp/tutorial/3.4.php).
 * В основном теле программы создать экземпляры классов разными способами, продемонстрировать доступные и недоступные способы работы с ними.
 
 ___
@@ -46,11 +46,10 @@ ___
 * `==` и `!=`
 * `++`
 
-
 <div class="table-responsive">
-<table class="table table-hover">
+<table class="table table-hover border-primary  table-bordered">
   <thead>
-    <tr>
+    <tr class="table-dark">
       <th scope="col">№ варианта</th>
       <th scope="col">ClassName1</th>
       <th scope="col">ClassName2</th>
@@ -58,91 +57,95 @@ ___
     </tr>
   </thead>
   <tbody>
-    <tr class="table-active">
+    <tr>
       <th scope="row">1</th>
-      <td>Человек</td>
-      <td>Студент</td>
-      <td>Первокурсник</td>
+      <td>Сортировка</td>
+      <td>Простая (квадратичная) сортировка $O(n^2)$</td>
+      <td>Сортировка пузырьком</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">2</th>
-      <td>Человек</td>
-      <td>Служащий</td>
-      <td>Инженер</td>
+      <td>Веб-сервис</td>
+      <td>Сервис прогноза погоды</td>
+      <td>Gismeteo</td>
     </tr>
-    <tr class="table-active">
+    <tr>
       <th scope="row">3</th>
-      <td>Изделие</td>
-      <td>Механизм</td>
-      <td>Деталь</td>
+      <td>Элемент графического интерфейса</td>
+      <td>Виджет</td>
+      <td>TextBox</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">4</th>
-      <td>Печатное издание</td>
-      <td>Книга</td>
-      <td>Учебник</td>
+      <td>Компилятор</td>
+      <td>Компилятор для языка Си</td>
+      <td>GCC</td>
     </tr>
-    <tr class="table-active">
+    <tr>
       <th scope="row">5</th>
-      <td>Испытание</td>
-      <td>Экзамен</td>
-      <td>Тест</td>
+      <td>Игровой движок</td>
+      <td>Шахматный движок</td>
+      <td>Stockfish</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">6</th>
-      <td>Товар</td>
-      <td>Продукт питания</td>
-      <td>Молоко</td>
+      <td>Коллекция объектов</td>
+      <td>Список</td>
+      <td>Двусвязный список</td>
     </tr>
-    <tr class="table-active">
+    <tr>
       <th scope="row">7</th>
-      <td>Транспортное средство</td>
-      <td>Поезд</td>
-      <td>Экспресс</td>
+      <td>Веб-сервис</td>
+      <td>Сервис прогноза погоды</td>
+      <td>wttr.in</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">8</th>
-      <td>Двигатель</td>
-      <td>Двигатель внутреннего сгорания</td>
-      <td>Дизельный двигатель</td>
+      <td>Коллекция объектов</td>
+      <td>Список</td>
+      <td>Кольцевой список</td>
     </tr>
-    <tr class="table-active">
+    <tr>
       <th scope="row">9</th>
-      <td>Животное</td>
-      <td>Птица</td>
-      <td>Сокол</td>
+      <td>Элемент графического интерфейса</td>
+      <td>Виджет</td>
+      <td>Кнопка</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">10</th>
-      <td>Товар</td>
-      <td>Велосипед</td>
-      <td>Горный велосипед</td>
+      <td>Компилятор</td>
+      <td>Компилятор для языка C#</td>
+      <td>csc.exe</td>
     </tr>
-    <tr class="table-active">
+    <tr>
       <th scope="row">11</th>
-      <td>Человек</td>
-      <td>Музыкант</td>
-      <td>Барабанщик</td>
+      <td>Сортировка</td>
+      <td>Сложная сортировка $O(n \log n)$</td>
+      <td>Быстрая сортировка</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">12</th>
-      <td>Товар</td>
-      <td>Инструмент</td>
-      <td>Молоток</td>
+      <td>Генератор</td>
+      <td>Генератор случайных чисел</td>
+      <td>Генератор случайных чисел с нормальным распределением</td>
     </tr>
    </tbody>
 </table>
 </div>
 
- <div class="row">
-   <div class="col-lg-12">
-     <ul class="list-unstyled">
-       <li class="float-end">
-         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание';">Вверх</button>
-       </li>
-       <li   class="float-end">
-         <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/OOP/labs/lab2.html';">ЛР №2 →</button>
-       </li>
-     </ul>
-   </div>
- </div>
+
+<div class="row">
+  <div class="col-lg-12">
+   <ul class="list-unstyled">
+     <li class="float-end">
+       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание';">Вверх</button>
+     </li>
+     <li  class="float-end">
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/OOP/labs/lab2.html';">ЛР №2 →</button>
+     </li>
+     <li>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/OOP/labs/lab0.html';">← ЛР №0</button>
+     </li>
+   </ul>
+  </div>
+</div>

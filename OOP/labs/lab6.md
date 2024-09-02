@@ -119,9 +119,9 @@ ___
      <li class="float-end">
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#объектно-ориентированное-программирование-2';">Вверх</button>
      </li>
-     <li  class="float-end">
+     <!-- <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/OOP/labs/lab7.html';">ЛР №7 →</button>
-     </li>
+     </li> -->
      <li>
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/OOP/labs/lab5.html';">← ЛР №5</button>
      </li>

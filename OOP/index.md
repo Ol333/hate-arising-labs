@@ -5,17 +5,17 @@
 
 # Объектно-ориентированное программирование
 
-* [Лабораторная работа №1]({{ site.baseurl }}/OOP/labs/lab1.html)
-* [Лабораторная работа №2]({{ site.baseurl }}/OOP/labs/lab2.html)
-* [Лабораторная работа №3]({{ site.baseurl }}/OOP/labs/lab3.html)
-* [Лабораторная работа №4]({{ site.baseurl }}/OOP/labs/lab4.html)
-* [Лабораторная работа №5]({{ site.baseurl }}/OOP/labs/lab5.html)
-* [Лабораторная работа №6]({{ site.baseurl }}/OOP/labs/lab6.html)
-* [Лабораторная работа №7]({{ site.baseurl }}/OOP/labs/lab7.html)
+* [Лабораторная работа №0]({{ site.baseurl }}/OOP/labs/lab0.html) Программа на языке C#
+* [Лабораторная работа №1]({{ site.baseurl }}/OOP/labs/lab1.html) Классы, объекты, инкапсуляция, наследование
+* [Лабораторная работа №2]({{ site.baseurl }}/OOP/labs/lab2.html) Полиморфизм
+* [Лабораторная работа №3]({{ site.baseurl }}/OOP/labs/lab3.html) Объектно-ориентированное проектирование
+* [Лабораторная работа №4]({{ site.baseurl }}/OOP/labs/lab4.html) Объектно-ориентированное проектирование 2
+* [Лабораторная работа №5]({{ site.baseurl }}/OOP/labs/lab5.html) Объектно-ориентированное программирование
+* [Лабораторная работа №6]({{ site.baseurl }}/OOP/labs/lab6.html) Объектно-ориентированное программирование 2
 
 ___
 
-### [Требования на допуск]({{ site.baseurl }}/OOP/labs/min.html)
+### [Требования по лабам / на допуск]({{ site.baseurl }}/OOP/labs/min.html)
 
 ### [Вопросы к экзамену]({{ site.baseurl }}/OOP/labs/exam.html)
 
