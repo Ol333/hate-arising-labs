@@ -8,62 +8,244 @@
   <ul></ul>
 </nav>
 
-# Алгоритмы шифрования
+# Исследование избыточности источника информации
 
-## Код Хаффмана
+___
 
-Алгоритм для кодирования текста:
-1.	Подсчитать частоту появления каждого символа в тексте. 
-2.	Построить бинарное дерево, размещая в узлах символы (пошагово объединяя наименее вероятные). 
-3.	Пройтись по дереву, сохраняя код для каждого символа.
-4.	Закодировать текст. При этом в начале закодированного файла должно лежать дерево/коды символов, позволяющие в дальнейшем его раскодировать.
+## Избыточность 
 
-## LZ77
+Коэффициент избыточности показывает, какая часть реального сообщения является излишней и могла бы не передаваться, если бы сообщение было организовано оптимально. Коэффициент избыточности выражается формулами: 
 
-Идея – замена повторяющихся последовательностей ссылками на те позиции, где они уже встретились, при этом используется скользящее окно (размером в степень двойки).
-В закодированном файле будут лежать тройки чисел: **(offset, length, next)**.
+$ φ = \frac{n_p - n_0}{n_p} = 1 - \frac{n_0}{n_p} ,$
 
-Пример
+$ φ = \frac{H_p - H_0}{H_p} = 1 - \frac{H_0}{H_p} ,$
 
-abacabacabadaca (с окном = 5)
+где $n_p$ и $H_p$ - длина и энтропия реального сообщения, $n_0$ и $H_0$ – длина и энтропия оптимального сообщения.
 
-<div class="card border-primary mb-2" style="max-width: 20rem;">
-  <div class="card-body">
-  <img src="{{ site.baseurl }}/img/lz77.svg"
-        alt="Синтаксис нотаций"  focusable="false" width="100%"
-        class="d-block user-select-none" />
-  </div>
+Сообщение будет оптимальным тогда, когда все символы алфавита равновероятны.
+Энтропия такого сообщения максимальна и равна $log_2m$, где $m$ – мощность алфавита.
+
+Энтропия реального сообщения при условии независимости символов сообщения вычисляется по формуле:
+
+$ H = - \sum_{i=1}^m p_i \log_2 p_i ,$
+
+где $p_i$ – вероятность появления $i$-го символа. 
+
+___
+
+## RLE
+
+Run-length encoding – кодирование длин серий.
+
+Идея – заменяем последовательность одинаковых символов на символ и количество его повторений.
+
+Пример с буквами:
+
+АААААБББССД → 5А3Б2С1Д
+
+Пример с числами (исходник "00000042044448802221" – 20 байт):
+
+<div class="table-responsive">
+<table class="table table-bordered">
+  <tbody>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>4</td>
+    <td>2</td>
+    <td>0</td>
+    <td>4</td>
+    <td>4</td>
+    <td>4</td>
+    <td>4</td>
+    <td>8</td>
+    <td>8</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tbody>
+</table>
 </div>
 
+↓
+
+<div class="table-responsive">
+<table class="table table-bordered">
+  <tbody>
+    <td class="table-active">6</td>
+    <td>0</td>
+    <td class="table-active">1</td>
+    <td>4</td>
+    <td class="table-active">1</td>
+    <td>2</td>
+    <td class="table-active">1</td>
+    <td>0</td>
+    <td class="table-active">4</td>
+    <td>4</td>
+    <td class="table-active">2</td>
+    <td>8</td>
+    <td class="table-active">1</td>
+    <td>0</td>
+    <td class="table-active">4</td>
+    <td>2</td>
+  </tbody>
+</table>
+</div>
+
+где ```6``` означает ```00000110```.
+
+Сжалось до 16 байт. Серые квадратики - байты, отвечающие за количество повторов.
+
+Можно сделать чуть умнее. В байте, уходящем на кодирование количества повторов, первый бит отдать на флаг повтора, а остальные 7 – на количество символов (до 128), к которому этот флаг относится. На предыдущем примере это будет выглядеть так:
+
+<div class="table-responsive">
+<table class="table table-bordered">
+  <tbody>
+    <td class="table-active">1|6</td>
+    <td>0</td>
+    <td class="table-active">0|3</td>
+    <td>4</td>
+    <td>2</td>
+    <td>0</td>
+    <td class="table-active">1|4</td>
+    <td>4</td>
+    <td class="table-active">1|2</td>
+    <td>8</td>
+    <td class="table-active">0|1</td>
+    <td>0</td>
+    <td class="table-active">1|4</td>
+    <td>2</td>
+  </tbody>
+</table>
+</div>
+
+где ```1|4``` означает ```1|0000100```.
+
+Получилось сжать до 14 байт.
+
+При этом, можно уменьшить числа, обозначающие количество повторов, для повторов на 2, а для уникальных – на 1 (это может иметь значение про большем, около 128, числе повторов):
+
+<div class="table-responsive">
+<table class="table table-bordered">
+  <tbody>
+    <td class="table-active">1|4</td>
+    <td>0</td>
+    <td class="table-active">0|2</td>
+    <td>4</td>
+    <td>2</td>
+    <td>0</td>
+    <td class="table-active">1|2</td>
+    <td>4</td>
+    <td class="table-active">1|0</td>
+    <td>8</td>
+    <td class="table-active">0|0</td>
+    <td>0</td>
+    <td class="table-active">1|2</td>
+    <td>2</td>
+  </tbody>
+</table>
+</div>
+
+Размер – 14 байт.
 
 ___
 
 ## Задание
 
 <ol>
-<li>Найти в Интернете текстовый файл, содержащий текст на одном из естественных языков или языке эсперанто. Длина текста – не менее 10 тыс. символов.
-</li>
-<li>Реализовать один из алгоритмов кодирования (Хаффман или LZ77):
-как кодирование, так и декодирование.
-После работы в папке с программой и исходным текстовым файлом должен появиться закодированный .bin файл и раскодированный .txt, совпадающий и исходным.
-<br><b>Можно воспользоваться готовыми алгоритмами из библиотек, но в этом случае при сдаче придется подробно объяснить, как алгоритм работает. </b>
-</li>
-<li>Сжать файл. Оценить, на сколько уменьшился его объем: <br>
-$ \Delta = (1 - \frac{n_{p1}}{n_p})*100% $,
-где $n_{p1}$ – размер закодированного файла, $n_p$ – размер исходного файла.
-<br><b>$\Delta$ должна быть $> 0$.</b>
-</li>
+  <li>Реализовать алгоритм декодирования файла, сжатого с помощью RLE (самым последним описанным вариантом).</li>
+  <li>Раскодировать файл по номеру варианта и записать результат в файл .txt.</li>
+  <li>Рассчитать оптимальную энтропию (если бы символы использовались равновероятно) для раскодированного сообщения.
+  $ H_0  =n \log_2  m $, где $n$ – количество символов в тексте, $m$ – мощность алфавита.
+  </li>
+  <li>Экспериментально определить реальную энтропию раскодированного сообщения при условии независимости символов.
+  $ H_P  = - \sum_{i=1}^m p_i \log_2 p_i $ , где где $p_i$ – вероятность появления $i$-го символа (или частота символа). 
+  </li>
+  <li>Рассчитать избыточность раскодированного сообщения при условии независимости символов алфавита.
+  $ φ = \frac{H_p -H_0}{H_p} = 1 - \frac{H_0}{H_p}  $
+  </li>
+  <li>Рассчитать насколько уменьшилась избыточность сообщения в результате кодирования. 
+  $ μ = \frac{n_{p1}}{n_p}$, где $n_{p1}$ – размер закодированного файла, $n_p$ – размер раскодированного файла.
+  </li>
 </ol>
+
+<div class="table-responsive">
+<table class="table table-hover border-primary  table-bordered">
+   <thead>
+     <tr class="table-dark">
+       <th scope="col">№ варианта</th>
+       <th scope="col">Задача</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle1.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle2.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle3.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">4</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle4.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">5</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle5.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">6</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle6.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">7</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle7.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">8</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle8.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">9</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle9.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">10</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle10.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">11</th>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle11.bin">Файл</a></td>
+     </tr>
+     <tr>
+       <th scope="row">12</th>
+       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle12.bin">Файл</a></td>
+     </tr>
+    </tbody>
+</table>
+</div>
+
+<br>
 
 <div class="row">
   <div class="col-lg-12">
    <ul class="list-unstyled">
      <li class="float-end">
-       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#алгоритмы-шифрования';">Вверх</button>
+       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#исследование-избыточности-источника-информации';">Вверх</button>
      </li>
-     <!-- <li  class="float-end">
+     <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab10.html';">ЛР №10 →</button>
-     </li> -->
+     </li>
      <li>
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab8.html';">← ЛР №8</button>
      </li>

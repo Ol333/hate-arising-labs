@@ -8,27 +8,15 @@
   <ul></ul>
 </nav>
 
-# DFD
+# IDEF0
 
-**Data flow diagrams** – диаграммы потоков данных.
+Почитайте [стандарт](https://docs.cntd.ru/document/1200028629), пожалуйста. Хотя бы попытайтесь.
 
-Здесь нет строгой системы требований, как, например, в IDEF0 или BPMN, где нотации имеют жестко определенный синтаксис, так как они могут быть исполняемыми. Но все же определенных правил стоит придерживаться, чтобы не вносить путаницу при чтении DFD другими людьми.
+Если кратко, то синтаксис следующий:
 
-Элементы диаграммы:
-
-* *Процесс* (Process) – функция или последовательность действий, которые нужно предпринять, чтобы данные были обработаны (создание заказа, регистрация клиента и т.д.). В названиях процессов принято использовать глаголы, т.е. «Создать клиента» (а не «создание клиента»).
-
-* *Внешние сущности* ( External Entity). Это любые объекты, которые не входят в саму систему, но являются для нее источником информации либо получателями какой-либо информации из системы после обработки данных (человек, внешняя система, какие-либо носители информации и хранилища данных).
-
-* *Хранилище данных* (Data store). Внутреннее хранилище данных для процессов в системе. Поступившие данные перед обработкой и результат после обработки, а также промежуточные значения должны где-то храниться. Это и есть базы данных, таблицы или любой другой вариант организации и хранения данных.
-
-* *Поток данных* (Data flow). Стрелки, которые показывают, какая информация входит, а какая исходит из того или иного блока на диаграмме.
-
-Используются две нотации: Йордана (Yourdon) и Гейна-Сарсон (Gane-Sarson), отличающиеся синтаксисом:
-
-<div class="card border-primary mb-2" style="max-width: 30rem;">
+<div class="card border-primary mb-2" style="max-width: 40rem;">
   <div class="card-body">
-  <img src="{{ site.baseurl }}/img/dfd.svg"
+  <img src="{{ site.baseurl }}/img/idef0.svg"
         alt="Синтаксис нотаций"  focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -36,45 +24,94 @@
 
 ## Задание
 
-Проектирование информационной системы с помощью методологии DFD.
+Спроектировать информационную систему в нотации IDEF0.
 
-После сдачи предыдущей работы обратитесь к преподавателю.
-Получите IDEF0 диаграмму информационной системы от одногрупника и сделайте по ней DFD диаграмму. Все, отраженное на исходной диаграмме, должно присутствовать на новой. При необходимости можно что-то добавлять, но не убирать.
+Для этого составить контекстную диаграмму, на которой должно быть выделено **3 функциональные задачи** (выхода системы).
+
+Затем провести декомпозицию контекстной диаграммы на **пять блоков**.
+
+Советую использовать [draw.io](https://app.diagrams.net/){:target="_blank"}.
+
+Не забудьте сохранить результат!
 
 <table class="table table-hover">
   <thead>
     <tr>
       <th scope="col">№ варианта</th>
-      <th scope="col">Нотация</th>
+      <th scope="col">Тема</th>
     </tr>
   </thead>
   <tbody>
     <tr class="table-active">
-      <th scope="row">Нечетные</th>
-      <td>Йордана</td>
+      <th scope="row">1</th>
+      <td>Автоматизация функций складского учета</td>
     </tr>
     <tr class="table-primary">
-      <th scope="row">Четные</th>
-      <td>Гейна-Сарсон</td>
+      <th scope="row">2</th>
+      <td>ИС службы заказа такси</td>
     </tr>
-    </tbody>
+    <tr class="table-active">
+      <th scope="row">3</th>
+      <td>ИС службы доставки еды</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">4</th>
+      <td>ИС выдачи музыкальных рекомендаций</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">5</th>
+      <td>ИС фирмы проката автомобилей</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">6</th>
+      <td>ИС Частной поликлиники</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">7</th>
+      <td>ИС кредитной компании</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">8</th>
+      <td>ИС автоматизации приемной компании в университете</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">9</th>
+      <td>ИС документооборота для малого предприятия (частная школа)</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">10</th>
+      <td>ИС планирования и подготовки сборочного производства</td>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">11</th>
+      <td>ИС ресторана</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">12</th>
+      <td>ИС психолога</td>
+    </tr>
+   </tbody>
 </table>
-
-*Все элементы диаграммы должны иметь имена.*
-
-Сайты, которые могут помочь:
-* [красиво](https://www.lucidchart.com/pages/ru/%D0%B4%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-dfd){:target="_blank"}
-* [вики](https://ru.wikipedia.org/wiki/DFD){:target="_blank"}
-* [habr](https://habr.com/ru/articles/668684/){:target="_blank"}
-* [познавательно](https://pcoding.ru/gost/dfd.pdf){:target="_blank"}
 
 ## Пример
 
 *Информационная система анализа ходов игрока сёги.*
 
+Контекстная диаграмма.
+
 <div class="card border-primary mb-2" style="max-width: 40rem;">
   <div class="card-body">
-  <img src="{{ site.baseurl }}/img/DFD_shogi.svg"
+  <img src="{{ site.baseurl }}/img/IDEF0_shogi.svg"
+        alt="Синтаксис нотаций"  focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
+
+Декомпозиция.
+
+<div class="card border-primary mb-2" style="max-width: 40rem;">
+  <div class="card-body">
+  <img src="{{ site.baseurl }}/img/IDEF0_shogi_decomp.svg"
         alt="Синтаксис нотаций"  focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
@@ -84,7 +121,7 @@
   <div class="col-lg-12">
    <ul class="list-unstyled">
      <li class="float-end">
-       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#dfd';">Вверх</button>
+       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#idef0';">Вверх</button>
      </li>
      <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab7.html';">ЛР №7 →</button>
