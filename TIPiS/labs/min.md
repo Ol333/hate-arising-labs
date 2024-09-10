@@ -17,7 +17,7 @@
 * соревнования для добавления в таблицу.
 
 <div class="table-responsive">
-<table class="table table-hover border-primary  table-bordered">
+<table class="table table-hover border-primary table-bordered">
   <thead>
   <tr class="table-dark">
       <th scope="col" colspan="4">Считается участие в течение текущего семестра и решение ненулевого количества заданий<br>Призовое место - x2</th>
@@ -38,7 +38,7 @@
     </tr>
     <tr>
       <td>Местный Хакатон</td>
-      <td></td>
+      <td>Окружной Хакатон</td>
       <td><a href="https://www.хакатоны.рф/">Оффлайн хакатон за пределами ХМАО</a></td>
       <td></td>
     </tr>
@@ -51,6 +51,14 @@
   </tbody>
 </table>
 </div>
+
+<div class="card mb-2" style="max-width: 50rem; max-height: 40rem;">
+  <div class="card-body">
+    <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2GsyfWACquWA86d13A1F3pkAsefh0RIBkIqP7zYZ84YKV3XjPK0vYpLb_uJTNWT0-bv4tIsVj-IjZ/pubhtml?gid=0&amp;range=A1:AX37&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp" style="border:none;">Ваш браузер не поддерживает таблицу</iframe>
+  </div>
+</div>
+
+
 
 # Требования для допуска к экзамену
 

@@ -51,7 +51,7 @@ Template matching)</td>
     </tr>
     <tr>
       <th scope="row">5</th>
-      <td>Оператор Превитта (Prewitt)</td>
+      <td>Оператор Прюитт (Prewitt)</td>
     </tr>
     <tr>
       <th scope="row">6</th>
