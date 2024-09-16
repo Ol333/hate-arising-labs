@@ -11,7 +11,7 @@
 
 # Свертка
 
-[Цифровая обработка изображений](https://vk.com/doc252264187_555814746?hash=pW7MVoAWCVC99RlZlMuyp95ZQPz6IJfpR1gMNrESxJc&dl=VKBY1ZInOSdIgCQPPHPEvGcZd0nfVty0rVwE5GO5RzL) со стр. 188.
+[Цифровая обработка изображений](https://disk.yandex.ru/i/KTeR88CHesTGsw) со стр. 188.
 
 Свёртка задается уравнением:
 

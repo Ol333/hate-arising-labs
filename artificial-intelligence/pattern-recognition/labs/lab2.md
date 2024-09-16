@@ -1,0 +1,128 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}">Главная</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/index.html">ИИ</a></li>
+  <li class="breadcrumb-item"><a href="{{ site.baseurl }}/artificial-intelligence/pattern-recognition/index.html">Распознавание образов</a></li>
+  <li class="breadcrumb-item active">ЛР №2</li>
+</ol>
+
+<nav>
+  <ul></ul>
+</nav>
+
+
+# Опознание объекта. Обнаружение объекта
+
+Классифицировать объект на изображении относительно легко с помощью сверточной сети.
+Но на реальных изображениях сначала нужно выделить область, в которой расположен объект.
+
+Одним из первых успешных подходов, примененных для определения нахождения объекта на картинке, был R-CNN (Region Convolution Neural Network)[*](https://habr.com/ru/companies/jetinfosystems/articles/498294/). В общих чертах: определяется набор гипотез, они сворачиваются и классифицируются.
+
+**Ограничивающая рамка (bounding box)** – координаты, ограничивающие определенную область изображения, – чаще всего в форме прямоугольника. Может быть представлена 4 координатами в двух форматах: центрированный $(c_{x},c_{y},w,h)$ и обычный $(x_{min},y_{min},x_{max},y_{max})$.
+
+**Гипотеза (Proposal)**, P – определенный регион изображения (заданный с помощью ограничивающей рамки), в котором предположительно находится объект.
+
+**IoU (Intersection-over-Union)** – метрика степени пересечения между двумя ограничивающими рамками.
+
+
+Поиск гипотез - регионов, в которых может находиться объект, можно осуществлять разными методами[*](https://learnopencv.com/selective-search-for-object-detection-cpp-python/) (object proposal / region proposal methods):
+
+* Sliding window - вырезаем из изображения все возможные прямоугольники (и по позиции, и по размеру).
+* Region proposal:
+  1. Objectness - используем меру объектности (отличие от окружения и наличие замкнутой границы), количественно определяющую вероятность того, что окно будет содержать объект.
+  2. Constrained Parametric Min-Cuts for Automatic Object Segmentation - снизу-вверх на регулярной сетке изображения генерируются гипотезы, которые ранжируются по правдоподобности.
+  3. Category Independent Object Proposals - на основе иерархической сегментации, вычесленной по границам окклюзии, собирается начальный набор регионов. Для пар регионов вычисляются вероятности принадлежности одному объекту. Затем происходит ранжирование и оставляются лучшие разнообразные варианты на основе комбинации оценки внешнего вида объекта и штрафа IoU.
+  4. Randomized Prim - сегментируем изображение на суперпиксели, а затем увеличиваем группы суперпикселей при высокой вероятности принадлежности одному объекту.
+  5. Selective Search - выделяем области похожих по яркости пискелей, а затем объединяем близкие области (по цвету, текстуре, размеру и форме), под конец получая области, в которых с высокой вероятностью есть объекты.
+
+
+
+[PASCAL VOC](https://docs.ultralytics.com/datasets/detect/voc/#sample-images-and-annotations) (Visual Object Classes) - набор данных для обнаружения, сегментации и классификации.
+
+## Задание 👾
+
+* Выбрать вариант реализации по желнию:
+
+<div class="table-responsive">
+<table class="table table-hover border-primary table-bordered">
+  <thead>
+    <tr class="table-dark">
+      <th scope="col">вариант 1</th>
+      <th scope="col">вариант 2</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr class="table-dark">
+      <th scope="col" colspan="2">Метод поиска гипотез</th>
+    </tr>
+    <tr>
+      <td>Самостоятельная реализация</td>
+      <td>Запуск исходников авторов метода</td>
+    </tr>
+    <tr class="table-dark">
+      <th scope="col" colspan="2">Классификация гипотез</th>
+    </tr>
+    <tr>
+      <td>CNN + классификация</td>
+      <td>R-CNN</td>
+    </tr>
+   </tbody>
+</table>
+</div>
+
+* Запустить поиск гипотез по варианту.
+* Вывести количество гипотез, предлагаемых для дальнейшей классификации.
+* Осуществить классификацию гипотез.
+
+<div class="table-responsive">
+<table class="table table-hover border-primary  table-bordered ">
+  <thead>
+    <tr class="table-dark">
+      <th scope="col">№ варианта</th>
+      <th scope="col">Задача</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Sliding window</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><a href="https://calvin-vision.net/bigstuff/objectness/"  target="_blank">Objectness</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>PMC: Automatic Object Segmentation Using
+Constrained Parametric Min-Cuts (<a href="https://www.cs.jhu.edu/~ayuille/JHUcourses/VisionAsBayesianInference2022/10/CPMC_Carreira_PAMI_2012.pdf"  target="_blank">статья</a>, <a href="https://github.com/m1ha1f/cpmc"  target="_blank">код</a>)</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td><a href="https://vision.cs.uiuc.edu/proposals/" target="_blank">Category Independent Object Proposals</a></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td><a href="https://github.com/smanenfr/rp#rp" target="_blank">Prime Object Proposals with Randomized Prim's Algorithm (RP)</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td><a href="https://www.koen.me/research/selectivesearch/"  target="_blank">Selective Search</a></td>
+    </tr>
+   </tbody>
+</table>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="list-unstyled">
+      <li class="float-end">
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание-1';">Вверх</button>
+      </li>
+      <li  class="float-end">
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab3.html';">ЛР №3 →</button>
+     </li>
+      <li>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab1.html';">← ЛР №1</button>
+      </li>
+    </ul>
+  </div>
+</div>

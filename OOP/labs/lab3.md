@@ -29,32 +29,32 @@ One Ring to rule them all.
 ``` csharp
 class Ring
 {
-    private Someone[] all;
-    private static Ring instance;
+    private Someone[] _all;
+    private static Ring _instance;
     private Ring() 
     {
-        all = new Someone[]{new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(),
+        _all = new Someone[]{new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(),
                 new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(), new Someone(),
                 new Someone(), new Someone(), new Someone()};
     }
 
-    public static Ring getInstance()
+    public static Ring GetInstance()
     {
-        if (instance == null)
-            instance = new Ring();
-        return instance;
+        if (_instance == null)
+            _instance = new Ring();
+        return _instance;
     }
-    public void toRule(string s)
+    public void ToRule(string s)
     {
-        foreach (var person in all)
+        foreach (var person in _all)
         {
-            person.getRuled(s.Split(':')[1]);
+            person.GetRuled(s.Split(':')[1]);
         }
     }
 
-    public string getFirstMinionWill()
+    public string GetFirstMinionWill()
     {
-        return all[0].getState();
+        return _all[0].GetState();
     }
 }
 ```
@@ -65,18 +65,18 @@ class Ring
 ``` csharp
 class Someone
 {
-    private string will = "free will";
-    private string aim = "doing something neutral";
+    private string _will = "free will";
+    private string _aim = "doing something neutral";
 
-    public void getRuled(string s)
+    public void GetRuled(string s)
     {
-        will = "not free will";
-        aim = s;
+        _will = "not free will";
+        _aim = s;
     }
 
-    public string getState()
+    public string GetState()
     {
-        return "This Someone have " + will + " and will " + aim;
+        return "This Someone have " + _will + " and will " + _aim;
     }
 }
 ```
@@ -85,11 +85,11 @@ class Someone
 {% tab example Main %}
 
 ``` csharp
-Ring ring = Ring.getInstance();
-Console.WriteLine(ring.getFirstMinionWill());
+Ring ring = Ring.GetInstance();
+Console.WriteLine(ring.GetFirstMinionWill());
 
-ring.toRule("Dark Lord's will: retrieve the Ring!");
-Console.WriteLine(ring.getFirstMinionWill());
+ring.ToRule("Dark Lord's will: retrieve the Ring!");
+Console.WriteLine(ring.GetFirstMinionWill());
 ```
 {% endtab %}
 
@@ -298,7 +298,7 @@ ___
   <div class="col-lg-12">
    <ul class="list-unstyled">
      <li class="float-end">
-       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#экспертные-оценки';">Вверх</button>
+       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#объектно-ориентированное-проектирование';">Вверх</button>
      </li>
      <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/OOP/labs/lab4.html';">ЛР №4 →</button>
