@@ -38,6 +38,39 @@
 
 [PASCAL VOC](https://docs.ultralytics.com/datasets/detect/voc/#sample-images-and-annotations) (Visual Object Classes) - набор данных для обнаружения, сегментации и классификации.
 
+Оценка работы метода обнаружения объекта рассчитывается как $Accuracy = \frac{TP+TN}{P+N}$.
+
+<div class="table-responsive">
+<table class="table table-hover border-primary table-bordered">
+  <thead>
+    <tr>
+      <td></td>
+      <td></td>
+      <th scope="col" colspan="2" class="table-dark">Predicted condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Total population = P + N</td>
+      <td class="table-primary">Positive (PP)</td>
+      <td class="table-primary">Negative (PN)</td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="table-dark">Actual condition</td>
+      <td class="table-primary">Positive (P)</td>
+      <td>True positive (TP), hit</td>
+      <td>False negative (FN), miss, underestimation</td>
+    </tr>
+    <tr>
+      <td class="table-primary">Negative (N)</td>
+      <td>False positive (FP), false alarm, overestimation</td>
+      <td>True negative (TN), correct rejection</td>
+    </tr>
+   </tbody>
+</table>
+</div>
+
 ## Задание 👾
 
 * Выбрать вариант реализации по желнию:
@@ -46,22 +79,19 @@
 <table class="table table-hover border-primary table-bordered">
   <thead>
     <tr class="table-dark">
+      <th scope="col"></th>
       <th scope="col">вариант 1</th>
       <th scope="col">вариант 2</th>
     </tr>
   </thead>
   <tbody>
-      <tr class="table-dark">
-      <th scope="col" colspan="2">Метод поиска гипотез</th>
-    </tr>
     <tr>
+      <td>Метод поиска гипотез</td>
       <td>Самостоятельная реализация</td>
       <td>Запуск исходников авторов метода</td>
     </tr>
-    <tr class="table-dark">
-      <th scope="col" colspan="2">Классификация гипотез</th>
-    </tr>
     <tr>
+      <td>Классификация гипотез</td>
       <td>CNN + классификация</td>
       <td>R-CNN</td>
     </tr>
@@ -72,6 +102,8 @@
 * Запустить поиск гипотез по варианту.
 * Вывести количество гипотез, предлагаемых для дальнейшей классификации.
 * Осуществить классификацию гипотез.
+* Обучать и тестировать можно на наборе PASCAL-VOC.
+* Посчитать и вывести количество гипотез по всем ячейкам таблицы + Accuracy для одного изображения.
 
 <div class="table-responsive">
 <table class="table table-hover border-primary  table-bordered ">
@@ -115,7 +147,7 @@ Constrained Parametric Min-Cuts (<a href="https://www.cs.jhu.edu/~ayuille/JHUcou
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание-1';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#опознание-объекта-обнаружение-объекта';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab3.html';">ЛР №3 →</button>
