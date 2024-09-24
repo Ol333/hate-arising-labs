@@ -31,21 +31,27 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://sp.urfu.ru/qf/">Квалификация ICPC</a>, <br><a href="https://foncode.ru/">Регулярные Соревнования по спортивному программированию FONCODE</a></td>
-      <td><a href="https://yandex.ru/cup/">Yandex Cup</a>, <br><a href="https://rucode.net/">RUCODE festival</a>, <br>VK Cup</td>
-      <td><a href="https://sp.urfu.ru/qf/">Четвертьфинал ICPC</a></td>
+      <td><a href="https://sp.urfu.ru/qf/" target="_blank">Квалификация ICPC</a>, <br><a href="https://foncode.ru/" target="_blank">Регулярные Соревнования по спортивному программированию FONCODE</a></td>
+      <td><a href="https://yandex.ru/cup/" target="_blank">Yandex Cup</a>, <br><a href="https://rucode.net/" target="_blank">RUCODE festival</a>, <br>VK Cup</td>
+      <td><a href="https://sp.urfu.ru/qf/" target="_blank">Четвертьфинал ICPC</a></td>
       <td>Полуфинал или финал ICPC</td>
     </tr>
     <tr>
       <td>Местный Хакатон</td>
-      <td>Окружной Хакатон</td>
-      <td><a href="https://www.хакатоны.рф/">Оффлайн хакатон за пределами ХМАО</a></td>
+      <td>Окружной Хакатон, <a href="https://www.it-innohack.ru/" target="_blank">IT INNO HACK</a></td>
+      <td><a href="https://www.хакатоны.рф/" target="_blank">Оффлайн хакатон за пределами ХМАО</a></td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-      <td><a href="https://ctfnews.ru/news/1900">SurCTF</a></td>
-      <td><a href="https://ctfnews.ru/">Оффлайн CTF за пределами ХМАО</a></td>
+      <td><a href="https://ctfnews.ru/news/1900" target="_blank">SurCTF</a></td>
+      <td><a href="https://ctfnews.ru/" target="_blank">Оффлайн CTF за пределами ХМАО</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>месяц работы системным администратором</td>
+      <td>месяц работы системным аналитиком</td>
+      <td></td>
       <td></td>
     </tr>
   </tbody>
@@ -54,11 +60,20 @@
 
 <div class="card mb-2" style="max-width: 50rem; max-height: 40rem;">
   <div class="card-body">
-    <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2GsyfWACquWA86d13A1F3pkAsefh0RIBkIqP7zYZ84YKV3XjPK0vYpLb_uJTNWT0-bv4tIsVj-IjZ/pubhtml?gid=0&amp;range=A1:AX37&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp" style="border:none;">Ваш браузер не поддерживает таблицу</iframe>
+    <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AX37&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp" style="border:none;">Ваш браузер не поддерживает таблицу</iframe>
   </div>
 </div>
 
 
+___
+
+
+<div class="table-responsive">
+  <div id="gridContainer"></div>
+</div>
+
+
+___
 
 # Требования для допуска к экзамену
 
