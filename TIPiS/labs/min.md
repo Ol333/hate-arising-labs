@@ -60,16 +60,8 @@
 
 <div class="card mb-2" style="max-width: 50rem; max-height: 40rem;">
   <div class="card-body">
-    <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AX37&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp" style="border:none;">Ваш браузер не поддерживает таблицу</iframe>
+    <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AX38&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp" style="border:none;">Ваш браузер не поддерживает таблицу</iframe>
   </div>
-</div>
-
-
-___
-
-
-<div class="table-responsive">
-  <div id="gridContainer"></div>
 </div>
 
 
