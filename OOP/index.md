@@ -30,6 +30,7 @@ C#:
 
 * [Рихтер Д. CLR via C#. Программирование на платформе Microsoft .NET Framework 4.5 на языке C# (2012 пер. 2013)](https://vk.com/doc170999522_485454911?hash=qmYk8crGz5P9CeUEbj9R5emFlaFQbeX79EbKXRZLhEH){:target="_blank"}
 * [metanit по C#](https://metanit.com/sharp/tutorial/){:target="_blank"}
+* [Соглашение об именовании](https://learn.microsoft.com/ru-ru/dotnet/standard/design-guidelines/capitalization-conventions#main)
 
 
 ООП:

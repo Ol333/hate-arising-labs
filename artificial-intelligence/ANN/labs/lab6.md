@@ -47,7 +47,7 @@ $ w(x,y) \star f(x,y) = \sum_{s=-a}^a \sum_{t=-b}^b w(s,t)f(x-s,y-t) $
 * Для тестовой выборки сохранить результаты работы модели в виде исходных изображений с подписями настоящего класса и определенного вашей нейронкой.
 
 <div class="table-responsive">
-<table class="table table-hover">
+<table class="table table-hover border-primary table-bordered">
   <thead>
     <tr>
       <th scope="col">№ варианта</th>
@@ -56,32 +56,32 @@ $ w(x,y) \star f(x,y) = \sum_{s=-a}^a \sum_{t=-b}^b w(s,t)f(x-s,y-t) $
     </tr>
   </thead>
   <tbody>
-    <tr class="table-active">
+    <tr>
       <th scope="row">1</th>
       <td>$max()$</td>
       <td>$y=ax^2+bx+c, a > 0, b, c \in R$</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">2</th>
       <td>$min()$</td>
       <td>$y=ax^3+bx^2+cx+d, a < 0, b, c, d \in R$</td>
     </tr>
-    <tr class="table-active">
+    <tr>
       <th scope="row">3</th>
       <td>$np.average()$</td>
       <td>$y = \frac{k}{x-a}+b, a,b \in R, r > 0$</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">4</th>
       <td>$np.linalg.norm()$ - L2</td>
       <td>$y=c* |x-k| + b, k,b \in R, c > 0$</td>
     </tr>
-    <tr class="table-active">
+    <tr>
       <th scope="row">5</th>
       <td>$sum()$</td>
       <td>$y = \frac{k}{|x-a| - c}+b, a,b \in R, k < 0, c < 0$</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <th scope="row">6</th>
       <td>$np.median()$</td>
       <td>$y=k |x-b| + ax + c, k < 0, a > 0, b,c \in R$</td>
