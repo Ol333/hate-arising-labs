@@ -6,25 +6,25 @@
 
 # Искусственные нейронные сети
 
-* [Лабораторная работа №1. Нейрон]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html)
+* [Лабораторная работа №1]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab1.html). Нейрон
 
-* [Лабораторная работа №2. Однослойная сеть]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html)
+* [Лабораторная работа №2]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab2.html). Однослойная сеть
 
-* [Лабораторная работа №3. Обратное распространение ошибки]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab3.html)
+* [Лабораторная работа №3]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab3.html). Обратное распространение ошибки
 
-* [Лабораторная работа №4. Keras]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab4.html)
+* [Лабораторная работа №4]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab4.html). Keras
 
-* [Лабораторная работа №5. Multihead]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab5.html)
+* [Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab5.html). Multihead
 
-* [Лабораторная работа №6. CNN]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab6.html)
+* [Лабораторная работа №6]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab6.html). CNN
 
-* [Лабораторная работа №7. RNN]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab7.html)
+* [Лабораторная работа №7]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab7.html). RNN
 
-* [Лабораторная работа №8. Transformer]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab8.html)
+* [Лабораторная работа №8]({{ site.baseurl }}/artificial-intelligence/ANN/labs/lab8.html). Transformer
 
 Дополнительно:
 
-* [Лабораторная работа №9. Обучение с подкреплением]({{ site.baseurl }}/artificial-intelligence/ANN/labs/labn.html)
+* [Лабораторная работа №9]({{ site.baseurl }}/artificial-intelligence/ANN/labs/labn.html). Обучение с подкреплением
 
 [Памятка]({{ site.baseurl }}/artificial-intelligence/ANN/compendium.html)
 
