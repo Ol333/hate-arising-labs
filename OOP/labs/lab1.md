@@ -12,6 +12,11 @@
 
 В прошлой лабораторной вы уже реализовывали функциональность, предоставляемую ClassName2 (или, как минимум, ClassName1). Теперь нужно посмотреть на это с точки зрения объектов.
 
+
+{% tabs Lab1_CD %}
+
+
+{% tab Lab1_CD Картинка %}
 <div class="card border-primary mb-2" style="max-width: 60rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/uml1.svg"
@@ -19,17 +24,132 @@
         class="d-block user-select-none" />
   </div>
 </div>
+{% endtab %}
+
+{% tab Lab1_CD PlantUML %}
+
+``` plantuml
+@startuml
+
+class ClassName1 {
+ - your_type _privateImportantField
+ + your_type Method1(your_type)
+ + ClassName1() 
+ + ClassName1(your_type)
+ + your_type GetPrivateImportantField()
+ # void _setPrivateImportantField(your_type)
+}
+
+class ClassName2 {
+ - your_type _privateImportantField
+ + your_type Method2(your_type)
+ + ClassName2()
+ + ClassName2(your_type)
+ + your_type GetPrivateImportantField()
+ # void _setPrivateImportantField(your_type)
+}
+
+class ClassName3 {
+ - your_type _privateImportantField
+ + your_type Method3(your_type)
+ + ClassName3()
+ + ClassName3(your_type)
+ + your_type GetPrivateImportantField()
+ # void _setPrivateImportantField(your_type)
+}
+
+ClassName1 <|-- ClassName2
+ClassName2 <|-- ClassName3
+
+@enduml
+```
+{% endtab %}
+
+{% tab Lab1_CD PlantCode from PlantUML %}
+
+``` csharp
+class ClassName1 {
+  private your_type _privateImportantField;
+  public your_type Method1(your_type param0) {
+      return null;
+  }
+  public void ClassName1() {
+  }
+  public void ClassName1(your_type param0) {
+  }
+  public your_type GetPrivateImportantField() {
+      return null;
+  }
+  public void _setPrivateImportantField(your_type param0) {
+  }
+}
+
+class ClassName2 : ClassName1 {
+  private your_type _privateImportantField;
+  public your_type Method2(your_type param0) {
+      return null;
+  }
+  public void ClassName2() {
+  }
+  public void ClassName2(your_type param0) {
+  }
+  public your_type GetPrivateImportantField() {
+      return null;
+  }
+  public void _setPrivateImportantField(your_type param0) {
+  }
+}
+
+class ClassName3 : ClassName2 {
+  private your_type _privateImportantField;
+  public your_type Method3(your_type param0) {
+      return null;
+  }
+  public void ClassName3() {
+  }
+  public void ClassName3(your_type param0) {
+  }
+  public your_type GetPrivateImportantField() {
+      return null;
+  }
+  public void _setPrivateImportantField(your_type param0) {
+  }
+}
+```
+{% endtab %}
+
+{% endtabs %}
+
+Из описания диаграммы классов в нотации PlantUML можно сгенерировать шаблон кода на C# с помощью открытого проекта с гитхаба [plantuml-code-generator](https://github.com/bafolts/plantcode){:target="_blank"} - пример того, что получится, на 3-й вкладке выше.
+
+Можно сгенерировать UML диаграмму классов из готового кода C# следующими методами:
+* Конструктор классов в Microsoft Visual Studio ([Class Designer](https://learn.microsoft.com/en-us/visualstudio/ide/class-designer/designing-and-viewing-classes-and-types?view=vs-2022){:target="_blank"}). Необходимо:
+  * Microsoft Visual Studio
+  * (плюсы) связано с кодом сборки, можно проектировать, рефакторить и просматривать классы
+  * (минусы) видит только связи наследования (+ ассоциация)
+* Doxigen
+  * (плюсы) у вас есть документация
+  * (минусы) видит только связи наследования (+ ассоциация)
+* Расширение для Visual Studio Code [CSharp to PlantUML](https://marketplace.visualstudio.com/items?itemName=pierre3.csharp-to-plantuml){:target="_blank"}. Необходимо:
+  * Visual Studio Code
+  * Dotnet SDK
+  * PlantUML
+  * (плюсы) хорошее начало для редактирования
+  * (минусы) отображает агрегацию как ассоциацию, а реализацию как наследование
 
 # Задание
 
 ## Приемлемо
 
-* Скачать [файл]({{ site.baseurl }}/img/uml1.svg), открыть в [draw.io](https://app.diagrams.net/){:target="_blank"}, изменить согласно варианту названия классов, полей и методов.
-* Реализовать иерархию классов в коде. Геттер и сеттер для приватного поля реализовать:
+1. Спроектировать программу - в диаграмме классов из примера изменить согласно варианту названия классов, полей и методов. Использовать один из следующих способов:
+  * Скачать [файл]({{ site.baseurl }}/img/uml1.svg), открыть в [draw.io](https://app.diagrams.net/){:target="_blank"}, внести изменения.
+  * Скопировать код PlantUML из 2-й вкладки выше, редактировать диаграмму в [plantuml.com](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000){:target="_blank"}.
+2. Реализовать иерархию классов в коде. Геттер и сеттер для приватного поля реализовать:
   * для ClassName1 через методы (как на диаграмме);
   * для ClassName2 через [свойство](https://metanit.com/sharp/tutorial/3.4.php);
   * для ClassName3 через [автосвойство](https://metanit.com/sharp/tutorial/3.4.php).
-* В основном теле программы создать экземпляры классов разными способами, продемонстрировать доступные и недоступные способы работы с ними.
+3. В основном теле программы создать экземпляры классов разными способами, продемонстрировать доступные и недоступные способы работы с ними.
+4. Если вы пропустили пункт 1., сгенерировать диаграмму классов из кода.
 
 ___
 

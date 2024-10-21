@@ -144,7 +144,7 @@ for result in results:
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание-1';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#опознание-объекта-но-быстрее';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab4.html';">ЛР №4 →</button>
