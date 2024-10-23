@@ -4,13 +4,17 @@
   <li class="breadcrumb-item active">Требования</li>
 </ol>
 
+<nav>
+  <ul></ul>
+</nav>
+
 # Начисление баллов
 
 Принятая лабораторная дает ```+5``` баллов.
 
 Пропуск любой пары по расписанию (лекция или практика) ```-1``` балл.
 
-# Дополнительные баллы
+## Дополнительные баллы
 
 До декабря принимаются:
 * возражения по стоимости.
@@ -38,7 +42,7 @@
     </tr>
     <tr>
       <td>Местный Хакатон</td>
-      <td>Окружной Хакатон, <a href="https://www.it-innohack.ru/" target="_blank">IT INNO HACK</a></td>
+      <td>Окружной Хакатон, <a href="https://www.it-innohack.ru/" target="_blank">IT INNO HACK</a>, <a href="https://moretech.vtb.ru/">VTB</a>, <a href="грантгубернатор.рф">грант губернатора ЮГРЫ</a>, <a href="https://mik.2035.university/">доп образзование от university2035</a></td>
       <td><a href="https://www.хакатоны.рф/" target="_blank">Оффлайн хакатон за пределами ХМАО</a></td>
       <td></td>
     </tr>
@@ -50,7 +54,7 @@
     </tr>
     <tr>
       <td>месяц работы системным администратором</td>
-      <td>месяц работы системным аналитиком</td>
+      <td>месяц работы системным аналитиком или программистом</td>
       <td></td>
       <td></td>
     </tr>
@@ -58,16 +62,43 @@
 </table>
 </div>
 
-<div class="card mb-2" style="max-width: 50rem; max-height: 40rem;">
-  <div class="card-body">
-    <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AX38&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp" style="border:none;">Ваш браузер не поддерживает таблицу</iframe>
-  </div>
+___
+
+<div class="table-responsive">
+  <div id="gridContainer"></div>
 </div>
+ 
+<script>
+  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AX38&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp";
+  fetch(url)
+    .then(res => res.text())
+    .then(res => {
+      const htmlString = "<table" + res.split('table')[2] + "table>"
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlString, 'text/html');
+      const table = doc.querySelector('table');
+      if (table) {
+          function removeAttrs(element) {
+              Array.from(element.attributes).forEach(attr => element.removeAttribute(attr.name));
+              Array.from(element.children).forEach(child => removeAttrs(child));
+          }
+          removeAttrs(table);
+      }
+      const clean_table = doc.body.innerHTML;
+
+      const out = clean_table.slice(0,6) + ' class="table table-hover border-primary table-bordered"' + clean_table.slice(6);
+      console.log(out);
+
+      document.getElementById("gridContainer").innerHTML = out;
+    });
+
+</script>
 
 
 ___
 
-# Требования для допуска к экзамену
+## Требования для допуска к экзамену
 
 Для допуска к экзамену по ТИПиС нужно:
 
@@ -93,9 +124,9 @@ ___
 ```70``` баллов обеспечит получение оценки "отлично" по дисциплине.
 
 
+____
 
-
-# Пересдача
+## Пересдача 🎠
 
 Пересдача экзамена принимается при условии выполнения 80% лабораторных работ. Оценка на один балл ниже, чем средняя оценка ответов на два вопроса билета.
 
