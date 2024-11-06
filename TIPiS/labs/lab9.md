@@ -190,7 +190,7 @@ ___
      </tr>
      <tr>
        <th scope="row">2</th>
-       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle2.bin">Файл</a></td>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle2.bin">Файл</a></td>
      </tr>
      <tr>
        <th scope="row">3</th>
@@ -198,7 +198,7 @@ ___
      </tr>
      <tr>
        <th scope="row">4</th>
-       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle4.bin">Файл</a></td>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle4.bin">Файл</a></td>
      </tr>
      <tr>
        <th scope="row">5</th>
@@ -206,7 +206,7 @@ ___
      </tr>
      <tr>
        <th scope="row">6</th>
-       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle6.bin">Файл</a></td>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle6.bin">Файл</a></td>
      </tr>
      <tr>
        <th scope="row">7</th>
@@ -214,7 +214,7 @@ ___
      </tr>
      <tr>
        <th scope="row">8</th>
-       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle8.bin">Файл</a></td>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle8.bin">Файл</a></td>
      </tr>
      <tr>
        <th scope="row">9</th>
@@ -222,7 +222,7 @@ ___
      </tr>
      <tr>
        <th scope="row">10</th>
-       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle10.bin">Файл</a></td>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle10.bin">Файл</a></td>
      </tr>
      <tr>
        <th scope="row">11</th>
@@ -230,7 +230,7 @@ ___
      </tr>
      <tr>
        <th scope="row">12</th>
-       <td><a class="link-dark" href="{{ site.baseurl }}/files/TIPiS/rle12.bin">Файл</a></td>
+       <td><a href="{{ site.baseurl }}/files/TIPiS/rle12.bin">Файл</a></td>
      </tr>
     </tbody>
 </table>
