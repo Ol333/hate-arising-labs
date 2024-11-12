@@ -67,7 +67,7 @@ Model)</td>
 </div>
 
 
-[Методичка](https://disk.yandex.ru/i/KK1sPybypSOf1A) по оформлению отчетов на кафедре.
+[Методичка](https://disk.yandex.ru/i/KK1sPybypSOf1A){:target="_blank"} по оформлению отчетов на кафедре.
 
 <div class="row">
   <div class="col-lg-12">

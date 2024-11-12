@@ -12,11 +12,11 @@
 
 [Лабораторная работа №3]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab3.html). Опознание объекта. 2
 
-[Лабораторная работа №4]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab4.html). Маскирование (редактируется)
+[Лабораторная работа №4]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab4.html). Сегментация
 
 Дополнительно:
 
-[Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html). Трекинг (редактируется)
+[Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html). Трекинг **(редактируется)**
 
 
 ### Диагностическое тестирование
