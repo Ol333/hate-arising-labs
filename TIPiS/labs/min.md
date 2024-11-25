@@ -41,7 +41,7 @@
       <td>Полуфинал или финал ICPC</td>
     </tr>
     <tr>
-      <td>Местный Хакатон: surgu.ai</td>
+      <td>Местный Хакатон: surgu.ai, <a href="https://leader-id.ru/events/247747" target="_blank">Digital Challenge</a></td>
       <td>Окружной Хакатон, <a href="https://www.it-innohack.ru/" target="_blank">IT INNO HACK</a>, <a href="https://moretech.vtb.ru/">VTB</a>, <a href="грантгубернатор.рф">грант губернатора ЮГРЫ</a>, <a href="https://mik.2035.university/">доп образзование от university2035</a></td>
       <td><a href="https://www.хакатоны.рф/" target="_blank">Оффлайн хакатон за пределами ХМАО</a></td>
       <td></td>
@@ -69,7 +69,7 @@ ___
 </div>
  
 <script>
-  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AX38&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp";
+  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AR38&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp";
   fetch(url)
     .then(res => res.text())
     .then(res => {

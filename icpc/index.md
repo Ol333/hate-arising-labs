@@ -11,6 +11,7 @@
     * [Стек]({{ site.baseurl }}/icpc/topics/data-structure/index.html#стек);
     * [Очередь]({{ site.baseurl }}/icpc/topics/data-structure/index.html#очередь);
     * [Графы]({{ site.baseurl }}/icpc/topics/data-structure/index.html#графы);
+    * [Cистема непересекающихся множеств]({{ site.baseurl }}/icpc/topics/data-structure/index.html#cистема-непересекающихся-множеств);
 * [Сортировки]({{ site.baseurl }}/icpc/topics/sorts/index.html):
     * [Быстрая сортировка]({{ site.baseurl }}/icpc/topics/sorts/index.html#quicksort)
 * [Динамическое программирование]({{ site.baseurl }}/icpc/topics/data-structure/index.html#динамическое-программирование);

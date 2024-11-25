@@ -181,7 +181,7 @@ PSPNet (Pyramid Scene Parsing Network) — это архитектура, раз
   <thead>
     <tr class="table-dark">
       <th scope="col">№ варианта</th>
-      <th scope="col">Задача</th>
+      <th scope="col">Модель</th>
     </tr>
   </thead>
   <tbody>
@@ -220,7 +220,7 @@ PSPNet (Pyramid Scene Parsing Network) — это архитектура, раз
         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#сегментация';">Вверх</button>
       </li>
       <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html';">ЛР №5 →</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html';">(доп.) ЛР №5 →</button>
      </li>
       <li>
         <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab3.html';">← ЛР №3</button>

@@ -21,7 +21,7 @@ ___
 
 ___
 
-### [Диагностическое тестирование](https://forms.gle/B5sJcAWSqaQ3kJk58){:target="_blank"}
+### [Диагностическое тестирование](https://forms.gle/BGLAF5kRjoxmKFHD6){:target="_blank"}
 ___
 
 ## Литература
@@ -46,3 +46,4 @@ C#:
 Паттерны объектно-ориентированного проектирования (1994 пер. 2020)](https://student.dei.uc.pt/~arede/Addison-Wesley.Design.Patterns.Elements.of.Reusable.Object-Oriented.Software.by.GoF.RUS.pdf){:target="_blank"}
 * [Тепляков С. Паттерны проектирования на платформе .NET (2015)](https://vk.com/doc44301783_411162088?hash=rN8STM9Ih1GjFaY6jANlsmpZEtSTWbsmAH7Rb1uKapz&dl=u7D5v4wwlR3ddUzzQGDOozsyEuIwYEHH2hWgBEu7z8H){:target="_blank"}
 * [metanit по паттернам](https://metanit.com/sharp/patterns/){:target="_blank"}
+* [RefactoringGuru](https://refactoring.guru/design-patterns/csharp) или их [github](https://github.com/RefactoringGuru/design-patterns-csharp)
