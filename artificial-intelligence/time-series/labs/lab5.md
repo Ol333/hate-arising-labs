@@ -34,6 +34,29 @@ $x_n = \frac{1}{N} \sum_{k=0}^{N-1}X_k e^{i 2 \pi k n / N}$, где $k = 0, ...,
 
 Модификация, позволяющая получить результат за время, меньшее чем $O(N^{2})$. 
 
+# Пример
+
+Пример того, как выглядит график преобразования Фурье для функции $\sin(x)+\sin(3x)+\sin(4x)$:
+
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col-lg-4">
+    <div class="card border-primary mb-2" style="max-width: 30rem;">
+      <img src="{{ site.baseurl }}/img/fur_1.svg"
+      alt="function" focusable="false" width="100%"
+      class="d-block user-select-none" />
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card border-primary mb-2" style="max-width: 30rem;">
+      <div class="card-body">
+      <img src="{{ site.baseurl }}/img/fur_2.svg"
+        alt="furie" focusable="false" width="100%"
+        class="d-block user-select-none" />
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Задание 1
 
 Исходный сигнал представляет собой синусоиду $f(x) = A_0 \sin(w_0 x + \varphi _0 )$.
@@ -45,6 +68,7 @@ $x_n = \frac{1}{N} \sum_{k=0}^{N-1}X_k e^{i 2 \pi k n / N}$, где $k = 0, ...,
 * Осуществить обратное преобразование Фурье. Построить график, который должен совпадать с исходным.
 
 * Реализовать то же с помощью библиотек и сравнить результаты.
+
 
 
 ## Задание 2

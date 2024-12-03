@@ -16,7 +16,7 @@
 
 Дополнительно:
 
-[Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html). Трекинг **(редактируется)**
+[Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html). Трекинг
 
 
-### Диагностическое тестирование
+### [Диагностическое тестирование](https://lms.surgu.ru/mod/quiz/view.php?id=338223){:target="_blank"}
