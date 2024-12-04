@@ -43,9 +43,9 @@
 
 ___
 
-{% tabs track_1 %}
+{% tabs recog_track_1 %}
 
-{% tab track_1 Код %}
+{% tab recog_track_1 Код %}
 
 ``` python
 from ultralytics import YOLO
@@ -61,7 +61,7 @@ model.predict(source=video_path, show=True, save=True, save_txt=True)
 ```
 {% endtab %}
 
-{% tab track_1 Результат %}
+{% tab recog_track_1 Результат %}
 <div class="card border-primary mb-2" style="max-width: 15rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/track_2.gif"
@@ -186,9 +186,9 @@ $IoU=\frac{\text{Area of Overlap}}{\text{Area of Union}}$ — метрика, к
 
 ___
 
-{% tabs track_2 %}
+{% tabs recog_track_2 %}
 
-{% tab track_2 Код %}
+{% tab recog_track_2 Код %}
 ```python
 # Загрузка обученной модели
 model = YOLO("/content/runs/detect/train/weights/best.pt")
@@ -199,7 +199,7 @@ model.predict(source=video_path, show=True, save=True)
 ```
 {% endtab %}
 
-{% tab track_2 Результат %}
+{% tab recog_track_2 Результат %}
 <div class="card border-primary mb-2" style="max-width: 15rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/track_3.gif"
@@ -214,15 +214,15 @@ model.predict(source=video_path, show=True, save=True)
 ___
 
 
-Как видите, модель неплохо работает даже с учетом того, что обучалась на сжатых данных 640x640, а тестируется на оригинальном формате 1920x1080.
+Как видите, модель неплохо работает даже с учетом того, что обучалась на сжатых данных 640x640, а тестируется на оригинальном формате 1920x1080 (или сжатой версии 640x360).
 
-Можно проверить, как она обработает сжатое изображение, которое потом будет преобразовано обратно с пропорциональным растяжением метки.
+Можно проверить, как она обработает сжатое (деформированное) изображение, которое потом будет преобразовано обратно с пропорциональным растяжением метки.
 
 ___
 
-{% tabs track_3 %}
+{% tabs recog_track_3 %}
 
-{% tab track_3 Результат %}
+{% tab recog_track_3 Результат %}
 <div class="card border-primary mb-2" style="max-width: 15rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/track_4.gif"
@@ -232,7 +232,7 @@ ___
 </div>
 {% endtab %}
 
-{% tab track_3 Код %}
+{% tab recog_track_3 Код %}
 ```python
 import cv2
 
@@ -283,7 +283,6 @@ print("Обработка видео завершена.")
 ```
 {% endtab %}
 
-
 {% endtabs %}
 
 ___
@@ -296,9 +295,9 @@ ___
 
 ___
 
-{% tabs track_4 %}
+{% tabs recog_track_4 %}
 
-{% tab track_4 Результат %}
+{% tab recog_track_4 Результат %}
 <div class="card border-primary mb-2" style="max-width: 15rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/track_5.gif"
@@ -308,7 +307,7 @@ ___
 </div>
 {% endtab %}
 
-{% tab track_4 Код %}
+{% tab recog_track_4 Код %}
 ```python
 from deep_sort_realtime.deepsort_tracker import DeepSort
 
@@ -385,7 +384,6 @@ print(f"Обработка завершена, результат сохранё
 ```
 {% endtab %}
 
-
 {% endtabs %}
 
 ___
@@ -407,6 +405,7 @@ ___
   * Проверить (продемонстрировать), что используемая вами предобученная модель не в состоянии отслеживать те объекты, что вы хотите.
 * Заменить один из шагов (или больше) по варианту. Можно изменить используемый инструмент на другой, на свою реализацию, свернуть несколько шагов в один альтернативный. **Результирующий набор использованных инструментов не должен совпадать в группе.** Можно добавить потоковую обработку видео.
 * Реализовать программу, отслеживающую объект на видео.
+* Если сдаете в течение пар семестра, то продемонстрировать работу модели. Если после - прислать на почту преподавателя подробный отчет о работе до экзамена.
 
 <div class="table-responsive">
 <table class="table table-hover border-primary table-bordered ">

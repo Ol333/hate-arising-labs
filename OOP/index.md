@@ -21,7 +21,7 @@ ___
 
 ___
 
-### [Диагностическое тестирование](https://forms.gle/BGLAF5kRjoxmKFHD6){:target="_blank"}
+### [Диагностическое тестирование](https://lms.surgu.ru/mod/quiz/view.php?id=338267){:target="_blank"}
 ___
 
 ## Литература
