@@ -446,9 +446,9 @@ deactivate System
      <li class="float-end">
        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#инженерия-требований';">Вверх</button>
      </li>
-     <!-- <li  class="float-end">
+     <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab12.html';">ЛР №12 →</button>
-     </li> -->
+     </li>
      <li>
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab10.html';">← ЛР №10</button>
      </li>
