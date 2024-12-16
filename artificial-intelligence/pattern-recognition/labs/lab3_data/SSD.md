@@ -71,7 +71,9 @@ $ \hat{g}_j^w = \log \left( \frac{g_j^w}{d_i^w} \right), \quad \hat{g}_j^h = \lo
 
 Потеря уверенности
 
-$L_{conf}(x, c) = - \sum_{i \in {Pos} } x_{ij}^p \log (\hat{c}_i^p) - \sum_{i \in {Neg} } \log (\hat{c}_i^0),$
+$L_{conf}(x, c) = - \sum_{i \in {Pos} } x_{ij}^p \log (\hat{c}_i^p) -$
+
+$ - \sum_{i \in {Neg} } \log (\hat{c}_i^0),$
 
 где $ \hat{c}_i^p = \frac{\exp(c_i^p)}{\sum_p \exp(c_i^p)} $
 

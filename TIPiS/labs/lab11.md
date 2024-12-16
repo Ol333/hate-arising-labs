@@ -406,7 +406,7 @@ deactivate System
 {% tab Lab11_sq3 Mermaid %}
 ```mermaid
 sequenceDiagram
-note left of undefined: Система уведомляет<br>пользователей о новых<br>отзывах на их продукты 
+note left of User: Система уведомляет<br>пользователей о новых<br>отзывах на их продукты 
 
 actor User
 participant System as Система
