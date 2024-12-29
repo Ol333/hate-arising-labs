@@ -40,7 +40,7 @@ C#:
 с примерами приложений на С++ (1990 пер. 1998)](https://studizba.com/pdf_reader/web/viewer.html?file=/uploads/unziped/real/226162/pdf/53537-74762.pdf){:target="_blank"} или [в другом виде](https://www.helloworld.ru/texts/comp/other/oop/index.htm){:target="_blank"}
 * [Халидов А. А. Объектно-ориентированное программирование: практикум (2018)](https://lib.kgeu.ru/irbis64r_15/scan/186%D1%8D%D0%BB.pdf){:target="_blank"}
 
-Паттерны проетирования:
+Паттерны проектирования:
 
 * [Гамма Э., Хелм Р., Джонсон Р., Влиссидес Дж.
 Паттерны объектно-ориентированного проектирования (1994 пер. 2020)](https://student.dei.uc.pt/~arede/Addison-Wesley.Design.Patterns.Elements.of.Reusable.Object-Oriented.Software.by.GoF.RUS.pdf){:target="_blank"}
