@@ -18,7 +18,7 @@
 
 #### 1. Ошибка вызванная точностью представления числа в формате IEEE754
 
-```C
+```c
 #include "stdio.h"
 
 int main(int argc, char *argv[])
@@ -45,7 +45,7 @@ Double: 419D6F34547E6B75=+123456789,12345679104328155517578125
 
 Разница между Single и Double составит: 2,87654320895671844482421875
 
-``` C
+```c
 #include "stdio.h"
 
 int main(int argc, char *argv[])
@@ -63,9 +63,11 @@ int main(int argc, char *argv[])
 
 #### 3. Ошибка в приведении промежуточных данных
 
-Visual Basic (Visual Studio):
+{% tabs big_data_lab2_3 %}
 
-``` VB
+{% tab big_data_lab2_3 Visual Basic (Visual Studio) %}
+
+```vb
 Private Sub Command1_Click()
             Dim a As Single
             Dim b As Single
@@ -79,11 +81,12 @@ Private Sub Command1_Click()
 
         End Sub
 ```
-> Результат: 9,934108E-09 (Должен быть 0.0)
+> Результат: 9,934108E-09 (Должен быть 0.0)	
+{% endtab %}
 
-Си:
+{% tab big_data_lab2_3 C %}
 
-```C
+```c
 #include "stdio.h"
 
 int main(int argc, char *argv[])
@@ -99,11 +102,16 @@ int main(int argc, char *argv[])
 }
 ```
 > 0.700001
+
 > Result: 0.000000
+{% endtab %}
+
+{% endtabs %}
+
 
 #### 4. Ошибки вызванные сдвигом мантисс. Циклические дыры.
 
-```C
+```c
 #include "stdio.h"
 
 int main(int argc, char *argv[])
@@ -236,6 +244,10 @@ print(variable_d, variable_u)
 
 #### 6. Ошибки при обработке циклов
 
+{% tabs big_data_lab2_6 %}
+
+{% tab big_data_lab2_6 C# %}
+
 ```csharp
 using System;
 
@@ -257,7 +269,10 @@ namespace o_mko
 }
 ```
 
-> ok	 
+Result: ok	
+{% endtab %}
+
+{% tab big_data_lab2_6 C++ %}
 
 ```cpp
 #include <iostream>
@@ -276,7 +291,10 @@ int main()
     }
 }
 ```
-> ⚪
+Result: ⚪
+{% endtab %}
+
+{% endtabs %}
 
 Проблему представления чисел решает создание специализированных библиотек обработки чисел. Обычно для представления числа используют массивы данных, что позволяет не ограничиваться машинными словами и оперировать числами имеющими практически не ограниченное число знаков.  Но при этом используются особые процедуры обработки чисел и, как следствие, существенное замедление вычислений.
 
@@ -290,23 +308,81 @@ int main()
 Использовать Jupyter Notebook ([шаблон](../../../files/AI-big-data/2lab_blank.ipynb), в котором практически все прописано).
 
 ## Задание 3
-* Создаем файл Excel
+* Создаем файл Excel следующего вида:
 
-|x1\x2|1|..|100|
-|-|-|-|-|
-|1|$Y = ax_1+bx_2$|||
-|..|||
-|100|||
+<div class="table-responsive">
+<table class="table table-hover border-primary table-bordered ">
+  <thead>
+    <tr>
+      <th scope="col">x1\x2</th>
+      <th scope="col">1</th>
+      <th scope="col">..</th>
+      <th scope="col">100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>$Y = ax_1+bx_2$</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row">..</th>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row">100</th>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+   </tbody>
+</table>
+</div>
 
-|Вариант|*Y*|
-|-|:-:|
-|1|$4x_1 - 2x_2$|
-|2|$3x_1 + 8x_2$|
-|3|$-4x_1 + 7x_2$|
-|4|$6x_1 + 5x_2$|
-|5|$-5x_1 - 3x_2$|
-|6|$9x_1 + 2x_2$|
-|7|$2x_1 - 4x_2$|
+<div class="table-responsive">
+ <table class="table table-hover border-primary table-bordered">
+   <thead>
+     <tr class="table-dark">
+       <th scope="col">№ варианта</th>
+       <th scope="col">Функция $Y$</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>$4x_1 - 2x_2$</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>$3x_1 + 8x_2$</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td>$-4x_1 + 7x_2$</td>
+     </tr>
+     <tr>
+       <th scope="row">4</th>
+       <td>$6x_1 + 5x_2$</td>
+     </tr>
+     <tr>
+       <th scope="row">5</th>
+       <td>$-5x_1 - 3x_2$</td>
+     </tr>
+     <tr>
+       <th scope="row">6</th>
+       <td>$9x_1 + 2x_2$</td>
+     </tr>
+     <tr>
+       <th scope="row">7</th>
+       <td>$2x_1 - 4x_2$</td>
+     </tr>
+    </tbody>
+</table>
+</div>
 
 * Строим 3D график.
 
@@ -330,10 +406,32 @@ int main()
 
 Выбираем один цвет, который присутствует на картинке. Выделяем несколько участков изображения, где этот цвет присутствует, и где отсутствует. Из этих участков создаем набор данных для обучения:
 
-|R|G|B|our color?|
-|-|-|-|-:|
-|255|255|0|1|
-|0|0|255|0|
+<div class="table-responsive">
+<table class="table table-hover border-primary table-bordered ">
+  <thead>
+    <tr>
+      <th scope="col">R</th>
+      <th scope="col">G</th>
+      <th scope="col">B</th>
+      <th scope="col">Is it our color?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>255</td>
+      <td>255</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>255</td>
+      <td>0</td>
+    </tr>
+   </tbody>
+</table>
+</div>
 
 \# Импортируем в Python код во 2-й лабе по ИНС для обучения однослойной сети из одного нейрона с 3 входами.
 
@@ -341,7 +439,7 @@ int main()
   <div class="col-lg-12">
     <ul class="list-unstyled">
       <li class="float-end">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#задание-1';">Вверх</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#продолжаем-подготовку-данных';">Вверх</button>
       </li>
       <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/big-data/labs/lab3.html';">ЛР №3 →</button>
