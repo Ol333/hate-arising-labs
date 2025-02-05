@@ -41,7 +41,7 @@
 
 
 <div class="table-responsive">
-<table class="table table-hover">
+<table class="table table-hover border-primary table-bordered">
    <thead>
      <tr>
        <th scope="col">№ варианта</th>
@@ -49,27 +49,27 @@
      </tr>
    </thead>
    <tbody>
-     <tr class="table-active">
+     <tr>
        <th scope="row">1</th>
        <td><a href="https://disk.yandex.ru/d/gx5pmlWUvQJTkw" target="_blank">Файл</a></td>
      </tr>
-     <tr class="table-primary">
+     <tr>
        <th scope="row">2</th>
        <td><a class="link-dark" href="https://disk.yandex.ru/d/P2rpxR0wvdC5gg" target="_blank">Файл</a></td>
      </tr>
-     <tr class="table-active">
+     <tr>
        <th scope="row">3</th>
        <td><a href="https://disk.yandex.ru/d/t4_xfXjEs25ebw" target="_blank">Файл</a></td>
      </tr>
-     <tr class="table-primary">
+     <tr>
        <th scope="row">4</th>
        <td><a class="link-dark" href="https://disk.yandex.ru/d/k_vWrR3x3QbLSA" target="_blank">Файл</a></td>
      </tr>
-     <tr class="table-active">
+     <tr>
        <th scope="row">5</th>
        <td><a href="https://disk.yandex.ru/d/m5WxScQK5g18Ww" target="_blank">Файл</a></td>
      </tr>
-     <tr class="table-primary">
+     <tr>
        <th scope="row">6</th>
        <td><a class="link-dark" href="https://disk.yandex.ru/d/wEmNrzXTfShEjw" target="_blank">Файл</a></td>
      </tr>

@@ -16,8 +16,15 @@
 
 Дополнительно:
 * [Лабораторная работа №8. Динамические системы]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab8.html)
-...
 
 ___
 
-### [Диагностическое тестирование](https://forms.gle/nZUv1cPAv1GhjLbh9){:target="_blank"}
+#### [Входной контроль](https://forms.yandex.ru/cloud/67a351b7068ff01a96fe8f34/){:target="_blank"}
+
+___
+
+### [Требования на допуск к экзамену]({{ site.baseurl }}/artificial-intelligence/time-series/labs/min.html)
+
+<!-- ___
+
+### [Диагностическое тестирование](https://forms.gle/nZUv1cPAv1GhjLbh9){:target="_blank"} -->

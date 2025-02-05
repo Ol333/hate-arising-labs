@@ -42,7 +42,7 @@
     </tr>
     <tr>
       <td>Местный Хакатон: surgu.ai, <a href="https://leader-id.ru/events/247747" target="_blank">Digital Challenge</a></td>
-      <td>Окружной Хакатон, <a href="https://www.it-innohack.ru/" target="_blank">IT INNO HACK</a>, <a href="https://moretech.vtb.ru/">VTB</a>, <a href="грантгубернатор.рф">грант губернатора ЮГРЫ</a>, <a href="https://mik.2035.university/">доп образзование от university2035</a></td>
+      <td>Окружной Хакатон, <a href="https://www.it-innohack.ru/" target="_blank">IT INNO HACK</a>, <a href="https://moretech.vtb.ru/">VTB</a>, <a href="грантгубернатор.рф">грант губернатора ЮГРЫ</a>, <a href="https://mik.2035.university/">доп образование от university2035</a></td>
       <td><a href="https://www.хакатоны.рф/" target="_blank">Оффлайн хакатон за пределами ХМАО</a></td>
       <td></td>
     </tr>

@@ -21,7 +21,7 @@ $ \sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (x-a)^n = f(a) + \frac{f'(a)}{1!} (x-a
 
 
 <div class="table-responsive">
-<table class="table table-hover">
+<table class="table table-hover border-primary table-bordered">
    <thead>
      <tr>
        <th scope="col">№ варианта</th>
@@ -29,27 +29,27 @@ $ \sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (x-a)^n = f(a) + \frac{f'(a)}{1!} (x-a
      </tr>
    </thead>
    <tbody>
-     <tr class="table-active">
+     <tr>
        <th scope="row">1</th>
        <td>$cos(x)$</td>
      </tr>
-     <tr class="table-primary">
+     <tr>
        <th scope="row">2</th>
        <td>$\frac{1}{1-x}$</td>
      </tr>
-     <tr class="table-active">
+     <tr>
        <th scope="row">3</th>
        <td>$ln(1+x)$</td>
      </tr>
-     <tr class="table-primary">
+     <tr>
        <th scope="row">4</th>
        <td>$e^x$</td>
      </tr>
-     <tr class="table-active">
+     <tr>
        <th scope="row">5</th>
        <td>$sin(x)$</td>
      </tr>
-     <tr class="table-primary">
+     <tr>
        <th scope="row">6</th>
        <td>$(1+x)^a$</td>
      </tr>

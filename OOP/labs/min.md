@@ -99,7 +99,7 @@
   </table>
 </div>
 
-Подробнее про критерии оценивания знаний при экзаменационном контроле [здесь](https://www.surgu.ru/publish/document/tekKontrolDocLink/STO-2.12.5-17.pdf). Соответственно, оценки за вопросы из экзаменационного билета оцениваются следующим образом:
+Подробнее про критерии оценивания знаний при экзаменационном контроле [здесь](https://www.surgu.ru/publish/document/tekKontrolDocLink/STO-2.12.5-17.pdf){:target="_blank"}. Соответственно, оценки за вопросы из экзаменационного билета оцениваются следующим образом:
 
 <div class="table-responsive">
   <table class="table table-bordered">
