@@ -25,7 +25,7 @@ ___
 <div class="card border-primary mb-2" style="max-width: 30rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/csharp_summary.png"
-        alt="Диаграмма классов"  focusable="false" width="100%"
+        alt="Документация C# в Visual Studio"  focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
