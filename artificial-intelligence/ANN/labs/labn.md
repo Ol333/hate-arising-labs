@@ -251,44 +251,46 @@ pip install keras-rl2
   </div>
 </div>
 
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">№ варианта</th>
-      <th scope="col">Реализовать</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="table-active">
-      <th scope="row">1</th>
-      <td>DQN</td>
-    </tr>
-    <tr class="table-primary">
-      <th scope="row">2</th>
-      <td><s>DDPG</s></td>
-    </tr>
-    <tr class="table-active">
-      <th scope="row">3</th>
-      <td>SARSA</td>
-    </tr>
-    <tr class="table-primary">
-      <th scope="row">4</th>
-      <td>A3C/A2C</td>
-    </tr>
-    <tr class="table-active">
-      <th scope="row">5</th>
-      <td>TRPO</td>
-    </tr>
-    <tr class="table-primary">
-      <th scope="row">6</th>
-      <td>PPO</td>
-    </tr>
-    <tr class="table-active">
-      <th scope="row">7</th>
-      <td>SAC</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-hover border-primary  table-bordered">
+    <thead>
+      <tr class="table-dark">
+        <th scope="col">№ варианта</th>
+        <th scope="col">Реализовать</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>DQN</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td><s>DDPG</s></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>SARSA</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>A3C/A2C</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>TRPO</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>PPO</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>SAC</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Полезные источники
 

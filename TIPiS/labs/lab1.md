@@ -191,7 +191,7 @@ ___
      </tr>
      <tr>
        <th scope="row">4</th>
-       <td><a href="http://codeforces.com/problemset/problem/1692/C" target="_blank">1692C - Где слон?</a></td>
+       <td><a href="https://codeforces.com/problemset/problem/2148/A" target="_blank">2148A - Возвышенная последовательность</a></td>
      </tr>
      <tr>
        <th scope="row">5</th>
@@ -219,7 +219,7 @@ ___
      </tr>
      <tr>
        <th scope="row">11</th>
-       <td><a href="https://codeforces.com/contest/1767/problem/A" target="_blank">1767A - Разрежь треугольник</a></td>
+       <td><a href="https://codeforces.com/contest/2014/problem/A" target="_blank">2014A - Робин Помогает</a></td>
      </tr>
      <tr>
        <th scope="row">12</th>

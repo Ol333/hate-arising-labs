@@ -14,9 +14,7 @@
 
 [Лабораторная работа №4]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab4.html). Сегментация
 
-Дополнительно:
-
 [Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html). Трекинг
 
+Дополнительно:
 
-### [Диагностическое тестирование](https://lms.surgu.ru/mod/quiz/view.php?id=338223){:target="_blank"}

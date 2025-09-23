@@ -28,4 +28,3 @@
 
 [Памятка]({{ site.baseurl }}/artificial-intelligence/ANN/compendium.html)
 
-### [Диагностическое тестирование](https://lms.surgu.ru/mod/quiz/view.php?id=338233){:target="_blank"}

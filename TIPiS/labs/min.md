@@ -69,30 +69,32 @@ ___
 </div>
  
 <script>
-  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pubhtml?gid=0&amp;range=A1:AR38&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp";
+  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdmZTJfKmtWBaQvhjsvgDtvTsN1mIAPjqI_4G6h-DUXeteWdkZkcDxnIXILr9rn2Vjqv2mwOFfELW9/pub?gid=0&amp;range=A1:AR38&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp&output=csv";
   fetch(url)
     .then(res => res.text())
     .then(res => {
-      const htmlString = "<table" + res.split('table')[2] + "table>"
-
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(htmlString, 'text/html');
-      const table = doc.querySelector('table');
-      if (table) {
-          function removeAttrs(element) {
-              Array.from(element.attributes).forEach(attr => element.removeAttribute(attr.name));
-              Array.from(element.children).forEach(child => removeAttrs(child));
-          }
-          removeAttrs(table);
-      }
-      const clean_table = doc.body.innerHTML;
-
-      const out = clean_table.slice(0,6) + ' class="table table-hover border-primary table-bordered"' + clean_table.slice(6);
-      console.log(out);
-
-      document.getElementById("gridContainer").innerHTML = out;
+      const rows = res.split('\n');
+        let html = '<table class="table table-hover border-primary table-bordered">';
+        
+        rows.forEach((row, index) => {
+            const cells = row.split(',');
+            html += '<tr>';
+            cells.forEach(cell => {
+                if (index === 0) {
+                    html += `<th>${cell}</th>`;
+                } else {
+                    html += `<td>${cell}</td>`;
+                }
+            });
+            html += '</tr>';
+        });
+        
+        html += '</table>';
+        document.getElementById("gridContainer").innerHTML = html;
+    })
+    .catch(error => {
+        console.error('Ошибка:', error);
     });
-
 </script>
 
 
@@ -103,25 +105,25 @@ ___
 Для допуска к экзамену по ТИПиС нужно:
 
 * выполнить не менее 1 лабораторной из каждого раздела (МФПС, МАИС, Информационные процессы);
-* набрать ```20``` баллов;
+* набрать ```13``` баллов;
 * выполнить диагностическое тестирование не менее, чем на 70%;
 * посетить *(или выполнить тест в moddle по теме занятия)* не менее 70% лекционных занятий.
 
 ___
 
-```35``` баллов обеспечит получение оценки “удовлетворительно” по дисциплине.
+```25``` баллов обеспечит получение оценки “удовлетворительно” по дисциплине.
 
 Для получения более высокой оценки необходимо ответить на 2 теоретических вопроса из билета.
 
 ___
 
-```45``` баллов обеспечит получение оценки "хорошо" по дисциплине.
+```32``` баллов обеспечит получение оценки "хорошо" по дисциплине.
 
 Для получения более высокой оценки необходимо ответить на 1 теоретический вопрос из двух в билете.
 
 ___
 
-```70``` баллов обеспечит получение оценки "отлично" по дисциплине.
+```49``` баллов обеспечит получение оценки "отлично" по дисциплине.
 
 
 ____

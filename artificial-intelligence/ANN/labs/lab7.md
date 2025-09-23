@@ -56,7 +56,7 @@ $ y_t = Vh_t + b_y $
 
 ### Backward pass
 
-В случаем бинарной классификации удобно использовать функцию потерь перекрестной энтропии, как [здесь](https://python-scripts.com/recurrent-neural-network).
+В случае бинарной классификации удобно использовать функцию потерь перекрестной энтропии, как [здесь](https://python-scripts.com/recurrent-neural-network){:target="_blank"}.
 
 $L = -\ln(p_c)$
 
@@ -162,7 +162,7 @@ $ \Delta w_{ji} = -\eta \frac{\partial E_{общ.}(n_0, n_1)}{\partial w_{ji}} =
       <th scope="row">1</th>
       <td>-</td>
       <td>GRU</td>
-      <td>Генерация тестовых отзывов</td>
+      <td>Генерация текстовых отзывов</td>
       <td>seq2seq</td>
       <td>Генерация аннотации по тексту научной статьи<a class="link-dark" href="https://cyberleninka.ru/" target="_blank">*</a> (можно заголовка по аннотации)<a class="link-dark" href="https://www.kaggle.com/datasets/Cornell-University/arxiv" target="_blank">*</a></td>
     </tr>

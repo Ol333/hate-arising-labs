@@ -34,30 +34,32 @@ ___
 </div>
 
 <script>
-  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQDPVi5ZgAjVwzEnZJVT9X5I6ZnfSCo5KHxleIYhQo957Xy84-GnepBWduPJ47QL01ZTq2j5hBELQfF/pubhtml?gid=0&amp;range=A1:AS13&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp";
+  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQDPVi5ZgAjVwzEnZJVT9X5I6ZnfSCo5KHxleIYhQo957Xy84-GnepBWduPJ47QL01ZTq2j5hBELQfF/pub?gid=0&amp;range=A1:AS13&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false&amp&output=csv";
   fetch(url)
     .then(res => res.text())
     .then(res => {
-      const htmlString = "<table" + res.split('table')[2] + "table>"
-
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(htmlString, 'text/html');
-      const table = doc.querySelector('table');
-      if (table) {
-          function removeAttrs(element) {
-              Array.from(element.attributes).forEach(attr => element.removeAttribute(attr.name));
-              Array.from(element.children).forEach(child => removeAttrs(child));
-          }
-          removeAttrs(table);
-      }
-      const clean_table = doc.body.innerHTML;
-
-      const out = clean_table.slice(0,6) + ' class="table table-hover border-primary table-bordered"' + clean_table.slice(6);
-      console.log(out);
-
-      document.getElementById("gridContainer").innerHTML = out;
+      const rows = res.split('\n');
+        let html = '<table class="table table-hover border-primary table-bordered">';
+        
+        rows.forEach((row, index) => {
+            const cells = row.split(',');
+            html += '<tr>';
+            cells.forEach(cell => {
+                if (index === 0) {
+                    html += `<th>${cell}</th>`;
+                } else {
+                    html += `<td>${cell}</td>`;
+                }
+            });
+            html += '</tr>';
+        });
+        
+        html += '</table>';
+        document.getElementById("gridContainer").innerHTML = html;
+    })
+    .catch(error => {
+        console.error('Ошибка:', error);
     });
-
 </script>
 
 

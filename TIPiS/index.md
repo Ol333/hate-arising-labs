@@ -27,11 +27,6 @@
 
 
 
-
-___
-
-### [Диагностическое тестирование](https://lms.surgu.ru/mod/quiz/view.php?id=338265){:target="_blank"}
-
 ___
 
 ### [Требования на допуск]({{ site.baseurl }}/TIPiS/labs/min.html)
