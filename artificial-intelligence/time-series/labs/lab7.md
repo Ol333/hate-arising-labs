@@ -84,7 +84,7 @@ DWT всегда реализуется как банк фильтров в ви
 
 * Построить график произвольной функции из `pywt.data`.
 * Построить скейлограмму.
-* Построить трехмерную поверхность двухпараметрического спектра $W(a,b)$. Как [здесь](https://habr.com/ru/articles/449646/).
+* Построить трехмерную поверхность двухпараметрического спектра $W(a,b)$. Как [здесь](https://habr.com/ru/articles/449646/){:target="_blank"}.
 * Построить плоскость $ab$ с цветовыми областями вейвлет-преобразования.
 * Построить сечения вейвлет-спектра $W(a,b)$ по нескольким произвольным значениям $a$ и $b$.
 * Построить скелетон - линии локальных экстремумов.
@@ -93,9 +93,9 @@ DWT всегда реализуется как банк фильтров в ви
 ## Задание 2
 
 * Добавить к сигналу из [ЛР5]({{ site.baseurl }}/artificial-intelligence/time-series/labs/lab5.html){:target="_blank"} белый гауссовский шум с нулевым математическим ожиданием и произвольно выбранной дисперсией.
-* Вычисление прямого дискретного вейвлет-преобразования с пошаговым выводом графиков коеффициентов (что-то [такое](https://www.wolfram.com/mathematica/new-in-8/wavelet-analysis/HTMLImages.ru/lifting-wavelet-transform-(lwt)/O_10.png){:target="_blank"}).
+* Вычисление прямого дискретного вейвлет-преобразования с пошаговым выводом графиков коэффициентов (что-то [такое](https://link.springer.com/article/10.1007/s13755-020-00129-1/figures/7){:target="_blank"}).
 * Вычисление обратного дискретного вейвлет-преобразования.
-* Сравнение исходного сигнала (без шума) с сигналом, прошедшим через фильтр. $MSE = \frac{1}{N} \sum_{k=0}^{N-1} (f(k) - \widehat f(k))^2 $, где $f(k)$ - эталонный сигнал, $\widehat f(k)$ - восстановленный сигнал.
+* Сравнение исходного сигнала (без шума) с зашумленным сигналом, прошедшим через фильтр. $MSE = \frac{1}{N} \sum_{k=0}^{N-1} (f(k) - \widehat f(k))^2 $, где $f(k)$ - эталонный сигнал, $\widehat f(k)$ - восстановленный сигнал.
 
 * Поменять вейвлет на произвольный неуказанный в вариантах и повторить все пункты выше.
 
@@ -152,7 +152,7 @@ DWT всегда реализуется как банк фильтров в ви
         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#вейвлет-преобразование';">Вверх</button>
       </li>
       <li  class="float-end">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/time-series/labs/lab8.html';">(доп.) ЛР №8 →</button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/time-series/labs/lab8.html';">ЛР №8 →</button>
      </li>
       <li>
         <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/artificial-intelligence/time-series/labs/lab6.html';">← ЛР №6</button>
