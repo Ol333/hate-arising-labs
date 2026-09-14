@@ -16,5 +16,4 @@
 
 [Лабораторная работа №5]({{ site.baseurl }}/artificial-intelligence/pattern-recognition/labs/lab5.html). Трекинг
 
-Дополнительно:
 

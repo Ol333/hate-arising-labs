@@ -98,7 +98,7 @@
   <div class="col-lg-12">
    <ul class="list-unstyled">
      <li class="float-end">
-       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#математика';">Вверх</button>
+       <button type="button" class="btn btn-outline-primary" onclick="window.location.href='#постановка-задачи-оптимизации';">Вверх</button>
      </li>
      <li  class="float-end">
        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ site.baseurl }}/TIPiS/labs/lab5.html';">ЛР №5 →</button>

@@ -166,7 +166,7 @@
 <div class="card border-primary mb-2" style="max-width: 40rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/UseCase.svg"
-        alt="RNN" focusable="false" width="100%"
+        alt="PlantUML diagram" focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
@@ -216,7 +216,7 @@ User <|-- Salesman
 <div class="card border-primary mb-2" style="max-width: 30rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/DB.svg"
-        alt="RNN" focusable="false" width="100%"
+        alt="PlantUML diagram" focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
@@ -334,7 +334,7 @@ Product ||--o{ Report : "содержится в"
 <div class="card border-primary mb-2" style="max-width: 40rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/DB_.svg"
-        alt="RNN" focusable="false" width="100%"
+        alt="Mermaid diagram" focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
@@ -348,7 +348,7 @@ Product ||--o{ Report : "содержится в"
 <div class="card border-primary mb-2" style="max-width: 50rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/SQ_1.svg"
-        alt="RNN" focusable="false" width="100%"
+        alt="PlantUML diagram" focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
@@ -356,7 +356,7 @@ Product ||--o{ Report : "содержится в"
 <div class="card border-primary mb-2" style="max-width: 50rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/SQ_2.svg"
-        alt="RNN" focusable="false" width="100%"
+        alt="PlantUML diagram" focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
@@ -368,7 +368,7 @@ Product ||--o{ Report : "содержится в"
 <div class="card border-primary mb-2" style="max-width: 50rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/SQ_3.svg"
-        alt="RNN" focusable="false" width="100%"
+        alt="PlantUML diagram" focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
@@ -431,7 +431,7 @@ deactivate System
 <div class="card border-primary mb-2" style="max-width: 50rem;">
   <div class="card-body">
     <img src="{{ site.baseurl }}/img/SQ_3_.svg"
-        alt="RNN" focusable="false" width="100%"
+        alt="Mermaid diagram" focusable="false" width="100%"
         class="d-block user-select-none" />
   </div>
 </div>
