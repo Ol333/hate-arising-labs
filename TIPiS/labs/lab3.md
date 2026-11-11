@@ -62,8 +62,7 @@
       <th scope="col" colspan="3">Итоговый тест</th>
     </tr>
     <tr>
-      <td>Программа на любом языке (не в Excel)</td>
-      <td colspan="2">-</td>
+      <td colspan="3">Программа на любом языке (не в Excel)</td>
     </tr>
    </tbody>
 </table>

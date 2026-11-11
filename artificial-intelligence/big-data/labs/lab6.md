@@ -23,11 +23,23 @@
 
 Результат сильно зависит от начальной инициализации. Хороший старт — **k-means++**.
 
-![K-Means clustering](https://avatars.mds.yandex.net/i?id=876827223569cbd854cf6b862068b7e7f45a0544-8972446-images-thumbs&n=13&n=13&w=690&h=460)
+<div class="card border-primary mb-2" style="max-width: 20rem;">
+  <div class="card-body">
+    <img src="https://avatars.mds.yandex.net/i?id=876827223569cbd854cf6b862068b7e7f45a0544-8972446-images-thumbs&n=13&n=13&w=690&h=460"
+        alt="K-Means clustering" focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
 
 **Иерархическая кластеризация** — строит не плоские группы, а дерево (дендрограмму). Снизу: каждый объект — отдельный кластер. На каждом шаге объединяем два самых похожих кластера. Наверху — один большой кластер. Удобно, когда нужна иерархия (новости по сюжетам, таксономия товаров).
 
-![](https://avatars.mds.yandex.net/i?id=95312e9f187e2fc338419b91b4a9584a_l-8187767-images-thumbs&n=13&w=690&h=460)
+<div class="card border-primary mb-2" style="max-width: 20rem;">
+  <div class="card-body">
+    <img src="https://avatars.mds.yandex.net/i?id=95312e9f187e2fc338419b91b4a9584a_l-8187767-images-thumbs&n=13&w=690&h=460"
+        alt="RNN" focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
 
 **Метрики качества** — две группы:
 
@@ -49,7 +61,13 @@
 
 Классическая картинка, ради которой t-SNE обычно и запоминают — MNIST: цифры на нём образуют хорошо разделённые «острова» без единой метки:
 
-![](https://avatars.mds.yandex.net/i?id=a87daef7b8fab06c34ccbb21cfde1135_l-5289254-images-thumbs&n=13&n=13&w=690&h=460)
+<div class="card border-primary mb-2" style="max-width: 20rem;">
+  <div class="card-body">
+    <img src="https://avatars.mds.yandex.net/i?id=a87daef7b8fab06c34ccbb21cfde1135_l-5289254-images-thumbs&n=13&n=13&w=690&h=460"
+        alt="RNN" focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
 
 #### 3. Обучение представлений (word2vec)
 
@@ -63,7 +81,13 @@
 
 На выходе — векторы, у которых близкие по смыслу слова автоматически оказываются рядом. Отсюда знаменитые арифметические свойства типа «король − мужчина + женщина ≈ королева».
 
-![](https://avatars.mds.yandex.net/i?id=79ba61f2a92fbc3f49ebed611774a6ba0186817d-5166135-images-thumbs&n=13&n=13&w=690&h=460)
+<div class="card border-primary mb-2" style="max-width: 20rem;">
+  <div class="card-body">
+    <img src="https://avatars.mds.yandex.net/i?id=79ba61f2a92fbc3f49ebed611774a6ba0186817d-5166135-images-thumbs&n=13&n=13&w=690&h=460"
+        alt="RNN" focusable="false" width="100%"
+        class="d-block user-select-none" />
+  </div>
+</div>
 
 _____
 
